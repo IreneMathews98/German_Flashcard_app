@@ -2,7 +2,7 @@
   <img src="static/images/logo.png" alt="FluentFling Logo" width="340"/>
 </p>
 
-<h1 align="center">FluentFling</h1>
+<h1 align="center">FluentFling</h1> 
 <p align="center"><em>Connect. Converse. Fly.</em></p>
 
 <p align="center">
