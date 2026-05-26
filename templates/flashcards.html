@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}{{ set_name or 'All Words' }} – Flashcards | FluentFling{% endblock %}
+
+{% block content %}
+{% if word_count == 0 %}
+<div class="text-center py-5">
+  <div class="fs-1 mb-3">📭</div>
+  <h3>No vocabulary yet</h3>
+  <p class="text-muted">Load a starter pack or import a file.</p>
+  <a href="/" class="btn btn-primary">Go Home</a>
+</div>
+{% else %}
+
+<!-- Floating side characters -->
+<div class="side-deco side-deco--left">
+  <span>🧠</span>
+  <span>📚</span>
+  <span>✨</span>
+  <span>🎯</span>
+</div>
+<div class="side-deco side-deco--right">
+  <span>💡</span>
+  <span>🌟</span>
+  <span>🗣️</span>
+  <span>🎉</span>
+</div>
+
+<!-- Breadcrumb -->
+<div class="d-flex align-items-center gap-3 mb-4">
+  <a href="/" class="text-muted text-decoration-none small">← Home</a>
+  <span class="text-muted">|</span>
+  <span class="fw-semibold">{{ set_name or 'All Vocabulary' }}</span>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-lg-7">
+
+    <!-- Filter bar + Shuffle -->
+    <div class="d-flex align-items-center gap-2 mb-4 flex-wrap">
+      <span class="text-muted small">Filter:</span>
+      <button class="btn btn-sm btn-outline-secondary type-filter active" data-type="all">All</button>
+      <button class="btn btn-sm btn-outline-secondary type-filter" data-type="noun">Nouns</button>
+      <button class="btn btn-sm btn-outline-secondary type-filter" data-type="verb">Verbs</button>
+      <button class="btn btn-sm btn-outline-secondary type-filter" data-type="adjective">Adjectives</button>
+      <button class="btn btn-sm btn-outline-secondary type-filter" data-type="other">Other</button>
+      <span class="ms-auto text-muted small" id="card-counter">– / –</span>
+      <button type="button" class="btn btn-sm btn-outline-secondary" id="shuffle-btn">⟳ Shuffle</button>
+    </div>
+
+    <!-- Flashcard -->
+    <div class="flashcard-wrapper mb-4" id="flashcard-wrapper">
+      <div class="flashcard" id="flashcard">
+        <div class="flashcard-front">
+          <span class="word-type-badge" id="front-type-badge"></span>
+          <div class="card-artikel" id="front-artikel"></div>
+          <div class="card-word" id="front-word">Loading…</div>
+          <p class="mt-3 mb-0 small" style="color:rgba(255,255,255,.4)">Click to reveal meaning</p>
+        </div>
+        <div class="flashcard-back">
+          <div class="card-meaning" id="back-meaning"></div>
+          <div class="card-sentence" id="back-sentence"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Easy / Hard -->
+    <div class="d-flex justify-content-center gap-3 mb-3">
+      <button type="button" class="btn btn-success btn-lg px-5" id="easy-btn">Easy ✓</button>
+      <button type="button" class="btn btn-danger  btn-lg px-5" id="hard-btn">Hard ↺</button>
+    </div>
+
+    <!-- Previous + keyboard hint -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <button type="button" class="btn btn-outline-secondary btn-sm" id="prev-btn">← Previous</button>
+      <p class="text-muted small mb-0">
+        <kbd>Space</kbd> flip &nbsp;·&nbsp; <kbd>E</kbd> easy &nbsp;·&nbsp; <kbd>H</kbd> hard &nbsp;·&nbsp; <kbd>←</kbd> back
+      </p>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress" style="height:6px;">
+      <div class="progress-bar" id="card-progress"
+           style="width:0%; background:linear-gradient(90deg,#7c3aed,#0891b2)"></div>
+    </div>
+
+  </div>
+</div>
+{% endif %}
+
+<!-- Pass set name to JS -->
+<div id="set-config" data-set="{{ set_name }}"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/flashcard.js?v=3"></script>
+{% endblock %}

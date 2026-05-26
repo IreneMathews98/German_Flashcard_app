@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block title %}Import Vocabulary | FluentFling{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="d-flex align-items-center mb-1 gap-3">
+      <a href="/" class="text-muted text-decoration-none small">← Home</a>
+    </div>
+    <h2 class="fw-bold mb-1">Import Vocabulary</h2>
+    <p class="text-muted mb-4">Name your set, upload a file, then let AI classify and generate sentences.</p>
+
+    <!-- Format hint -->
+    <div class="alert alert-info mb-4">
+      <strong>Supported formats:</strong>
+      <ul class="mb-0 mt-1">
+        <li><strong>.txt</strong> — one entry per line: <code>Word (type) - English meaning</code></li>
+        <li><strong>.csv / .xlsx</strong> — columns: <code>german_word</code>, <code>meaning</code></li>
+      </ul>
+    </div>
+
+    <!-- Step 1: Name your set -->
+    <div class="card shadow-sm mb-4" id="name-section">
+      <div class="card-body p-4">
+        <h6 class="fw-semibold mb-3">① Name your vocabulary set</h6>
+        <div class="input-group">
+          <input type="text" class="form-control form-control-lg" id="set-name"
+                 placeholder="e.g. New file name"
+                 list="existing-sets-list"
+                 autocomplete="off">
+          <button type="button" id="confirm-name-btn" class="btn btn-outline-secondary">Next →</button>
+        </div>
+        <div class="text-danger small mt-1 d-none" id="name-error">Please enter a name for your vocabulary set.</div>
+        <datalist id="existing-sets-list">
+          {% for name in existing_sets %}
+          <option value="{{ name }}">
+          {% endfor %}
+        </datalist>
+        <div class="form-text mt-1">Saves as <code id="filename-preview">YourName.xlsx</code> in the vocabulary folder.</div>
+      </div>
+    </div>
+
+    <!-- Step 2: Upload file (shown after name is set) -->
+    <div class="card shadow-sm mb-4 d-none" id="upload-section">
+      <div class="card-body p-4">
+        <h6 class="fw-semibold mb-3">② Upload your file
+          <span class="badge bg-primary ms-2" id="set-name-badge"></span>
+        </h6>
+        <div class="upload-zone" id="drop-zone">
+          <div class="upload-icon">📂</div>
+          <p class="fw-semibold mb-1">Drag & drop your file here</p>
+          <p class="text-muted small mb-3">or click to browse</p>
+          <input type="file" id="file-input" accept=".txt,.csv,.xlsx,.xls" class="d-none">
+          <button type="button" id="choose-file-btn" class="btn btn-outline-primary">Choose File</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: Preview -->
+    <div id="preview-section" class="d-none">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h5 class="mb-0">Preview <span class="badge bg-secondary" id="word-count-badge">0 words</span></h5>
+        <div class="d-flex gap-2">
+          <button type="button" id="change-file-btn" class="btn btn-sm btn-outline-secondary">Change file</button>
+          <button type="button" id="process-btn" class="btn btn-primary">✨ Process with AI</button>
+        </div>
+      </div>
+      <div class="table-responsive" style="max-height: 350px; overflow-y: auto;">
+        <table class="table table-sm table-hover">
+          <thead class="table-light sticky-top">
+            <tr><th>#</th><th>German Word</th><th>Meaning</th><th>Type Hint</th></tr>
+          </thead>
+          <tbody id="preview-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Processing -->
+    <div id="processing-section" class="d-none text-center py-5">
+      <div class="spinner-border text-primary mb-3" style="width:3rem;height:3rem;"></div>
+      <h5 id="processing-msg">Processing words with AI…</h5>
+      <div class="progress mt-3" style="height:8px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated"
+             id="progress-bar" style="width:0%"></div>
+      </div>
+      <p class="text-muted small mt-2" id="progress-text">Analysing…</p>
+    </div>
+
+    <!-- Done -->
+    <div id="done-section" class="d-none text-center py-4">
+      <div class="fs-1 mb-2">✅</div>
+      <h4 class="fw-bold">Done!</h4>
+      <p class="text-muted" id="done-msg"></p>
+      <div class="d-flex gap-3 justify-content-center">
+        <a href="/" id="done-study-link" class="btn btn-primary">Study Flashcards →</a>
+        <button type="button" id="reset-all-btn" class="btn btn-outline-secondary">Import More</button>
+      </div>
+    </div>
+
+    <!-- Error -->
+    <div id="error-section" class="d-none">
+      <div class="alert alert-danger" id="error-msg"></div>
+      <button type="button" id="try-again-btn" class="btn btn-outline-secondary">Try Again</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/upload.js?v=5"></script>
+{% endblock %}

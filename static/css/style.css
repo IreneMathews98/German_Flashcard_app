@@ -1,0 +1,324 @@
+/* ── Variables ──────────────────────────────────────────────── */
+:root {
+  --purple:       #7c3aed;
+  --purple-dark:  #4c1d95;
+  --purple-light: #ede9fe;
+  --teal:         #0891b2;
+  --teal-dark:    #0c4a6e;
+  --teal-light:   #e0f7ff;
+  --orange:       #f97316;
+  --gold:         #f5c842;
+  --navy:         #4c1d95;
+  --card-radius:  18px;
+  --shadow:       0 4px 28px rgba(124,58,237,.1);
+  --shadow-lg:    0 8px 40px rgba(124,58,237,.18);
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff 0%, #fdf4ff 100%);
+  min-height: 100vh;
+  color: #1a1a2e;
+}
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+.navbar {
+  background: linear-gradient(135deg, #4c1d95 0%, #0c4a6e 100%);
+  padding: .9rem 0;
+  box-shadow: 0 2px 20px rgba(76,29,149,.35);
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: -.3px;
+  background: linear-gradient(90deg, #fff 0%, #c4b5fd 50%, #7dd3fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.navbar .nav-link {
+  color: rgba(255,255,255,.75) !important;
+  font-weight: 500;
+  transition: color .2s;
+}
+.navbar .nav-link:hover { color: #fff !important; }
+
+/* ── Bootstrap btn-primary override ───────────────────────── */
+.btn-primary {
+  background: linear-gradient(135deg, var(--purple) 0%, var(--teal) 100%);
+  border: none;
+  transition: opacity .2s, transform .15s, box-shadow .2s;
+  box-shadow: 0 3px 14px rgba(124,58,237,.3);
+}
+.btn-primary:hover {
+  opacity: .9;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(124,58,237,.4);
+  background: linear-gradient(135deg, var(--purple) 0%, var(--teal) 100%);
+  border: none;
+}
+.btn-primary:active { transform: none; }
+.btn-outline-primary {
+  color: var(--purple);
+  border-color: var(--purple);
+}
+.btn-outline-primary:hover {
+  background: var(--purple);
+  border-color: var(--purple);
+}
+
+/* ── Cards ──────────────────────────────────────────────────── */
+.card {
+  border: none;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  background: #fff;
+}
+
+/* ── Set cards (home) ───────────────────────────────────────── */
+.set-card {
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+  border: 2px solid transparent;
+}
+.set-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--purple-light);
+}
+
+/* ── Upload zone ────────────────────────────────────────────── */
+.upload-zone {
+  border: 2px dashed #c9d0e0;
+  border-radius: 14px;
+  padding: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color .2s, background .2s;
+}
+.upload-zone:hover, .upload-zone.drag-over {
+  border-color: var(--purple);
+  background: #f5f3ff;
+}
+.upload-icon { font-size: 2.5rem; }
+
+/* ── Word-type badge ────────────────────────────────────────── */
+.word-type-badge {
+  display: inline-block;
+  padding: .25rem .75rem;
+  border-radius: 99px;
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: #fff;
+  background: #6c757d;
+}
+
+/* ── Flashcard ──────────────────────────────────────────────── */
+.flashcard-wrapper {
+  perspective: 1200px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity .22s ease, transform .22s ease;
+}
+.flashcard-wrapper.card-exit {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  min-height: 380px;
+  transform-style: preserve-3d;
+  transition: transform .55s cubic-bezier(.4,0,.2,1);
+}
+.flashcard.flipped { transform: rotateY(180deg); }
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--card-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.flashcard-front {
+  background: linear-gradient(135deg, #4c1d95 0%, #0c4a6e 60%, #7c3aed 100%);
+  color: #fff;
+}
+.flashcard-front::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top right, rgba(255,255,255,.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.flashcard-back {
+  background: linear-gradient(160deg, #fff 70%, #f5f3ff 100%);
+  transform: rotateY(180deg);
+  color: #1a1a2e;
+  border: 2px solid var(--purple-light);
+}
+
+.card-artikel {
+  font-size: 1.2rem;
+  color: var(--gold);
+  font-weight: 700;
+  min-height: 1.6rem;
+}
+.card-word {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+}
+.card-meaning {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--purple-dark);
+  margin-bottom: 1rem;
+}
+.card-sentence {
+  font-size: .95rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.7;
+}
+.card-sentence .german { font-weight: 600; color: var(--teal-dark); }
+.card-sentence .english { color: #888; font-style: italic; }
+
+/* ── Type filter pills ──────────────────────────────────────── */
+.type-filter.active {
+  background: linear-gradient(135deg, var(--purple), var(--teal));
+  border-color: transparent;
+  color: #fff;
+}
+
+/* ── Floating side decorations (flashcard page only) ────────── */
+.side-deco {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  font-size: 1.7rem;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeInDeco 1s ease .5s forwards;
+}
+.side-deco--left  { left: 1.5rem; }
+.side-deco--right { right: 1.5rem; }
+
+.side-deco span {
+  display: block;
+  animation: floatChar 3.5s ease-in-out infinite;
+}
+.side-deco span:nth-child(2) { animation-delay: .6s; }
+.side-deco span:nth-child(3) { animation-delay: 1.2s; }
+.side-deco span:nth-child(4) { animation-delay: 1.8s; }
+
+@media (max-width: 1100px) { .side-deco { display: none; } }
+
+@keyframes floatChar {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes fadeInDeco {
+  to { opacity: .35; }
+}
+
+/* ── Test: type selector ────────────────────────────────────── */
+.test-type-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 2px solid #e0e4ee;
+  cursor: pointer;
+  transition: border-color .2s, background .2s;
+}
+.test-type-option.active {
+  border-color: var(--purple);
+  background: var(--purple-light);
+}
+.type-icon { font-size: 1.5rem; flex-shrink: 0; }
+
+/* ── Multiple choice options ────────────────────────────────── */
+.mc-option {
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 2px solid #e0e4ee;
+  cursor: pointer;
+  transition: border-color .2s, background .2s, transform .1s;
+  font-weight: 500;
+}
+.mc-option:hover {
+  border-color: var(--purple);
+  background: var(--purple-light);
+  transform: translateX(4px);
+}
+.mc-option.correct { border-color: #16a34a; background: #dcfce7; color: #166534; }
+.mc-option.wrong   { border-color: #dc2626; background: #fee2e2; color: #991b1b; }
+
+/* ── Score ring ─────────────────────────────────────────────── */
+.score-ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: conic-gradient(var(--purple) var(--pct, 0%), #e0e4ee 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score-ring-inner {
+  width: 110px;
+  height: 110px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Stat boxes ─────────────────────────────────────────────── */
+.stat-box {
+  background: var(--purple-light);
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  min-width: 90px;
+}
+
+/* ── Result emoji ───────────────────────────────────────────── */
+.result-emoji {
+  font-size: 4rem;
+  animation: popIn .5s cubic-bezier(.175,.885,.32,1.275);
+}
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* ── Correct answer flash ───────────────────────────────────── */
+@keyframes correctFlash {
+  0%   { box-shadow: 0 0 0 0 rgba(22,163,74,.6); }
+  70%  { box-shadow: 0 0 0 16px rgba(22,163,74,0); }
+  100% { box-shadow: 0 0 0 0 rgba(22,163,74,0); }
+}
+.correct-flash { animation: correctFlash .6s ease; }

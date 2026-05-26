@@ -1,0 +1,2844 @@
+[
+  {
+    "german_word": "abholen",
+    "meaning": "to pick up",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "absagen",
+    "meaning": "to cancel",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "absichtlich",
+    "meaning": "Intentionally",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "abziehen, minus",
+    "meaning": "subtract, minus",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "abzüglich",
+    "meaning": "minus",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "aktuell",
+    "meaning": "current / up-to-date",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "als Entgegenkommen",
+    "meaning": "as a gesture of goodwill",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Als Entschädigung kann ich Ihnen ... anbieten.",
+    "meaning": "As compensation, I can offer you...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "anbieten",
+    "meaning": "to offer",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "andernfalls",
+    "meaning": "otherwise",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Angebot(das)",
+    "meaning": "the offer",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Angebote einholen",
+    "meaning": "to request quotes",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Anliegen(das)",
+    "meaning": "The concern / request",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "annehmen",
+    "meaning": "accept s.t",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "anschaffen",
+    "meaning": "acquire / buy",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Ärger(der)",
+    "meaning": "annoyance / anger",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "aufgeben",
+    "meaning": "to give up, quit, abandon",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "aufgeschlossen",
+    "meaning": "open-minded",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Auftrag(der) erteilen()",
+    "meaning": "to place/give an order",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Auftrag(der), Aufträge (die)()",
+    "meaning": "order, orders",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "auftreten",
+    "meaning": "to occur",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Aufzug",
+    "meaning": "elevator",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Aus Gründen der Transparenz ...",
+    "meaning": "For reasons of transparency ...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "ausfallen",
+    "meaning": "to be cancelled / fail",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "ausgezeichnet",
+    "meaning": "plus",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "ausstehend",
+    "meaning": "outstanding (payment)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "ausstehende Zahlung",
+    "meaning": "outstanding payment",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bedauerlich",
+    "meaning": "regrettable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bedauern",
+    "meaning": "to regret",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "begrenzt",
+    "meaning": "limited",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "begrenzte Menge",
+    "meaning": "limited quantity",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "beheben",
+    "meaning": "to fix / rectify",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "beinhalten",
+    "meaning": "include / contain",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "belastbar",
+    "meaning": "resilient",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bestätigen",
+    "meaning": "to confirm",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Betrag(der)",
+    "meaning": "amount",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Betriebskarte.",
+    "meaning": "Company ID Card",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bevor",
+    "meaning": "before",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bezugnehmend",
+    "meaning": "referring to / with reference",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bezugnehmend auf",
+    "meaning": "referring to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bezugnehmend auf Ihre Beschwerde",
+    "meaning": "With reference to your complaint",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bis",
+    "meaning": "until",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Bitte teilen Sie uns mit ...",
+    "meaning": "Please let us know ...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Brief(der)",
+    "meaning": "letter",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "dadurch, dass",
+    "meaning": "through / by the fact that",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "dagegen / hingegen",
+    "meaning": "in contrast / on the other hand",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "damit",
+    "meaning": "so that (purpose)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Dann erwarte ich aber...",
+    "meaning": "In that case, however, I expect...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "darauf achten",
+    "meaning": "to pay attention to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "das A und O sein",
+    "meaning": "to be the be-all and end-all",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Das ist außerordentlich bedauerlich.()",
+    "meaning": "That is extremely regrettable.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "dauerhaft",
+    "meaning": "permanent(ly)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Defekt(der)",
+    "meaning": "defect",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "denn",
+    "meaning": "because (main clause)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "dennoch",
+    "meaning": "nevertheless",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "der entstandene ärger()",
+    "meaning": "the annoyance that has occurred",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "der sichere Job()",
+    "meaning": "secure job",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "deshalb",
+    "meaning": "therefore / that's why",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Abstinenz",
+    "meaning": "abstinence (complete avoidance)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Angelegenheit",
+    "meaning": "matter / affair",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Arbeitgeberbescheinigung",
+    "meaning": "employer's certificate",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Beanstandung",
+    "meaning": "complaint / objection",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Beratung",
+    "meaning": "advice / consultation",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Bescheinigung",
+    "meaning": "certificate / official document",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die bestellte Ware",
+    "meaning": "the ordered goods",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Bestellung",
+    "meaning": "order",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Bitte",
+    "meaning": "The request",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Federgabel",
+    "meaning": "suspension fork",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die fehlerhafte Lieferung",
+    "meaning": "incorrect delivery",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die flexible Arbeitszeit",
+    "meaning": "flexible working hours",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Folgebestellung",
+    "meaning": "subsequent order",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Garantie gewähren",
+    "meaning": "to grant a warranty",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Geburtsbescheinigung",
+    "meaning": "birth certificate",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Gleitzeit",
+    "meaning": "flextime",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Höhe von",
+    "meaning": "the amount of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Komponente, die Komponenten",
+    "meaning": "component(s)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Konditionen",
+    "meaning": "terms / conditions",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Krankenkassenbescheinigung",
+    "meaning": "health insurance certificate",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Kunden zufriedenstellen",
+    "meaning": "to satisfy customers",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Kundenkommunikation",
+    "meaning": "customer communication",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Lieferfrist einhalten",
+    "meaning": "meet the delivery deadline",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Lieferung",
+    "meaning": "delivery",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Montageabteilung",
+    "meaning": "assembly department",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Rechnung",
+    "meaning": "the invoice",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Regel",
+    "meaning": "rule",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Reklamation",
+    "meaning": "complaint",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Die Spedition",
+    "meaning": "The Freight Forwarder",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die TÜV-geprüfte Verarbeitung",
+    "meaning": "TÜV-certified workmanship",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Überstunden machen",
+    "meaning": "to do overtime",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Unannehmlichkeiten",
+    "meaning": "inconveniences",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Verarbeitung",
+    "meaning": "workmanship / processing",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die verzögerte Lieferung",
+    "meaning": "delayed delivery",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Vorschrift",
+    "meaning": "Regulation",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Weiterbildung",
+    "meaning": "further training",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Wiedergutmachung",
+    "meaning": "compensation / making amends",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Work-Life-Balance",
+    "meaning": "work-life balance",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Zahlung begleichen",
+    "meaning": "to settle a payment",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Dienstleistung",
+    "meaning": "service",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "ein Angebot unterbreiten",
+    "meaning": "submit an offer",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "eine fehlerhafte Lieferung reklamieren",
+    "meaning": "lodge a complaint regarding a defective delivery",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "einen Auftrag erteilen",
+    "meaning": "place an order",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "einen Kunden verlieren",
+    "meaning": "to lose a customer",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "einfach",
+    "meaning": "simple",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "einhalten",
+    "meaning": "to keep (deadline/promise)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Einkommensnachweis(der)",
+    "meaning": "proof of income",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "einreichen",
+    "meaning": "to submit",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "einwandfrei",
+    "meaning": "flawless / perfect",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Empfang (der) bestätigen()",
+    "meaning": "to confirm receipt",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "empfehlen",
+    "meaning": "to recommend",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "entgegen",
+    "meaning": "in contrast to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Entschädigung",
+    "meaning": "Compensation",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "entscheidungsfreudig",
+    "meaning": "decisive",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "entschuldigen sich für",
+    "meaning": "to apologize for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "erfahren sein",
+    "meaning": "to be experienced",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "erläutern",
+    "meaning": "explain",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Erreichbarkeit",
+    "meaning": "availability",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "erstellbar",
+    "meaning": "creatable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "erwerben",
+    "meaning": "purchase / acquire",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "etwas vorschlagen",
+    "meaning": "to suggest something",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "exklusiv",
+    "meaning": "exclusive",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Fahrerausfälle",
+    "meaning": "Driver Absences / Supply shortage",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "fährt / fuhr / fahren",
+    "meaning": "drive/go",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "fällig",
+    "meaning": "due (to be paid)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "falls",
+    "meaning": "if (less certain)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "fehlen",
+    "meaning": "missing / to miss",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Fehler(der)",
+    "meaning": "mistake / error",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Fehler(der) beheben()",
+    "meaning": "to fix the error",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Feierabend(der)",
+    "meaning": "end of the workday",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Filiale",
+    "meaning": "branch/store",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Formular(das)",
+    "meaning": "form (to fill out)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "freudig",
+    "meaning": "joyful",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "fristgerecht",
+    "meaning": "on time / within the deadline",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Für weitere Fragen stehen wir Ihnen gerne zur Verfügung.",
+    "meaning": "We are happy to answer any further questions.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "garantieren",
+    "meaning": "to guarantee",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Garantieverlängerung",
+    "meaning": "warranty extension",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "gegründet",
+    "meaning": "clarify",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "geprüft",
+    "meaning": "tested / inspected",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "gerechtfertigt",
+    "meaning": "justified",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Gesetz(das)",
+    "meaning": "law",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "gewähren",
+    "meaning": "to grant",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Grund(der) dafür war(Der)",
+    "meaning": "The reason for this was...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "hartnäckig",
+    "meaning": "persistent",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Häufig",
+    "meaning": "Frequently",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "hinzufügen",
+    "meaning": "add",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Hochschulabsolvent(der)",
+    "meaning": "university graduate",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "hochwertig",
+    "meaning": "high-quality",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Home-Office(das)",
+    "meaning": "home office",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Ich bitte um eine schnelle Lösung.",
+    "meaning": "I request a speedy resolution.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Ich entschuldige mich noch einmal für",
+    "meaning": "I apologize once again for...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Ich finde schon sehr ärgerlich, dass ...",
+    "meaning": "I find it quite frustrating that...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Ich gehe davon aus, dass Sie uns entgegenkommen.",
+    "meaning": "I assume that you will meet us halfway.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "im Zeitraum von",
+    "meaning": "within the period of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "im Zeitraum von\t/ innerhalb von",
+    "meaning": "on time / within the deadline",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "in Anspruch nehmen",
+    "meaning": "make use of / utilize",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "in Rechnung stellen",
+    "meaning": "invoice",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "In Zukunft werden wir darauf achten, dass ...",
+    "meaning": "In the future we will make sure that ...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "indem",
+    "meaning": "by (doing something)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "innerhalb von 10 Tagen",
+    "meaning": "within 10 days",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "kaufen",
+    "meaning": "buy",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Kaufpreis(der)",
+    "meaning": "purchase price",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "kompliziert",
+    "meaning": "complicated",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "kostenfreie Lieferung",
+    "meaning": "free delivery",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "kostenlose Reparatur",
+    "meaning": "free repair",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "kostenloses Zubehör",
+    "meaning": "free accessory",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Kostenvoranschlag(der)",
+    "meaning": "the cost estimate / quote (Angebot)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Krankheitsfall(der)",
+    "meaning": "case of illness",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Kundendienst(der)",
+    "meaning": "customer service",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Kundenservice(der)",
+    "meaning": "customer service",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Kündigungsschutz(der)",
+    "meaning": "protection against dismissal",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "längerfristig",
+    "meaning": "long-term",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "längerfristig / dauerhaft",
+    "meaning": "long-term",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "lieferbar",
+    "meaning": "available for delivery",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "lösbar",
+    "meaning": "solvable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Mahnung",
+    "meaning": "Payment Reminder",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Mangel (der) , Mängel (die)()",
+    "meaning": "defect(s)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Mangel (der) haben()",
+    "meaning": "to have a defect/shortcoming",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Mengenrabatt(der)",
+    "meaning": "volume discount",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Merkmale",
+    "meaning": "characteristics",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Mindestbetrag(der)",
+    "meaning": "minimum amount",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "mittlerweile",
+    "meaning": "by now / in the meantime",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "nachdem + Plusquamperfekt",
+    "meaning": "after + past perfect",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "nachhaken",
+    "meaning": "follow up (fragen)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "nächste / In der kommenden",
+    "meaning": "in the coming",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Nachweis(der)",
+    "meaning": "proof / evidence",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "obwohl",
+    "meaning": "although",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "ohne dass",
+    "meaning": "without (something happening)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Preisnachlass",
+    "meaning": "price reduction",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Produktionsausfall(der)",
+    "meaning": "production stoppage",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "prüfen",
+    "meaning": "to check / inspect",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "pünktlich",
+    "meaning": "punctual(ly)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "pünktlich / fristgerecht",
+    "meaning": "punctual(ly)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "quer",
+    "meaning": "across",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Rabatt(der)",
+    "meaning": "discount",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "realisierbar",
+    "meaning": "feasible",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Rechnungsbetrag(der)",
+    "meaning": "invoice amount",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Recht(das)",
+    "meaning": "law / right / justice",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "rechtfertigen",
+    "meaning": "justify",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "recycelte Materialien",
+    "meaning": "recycled materials",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "reibungslos",
+    "meaning": "smooth(ly)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "reklamieren",
+    "meaning": "to complain (about a product)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Rückerstattung des Kaufpreises",
+    "meaning": "refund of the purchase price",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "rückwirkend",
+    "meaning": "retroactively",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sachlich",
+    "meaning": "factual / objective",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Schaden(der)",
+    "meaning": "damage",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Schaden(der) wiedergutmachen()",
+    "meaning": "to make up for the damage",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Schaden(der) zu beheben()",
+    "meaning": "rectify the issue",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "schicken",
+    "meaning": "to send",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "schnellstmöglich",
+    "meaning": "as quickly as possible",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "seitdem",
+    "meaning": "since then",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Selbstverständlich übernehmen wir die Kosten.",
+    "meaning": "Of course we will cover the costs.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "selten",
+    "meaning": "Rarely",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "senden",
+    "meaning": "to send",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich auskennen mit",
+    "meaning": "to be familiar with",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich beschweren",
+    "meaning": "to complain",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich beschweren über",
+    "meaning": "to complain about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich erklären",
+    "meaning": "to explain oneself",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich in Verbindung setzen",
+    "meaning": "to get in touch",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich kümmern um",
+    "meaning": "to take care of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich selbstständig machen",
+    "meaning": "to become self-employed",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich verlassen auf",
+    "meaning": "to rely on",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich wiederholen",
+    "meaning": "to repeat itself / happen again",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Sicherheitsunterweisung.",
+    "meaning": "Safety Briefing",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sichern",
+    "meaning": "to secure",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sichtbar",
+    "meaning": "visible",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Skonto gewähren(2% Skonto gewähren)",
+    "meaning": "grant a 2% cash discount",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "so ... dass",
+    "meaning": "so ... that",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sobald",
+    "meaning": "as soon as",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sodass",
+    "meaning": "so that (result)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "solange",
+    "meaning": "as long as",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Sorgerecht(das)",
+    "meaning": "custody (of a child)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "stornieren",
+    "meaning": "to cancel (order)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "termingerecht",
+    "meaning": "on schedule",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "traurig, schade",
+    "meaning": "sad, too bad",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "übermütig",
+    "meaning": "overconfident",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "übernächste Woche",
+    "meaning": "the week after next",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Überschüssige Teile",
+    "meaning": "excess parts",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "überstehen",
+    "meaning": "survive/endure",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "überzeugen",
+    "meaning": "to convince",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "umfassen",
+    "meaning": "include",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "umgehend",
+    "meaning": "immediate",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "umgekehrt",
+    "meaning": "reversed/ vice versa",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "umsichtig",
+    "meaning": "prudent",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "umso zuverlässiger",
+    "meaning": "all the more reliable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "umsonst",
+    "meaning": "for free",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "umständlich",
+    "meaning": "cumbersome / complicated",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Umtausch(der)",
+    "meaning": "exchange",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "unangekündigt",
+    "meaning": "unannounced",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "unbeabsichtigt",
+    "meaning": "Unintentionally",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "ungerechtfertigt",
+    "meaning": "unjustified",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "unverbindlich",
+    "meaning": "non-binding",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "unverbindliches Angebot",
+    "meaning": "non-binding offer / quote",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "unverzüglich",
+    "meaning": "immediately / without delay",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "unvorsichtig",
+    "meaning": "careless",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "unwichtig sein",
+    "meaning": "to be unimportant",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "unwissend sein",
+    "meaning": "to be ignorant",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verbindlich",
+    "meaning": "binding",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verbindliche Bestellung",
+    "meaning": "binding order",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "vereinzelt",
+    "meaning": "Occasionally",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "vergleichbar",
+    "meaning": "comparable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verkaufen",
+    "meaning": "sell",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verknüpfen",
+    "meaning": "link / associate / knot",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Verlangen(das)",
+    "meaning": "desire, craving, demand",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "vernünftig",
+    "meaning": "reasonable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verschieben",
+    "meaning": "to postpone",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Versehen(das)",
+    "meaning": "oversight / mistake",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "versehentlich",
+    "meaning": "by mistake",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "versichern",
+    "meaning": "to assure / promise",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verständlicherweise",
+    "meaning": "understandably",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verständnisvoll",
+    "meaning": "understanding",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Vertretung (die)",
+    "meaning": "substitute / replacement / Representation",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verunsichern",
+    "meaning": "unsettle / confuse",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verwenden",
+    "meaning": "to use",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verwirren",
+    "meaning": "confuse",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Verzicht(der) auf()",
+    "meaning": "waiver of, renunciation of, giving up",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verzichten",
+    "meaning": "waive / do without",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verzögern",
+    "meaning": "Delay",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Verzögerung",
+    "meaning": "delay",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "vom Kauf zurücktreten",
+    "meaning": "withdraw from a purchase",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Vorfall(der)",
+    "meaning": "incident",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "vorkommen",
+    "meaning": "happen",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "vorschlagen",
+    "meaning": "to suggest",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "vorstellbar",
+    "meaning": "imaginable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "vorübergehend",
+    "meaning": "temporary(ly)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Vorwurf(der)",
+    "meaning": "The accusation",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "während",
+    "meaning": "while / whereas",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wären Sie mit .... als Ausgleich einverstanden?",
+    "meaning": "Would you agree to ... as compensation?",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Warengutschein(der)",
+    "meaning": "gift voucher / merchandise voucher",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wasserschaden(der)",
+    "meaning": "water damage",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "weil",
+    "meaning": "because (subordinate clause)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "wertschätzen",
+    "meaning": "appreciate",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "wieder vorkommen",
+    "meaning": "to happen again",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "wiederholbar",
+    "meaning": "repeatable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir bedauern diesen Vorfall sehr.",
+    "meaning": "We very much regret this incident.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir bedauern sehr, dass ...",
+    "meaning": "We very much regret that ...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir bestätigen den Empfang Ihres Briefes.",
+    "meaning": "We confirm receipt of your letter.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir bitten Sie, die Ware zurückzusenden.",
+    "meaning": "We ask you to send the goods back.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir bitten um Ihr Verständnis.",
+    "meaning": "We ask for your understanding.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir danken Ihnen für Ihr Angebot.",
+    "meaning": "We thank you for your offer.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir freuen uns auf Ihre Antwort.",
+    "meaning": "We look forward to your reply.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir kommen Ihnen gern entgegen.",
+    "meaning": "We are happy to accommodate you.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir können Ihnen versichern, dass ...",
+    "meaning": "We can assure you that ...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir möchten Ihnen als Entschuldigung ... zukommen lassen.",
+    "meaning": "As an apology, we would like to send you ...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir möchten uns für die Unannehmlichkeiten entschuldigen.",
+    "meaning": "We would like to apologize for the inconvenience.",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir sind sehr unzufrieden, weil",
+    "meaning": "We are very dissatisfied because...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wir werden dafür sorgen, dass ...",
+    "meaning": "We will make sure that ...",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "wobei",
+    "meaning": "whereby",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zahlreiche",
+    "meaning": "numerous",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Zeiterfassung.",
+    "meaning": "Time Tracking",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zentral sein, essentiell sein",
+    "meaning": "to be central, to be essential",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zielstrebig",
+    "meaning": "determined",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zu kurzfristig",
+    "meaning": "too short notice",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zu kurzfristig / nicht mehr termingerecht",
+    "meaning": "on too short notice",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zu unserem Bedauern",
+    "meaning": "to our regret",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zukommen lassen",
+    "meaning": "to send / to let someone have",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zurücksenden",
+    "meaning": "to send back",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zurücktreten",
+    "meaning": "step back / step down /  withdraw",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zusagen",
+    "meaning": "to accept",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zusätzlich, plus , zuzüglich",
+    "meaning": "additionally, plus",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zusichern",
+    "meaning": "to assure / promise",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Zustand(der)",
+    "meaning": "condition",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zuverlässig",
+    "meaning": "reliable",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zuversichtlich",
+    "meaning": "confident",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zwischen den Zeilen lesen",
+    "meaning": "read between the lines",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zwischenzeitlich",
+    "meaning": "in the meantime",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Zwischenzeugnis(das)",
+    "meaning": "interim reference letter",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "das Elterngeld",
+    "meaning": "parental allowance",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Antrag stellen auf",
+    "meaning": "to apply for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "elektronisch oder per Post einreichen",
+    "meaning": "to submit electronically or by mail",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "das Basiselterngeld",
+    "meaning": "basic parental allowance",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "das ElterngeldPlus",
+    "meaning": "parental allowance Plus (longer, half amount)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "aufwändig",
+    "meaning": "time-consuming / complicated",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "drei Jahre Kündigungsschutz",
+    "meaning": "three years of dismissal protection",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "die Elternzeit",
+    "meaning": "parental leave",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "beide Elternteile",
+    "meaning": "both parents",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "der formlose Antrag",
+    "meaning": "informal application",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "das Sorgerecht",
+    "meaning": "custody (of a child)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "das Zwischenzeugnis",
+    "meaning": "interim reference letter",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "der Einkommensnachweis",
+    "meaning": "proof of income",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "der Gesundheitsschutz",
+    "meaning": "health protection",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "das Mutterschaftsgeld",
+    "meaning": "maternity allowance",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "das bundesweite Gesetz",
+    "meaning": "federal law",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Diskussion (die) + über (+Akk)",
+    "meaning": "discussion about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Suche (die) + nach (+Dat)",
+    "meaning": "search for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Beschwerde (die) + über (+Akk)",
+    "meaning": "complaint about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Ärger (der) + über (+Akk)",
+    "meaning": "anger about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Antwort (die) + auf (+Akk)",
+    "meaning": "answer to / reply to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Freude (die) + über (+Akk)",
+    "meaning": "joy about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Hilfe (die) + bei (+Dat) / gegen (+Akk)",
+    "meaning": "help with / help against",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Antrag (der) + auf (+Akk)",
+    "meaning": "application for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Abhängigkeit (die) + von (+Dat)",
+    "meaning": "dependence on",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Trennung (die) + von (+Dat)",
+    "meaning": "separation from",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Rede (die) + über (+Akk) / von (+Dat)",
+    "meaning": "speech about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Interesse (das) + an (+Dat)",
+    "meaning": "interest in",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Bitte (die) + um (+Akk)",
+    "meaning": "request for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Bewerbung (die) + um (+Akk)",
+    "meaning": "application for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Wirkung (die) + auf (+Akk) / gegen (+Akk)",
+    "meaning": "effect on / effect against",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Sorge (die) + um (+Akk) / vor (+Dat)",
+    "meaning": "worry about / fear of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Verabredung (die) + mit (+Dat)",
+    "meaning": "appointment with / date with",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Kontakt (der) + mit (+Dat)",
+    "meaning": "contact with",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Verwandtschaft (die) + mit (+Dat)",
+    "meaning": "relationship with (by marriage/family)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Angst (die) + vor (+Dat)",
+    "meaning": "fear of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Recht (das) + auf (+Akk)",
+    "meaning": "right to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Teilnahme (die) + an (+Dat)",
+    "meaning": "participation in",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Erinnerung (die) + an (+Akk)",
+    "meaning": "memory of / reminder of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Anpassung (die) + an (+Akk)",
+    "meaning": "adaptation to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "basieren auf",
+    "meaning": "Based on",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "beharren auf",
+    "meaning": "insist to/on",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "beruhen auf",
+    "meaning": "to be based on",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bestehen auf",
+    "meaning": "to insist on",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "arbeiten an (+D)",
+    "meaning": "work on ( a project)",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sich gewöhnen an",
+    "meaning": "get used to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Einstellung(die) auf",
+    "meaning": "The adjustment to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "Der Bericht über",
+    "meaning": "The report on",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "der Entschluss zu",
+    "meaning": "the decision to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "kämpfen",
+    "meaning": "battle",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bemühen sich",
+    "meaning": "make an effort",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bearbeiten",
+    "meaning": "process",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "abhängig von + Dativ",
+    "meaning": "dependent on",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "angenehm für + Akkusativ",
+    "meaning": "pleasant for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bekannt für + Akkusativ",
+    "meaning": "famous for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "bereit zu + Dativ",
+    "meaning": "ready to / willing to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "beteiligt an + Dativ",
+    "meaning": "involved in",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "böse auf + Akkusativ",
+    "meaning": "angry with",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "dankbar für + Akkusativ",
+    "meaning": "grateful for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "einverstanden mit + Dativ",
+    "meaning": "agreed with",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "enttäuscht von + Dativ",
+    "meaning": "disappointed by",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "fähig zu + Dativ",
+    "meaning": "capable of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "fertig mit + Dativ",
+    "meaning": "finished with",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "frei von + Dativ",
+    "meaning": "free from",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "froh über + Akkusativ",
+    "meaning": "happy about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "geschieden von + Dativ",
+    "meaning": "divorced from",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "gespannt auf + Akkusativ",
+    "meaning": "excited about / curious about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "getrennt von + Dativ",
+    "meaning": "separated from",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "interessiert an + Dativ",
+    "meaning": "interested in",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "müde von + Dativ",
+    "meaning": "tired from",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "neugierig auf + Akkusativ",
+    "meaning": "curious about",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "reich an + Dativ",
+    "meaning": "rich in",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "sauer auf + Akkusativ",
+    "meaning": "angry at",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "scharf auf + Akkusativ",
+    "meaning": "keen on / eager for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "stolz auf + Akkusativ",
+    "meaning": "proud of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "überzeugt von + Dativ",
+    "meaning": "convinced of",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verantwortlich für + Akkusativ",
+    "meaning": "responsible for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "verheiratet mit + Dativ",
+    "meaning": "married to",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "wütend auf + Akkusativ",
+    "meaning": "angry at",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zufrieden mit + Dativ",
+    "meaning": "satisfied with",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  },
+  {
+    "german_word": "zuständig für + Akkusativ",
+    "meaning": "responsible for",
+    "word_type": "",
+    "artikel": "",
+    "sentence": ""
+  }
+]

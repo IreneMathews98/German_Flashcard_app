@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block title %}FluentFling – Home{% endblock %}
+
+{% block content %}
+
+<!-- Import button -->
+<a href="/upload" class="btn btn-primary w-100 py-3 mb-5 fs-5 fw-semibold">
+  + Import New Set
+</a>
+
+<!-- My Vocabulary -->
+<div class="d-flex align-items-center justify-content-between mb-3">
+  <h5 class="fw-semibold mb-0">My Vocabulary</h5>
+  {% if user_sets %}
+  <a href="/flashcards" class="btn btn-sm btn-outline-secondary">Study All →</a>
+  {% endif %}
+</div>
+
+{% if not user_sets %}
+<div class="text-center py-5 text-muted">
+  <div class="fs-1 mb-2">📭</div>
+  <p>No vocabulary sets yet. Import a file to get started.</p>
+</div>
+{% else %}
+<div class="row g-3" id="sets-grid">
+  {% for s in user_sets %}
+  <div class="col-md-4" id="set-card-{{ loop.index }}">
+    <div class="card h-100 set-card">
+      <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <h6 class="fw-bold mb-0">{{ s.name }}</h6>
+          <button type="button" class="btn btn-sm btn-link text-danger p-0 ms-2"
+                  onclick="deleteSet('{{ s.name }}', {{ loop.index }})"
+                  title="Delete set">🗑</button>
+        </div>
+        <p class="text-muted small mb-1">
+          {{ s.count }} word{{ 's' if s.count != 1 }}
+          {% if s.missing_sentences > 0 %}
+          · <span class="text-warning fw-semibold">{{ s.missing_sentences }} missing sentences</span>
+          {% else %}
+          · <span class="text-success">✓ All sentences ready</span>
+          {% endif %}
+        </p>
+        <div class="d-flex gap-2 mt-3 flex-wrap">
+          <a href="/flashcards?set={{ s.name }}" class="btn btn-sm btn-primary">Study</a>
+          <a href="/test?set={{ s.name }}" class="btn btn-sm btn-outline-primary">Test</a>
+          {% if s.missing_sentences > 0 %}
+          <button type="button" class="btn btn-sm btn-outline-secondary gen-btn"
+                  data-set="{{ s.name }}" onclick="generateSentences(this)">
+            ✨ Generate Sentences
+          </button>
+          {% endif %}
+        </div>
+        <div class="gen-progress d-none mt-2">
+          <div class="progress" style="height:5px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary gen-bar"
+                 style="width:0%"></div>
+          </div>
+          <p class="text-muted small mt-1 gen-msg"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function deleteSet(name, idx) {
+  if (!confirm(`Delete "${name}" and all its words? This cannot be undone.`)) return;
+  const r = await fetch(`/api/sets/${encodeURIComponent(name)}`, { method: 'DELETE' });
+  if (r.ok) {
+    document.getElementById(`set-card-${idx}`)?.remove();
+  } else {
+    alert('Delete failed.');
+  }
+}
+
+async function generateSentences(btn) {
+  const setName  = btn.dataset.set;
+  const card     = btn.closest('.set-card');
+  const progress = card.querySelector('.gen-progress');
+  const bar      = card.querySelector('.gen-bar');
+  const msg      = card.querySelector('.gen-msg');
+
+  btn.disabled = true;
+  progress.classList.remove('d-none');
+
+  try {
+    const r = await fetch(`/api/generate-sentences?set=${encodeURIComponent(setName)}`, { method: 'POST' });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || 'Failed');
+    if (!d.job_id) { progress.classList.add('d-none'); btn.textContent = '✓ Done'; return; }
+
+    const total = d.total;
+    while (true) {
+      await new Promise(r => setTimeout(r, 1800));
+      const s = await (await fetch(`/api/generate-sentences/${d.job_id}/status`)).json();
+      bar.style.width = Math.round(s.progress * 100) + '%';
+      msg.textContent = `${Math.round(s.progress * total)} / ${total} words…`;
+      if (s.done) {
+        if (s.status === 'error') throw new Error(s.error);
+        msg.textContent = `✅ ${s.count} sentences generated.`;
+        bar.style.width = '100%';
+        bar.classList.remove('progress-bar-animated');
+        btn.textContent = '✓ Done';
+        break;
+      }
+    }
+  } catch (e) {
+    progress.classList.add('d-none');
+    btn.disabled = false;
+    alert('Error: ' + e.message);
+  }
+}
+</script>
+{% endblock %}

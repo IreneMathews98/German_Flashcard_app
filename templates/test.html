@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% block title %}{{ set_name or 'All Words' }} – Test | FluentFling{% endblock %}
+
+{% block content %}
+{% if total_count < 4 %}
+<div class="text-center py-5">
+  <div class="fs-1 mb-3">📭</div>
+  <h3>Not enough words</h3>
+  <p class="text-muted">Need at least 4 words across all sets. Currently have {{ total_count }}.</p>
+  <a href="/" class="btn btn-primary">Go Home</a>
+</div>
+{% else %}
+
+<!-- Breadcrumb -->
+<div class="d-flex align-items-center gap-3 mb-4">
+  <a href="/" class="text-muted text-decoration-none small">← Home</a>
+  <span class="text-muted">|</span>
+  <span class="fw-semibold">{{ set_name or 'All Vocabulary' }}</span>
+</div>
+
+<!-- Setup screen -->
+<div id="setup-screen">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <h2 class="fw-bold mb-1">Test yourself</h2>
+      <p class="text-muted mb-4"><span id="word-count-display">{{ word_count }}</span> words available.</p>
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          {% if all_sets | length > 1 %}
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Vocabulary set</label>
+            <select class="form-select" id="set-selector">
+              <option value="" {% if not set_name %}selected{% endif %}>
+                All sets ({{ total_count }} words)
+              </option>
+              {% for s in all_sets %}
+              <option value="{{ s.name }}" {% if set_name == s.name %}selected{% endif %}>
+                {{ s.name }} ({{ s.count }} words)
+              </option>
+              {% endfor %}
+            </select>
+          </div>
+          {% endif %}
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Test type</label>
+            <div class="d-flex flex-column gap-2" id="type-selector">
+              <label class="test-type-option active" data-value="multiple_choice">
+                <input type="radio" name="test-type" value="multiple_choice" checked class="d-none">
+                <span class="type-icon">🔤</span>
+                <div><div class="fw-semibold">Multiple Choice</div>
+                  <div class="text-muted small">See the German word, pick the correct meaning.</div></div>
+              </label>
+              <label class="test-type-option" data-value="fill_blank">
+                <input type="radio" name="test-type" value="fill_blank" class="d-none">
+                <span class="type-icon">✏️</span>
+                <div><div class="fw-semibold">Fill in the Blank</div>
+                  <div class="text-muted small">Complete the sentence with the missing German word.</div></div>
+              </label>
+              <label class="test-type-option" data-value="typing">
+                <input type="radio" name="test-type" value="typing" class="d-none">
+                <span class="type-icon">⌨️</span>
+                <div><div class="fw-semibold">Type the Word</div>
+                  <div class="text-muted small">Read the English meaning and type the German word.</div></div>
+              </label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Number of questions</label>
+            <div class="d-flex align-items-center gap-3">
+              <input type="range" class="form-range" id="q-count"
+                     min="4" max="{{ [word_count, 20]|min }}" value="{{ [word_count, 10]|min }}" step="1">
+              <span class="fw-bold fs-5" id="q-count-label">10</span>
+            </div>
+          </div>
+          <button class="btn btn-primary w-100" onclick="startTest()">Start Test →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz screen -->
+<div id="quiz-screen" class="d-none">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted small" id="q-counter">Question 1 / 10</span>
+        <div class="d-flex gap-2">
+          <span class="badge bg-success" id="score-correct">✓ 0</span>
+          <span class="badge bg-danger" id="score-wrong">✗ 0</span>
+        </div>
+      </div>
+      <div class="progress mb-4" style="height:6px;">
+        <div class="progress-bar bg-primary" id="quiz-progress" style="width:0%"></div>
+      </div>
+      <div class="card shadow-sm mb-4">
+        <div class="card-body p-4">
+          <div class="word-type-badge mb-3" id="q-type-badge" style="display:inline-block"></div>
+          <h3 class="fw-bold mb-1" id="q-question"></h3>
+          <p class="text-muted" id="q-subtext"></p>
+        </div>
+      </div>
+      <div id="mc-options" class="d-none">
+        <div class="d-flex flex-column gap-3" id="mc-options-list"></div>
+      </div>
+      <div id="text-input-area" class="d-none">
+        <div class="input-group">
+          <input type="text" class="form-control form-control-lg" id="text-answer"
+                 placeholder="Type your answer…"
+                 onkeydown="if(event.key==='Enter') submitText()">
+          <button class="btn btn-primary" onclick="submitText()">Check →</button>
+        </div>
+        <p class="text-muted small mt-2" id="input-hint"></p>
+      </div>
+      <div id="feedback-area" class="d-none mt-3">
+        <div class="alert" id="feedback-box">
+          <strong id="feedback-label"></strong><span id="feedback-detail"></span>
+        </div>
+        <button class="btn btn-primary" onclick="nextQuestion()">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Results screen -->
+<div id="results-screen" class="d-none">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 text-center py-4">
+      <div class="result-emoji mb-3" id="result-emoji">🏆</div>
+      <h2 class="fw-bold" id="result-title">Results</h2>
+      <p class="text-muted" id="result-subtitle"></p>
+      <div class="score-ring mx-auto mb-4" id="score-ring">
+        <div class="score-ring-inner">
+          <span class="fw-bold fs-2" id="final-score"></span>
+          <span class="text-muted small d-block">score</span>
+        </div>
+      </div>
+      <div class="d-flex gap-3 justify-content-center flex-wrap mb-4">
+        <div class="stat-box"><div class="fw-bold fs-4 text-success" id="stat-correct">0</div><div class="text-muted small">Correct</div></div>
+        <div class="stat-box"><div class="fw-bold fs-4 text-danger" id="stat-wrong">0</div><div class="text-muted small">Wrong</div></div>
+        <div class="stat-box"><div class="fw-bold fs-4" id="stat-total">0</div><div class="text-muted small">Total</div></div>
+      </div>
+      <div class="d-flex gap-3 justify-content-center">
+        <button class="btn btn-primary" onclick="startTest()">Try Again</button>
+        <a href="#" id="study-link" class="btn btn-outline-secondary">Study Cards</a>
+        <button class="btn btn-outline-secondary" onclick="showSetup()">Change Settings</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+<!-- Pass context to JS -->
+<div id="set-config"
+     data-set="{{ set_name }}"
+     data-sets='{{ all_sets | tojson }}'
+     data-total="{{ total_count }}"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script src="/static/js/test.js?v=2"></script>
+{% endblock %}
