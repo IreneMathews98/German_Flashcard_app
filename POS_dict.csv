@@ -1,0 +1,26 @@
+﻿TAG,meaning,Related,Symbol
+ADJA," attributive adjective (der gute Mann → ""gute"" is ADJA)",Adjective,ADJ
+ADJD," predicative/adverbial adjective (Der Mann ist gut → ""gut"" is ADJD)",Adjective,ADJ
+ADV," adverb (schnell, gestern, dort)",Adverb,ADV
+PROAV," pronominal adverb (dafür, damit, womit)",Adverb,ADV
+ART," article (der, die, das, ein, eine)",Article,ART
+PIS," indefinite pronoun (jemand, niemand, alles)",Article,ART
+PPOSAT," possessive article (mein, dein, sein)",Article,ART
+PRF," reflexive pronoun (sich, mich, dich)",Reflexive Article,REFART
+KOKOM," comparative conjunction (als, wie)",Comparative,COMP
+PTKNEG, negation particle (nicht),Negation,NEG
+FM," foreign word (internet, computer)",Noun,NN
+NE," proper noun (Berlin, Deutschland)",Noun,NN
+NN," normal noun (Angelegenheit, Entscheidung)",Noun,NN
+XY, non- German character sequence,Noun,NN
+CARD," cardinal number (eins, zwei, drei)",Number,NUM
+APPR," preposition (in, auf, bei, mit, von)",Prepositions,PP
+APPRART," preposition + article contraction (im = in dem, zur = zu der)",Prepositions,PP
+PTKVZ, separable verb prefix (auf,Verb,VB
+VAFIN," finite auxiliary verb (habe, ist, wird)",Verb,VB
+VAINF," infinitive auxiliary (haben, sein, werden)",Verb,VB
+VMINF," infinitive modal verb (können, müssen, wollen)",Verb,VB
+VVFIN," finite verb (conjugated: verliert, trifft)",Verb,VB
+VVINF," infinitive verb (verlieren, aufziehen, treffen)",Verb,VB
+VVIZU," infinitive with ""zu"" (zu verlieren, aufzuziehen)",Verb,VB
+VVPP," past participle (verloren, getroffen)",Verb,VB

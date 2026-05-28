@@ -1,0 +1,287 @@
+{% extends "base.html" %}
+{% block title %}{{ set_name }} – FluentFling{% endblock %}
+
+{% block content %}
+
+<!-- Breadcrumb -->
+<nav class="d-flex align-items-center gap-2 mb-4 small text-muted">
+  <a href="/" class="text-muted text-decoration-none">Home</a>
+  <span>/</span>
+  <span class="fw-semibold text-dark">{{ set_name }}</span>
+</nav>
+
+<!-- Set name + rename -->
+<div class="d-flex align-items-center gap-3 mb-4 flex-wrap">
+  <h2 class="fw-bold mb-0" id="set-title">{{ set_name }}</h2>
+  <button class="btn btn-sm btn-outline-secondary" id="rename-btn" onclick="startRename()" title="Rename set">
+    <i class="bi bi-pencil"></i>
+  </button>
+  <form id="rename-form" class="d-none d-flex gap-2 align-items-center" onsubmit="submitRename(event)">
+    <input type="text" class="form-control form-control-sm" id="rename-input"
+           value="{{ set_name }}" style="width:220px">
+    <button type="submit" class="btn btn-sm btn-primary">Save</button>
+    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="cancelRename()">Cancel</button>
+  </form>
+</div>
+
+<!-- Summary -->
+<div class="row g-3 mb-5">
+  <div class="col-auto">
+    <div class="card summary-stat text-center px-4 py-3">
+      <div class="stat-num">{{ total }}</div>
+      <div class="stat-label">Words</div>
+    </div>
+  </div>
+  <div class="col-auto">
+    <div class="card summary-stat text-center px-4 py-3">
+      <div class="stat-num {% if sentence_count == total %}text-success{% else %}text-warning{% endif %}">
+        {{ sentence_count }}<span class="stat-denom"> / {{ total }}</span>
+      </div>
+      <div class="stat-label">Sentences</div>
+    </div>
+  </div>
+  {% for wtype, cnt in type_counts.items() if wtype != 'unknown' %}
+  <div class="col-auto">
+    <div class="card summary-stat text-center px-4 py-3">
+      <div class="stat-num">{{ cnt }}</div>
+      <div class="stat-label">{{ wtype | replace('_', ' ') | title }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Word table -->
+<div class="card">
+  <div class="card-body p-0">
+    <div class="p-3 border-bottom d-flex align-items-center gap-3">
+      <i class="bi bi-search text-muted"></i>
+      <input type="text" class="form-control border-0 shadow-none p-0"
+             id="search-input" placeholder="Search words…" oninput="filterTable()">
+      <span class="text-muted small text-nowrap" id="row-count"></span>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0" id="words-table">
+        <thead class="table-light">
+          <tr>
+            <th class="ps-4" style="width:22%">German Word</th>
+            <th style="width:20%">Meaning</th>
+            <th style="width:14%">Type</th>
+            <th>Sentence</th>
+            <th class="text-end pe-4" style="width:6%"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for w in words %}
+          <tr data-id="{{ w.id }}">
+            <td class="ps-4 fw-semibold">
+              {% if w.artikel and w.artikel != '-' %}
+              <span class="text-warning me-1 fw-bold">{{ w.artikel }}</span>
+              {% endif %}
+              {{ w.german_word }}
+            </td>
+            <td class="text-muted">{{ w.meaning }}</td>
+            <td>
+              {% if w.word_type %}
+              <span class="word-type-badge wt-{{ w.word_type }}">{{ w.word_type | replace('_', ' ') }}</span>
+              {% else %}
+              <span class="text-muted">—</span>
+              {% endif %}
+            </td>
+            <td class="small text-muted" style="max-width:300px">
+              {% if w.sentence %}
+                {% set parts = w.sentence.split('|') %}
+                <span class="d-block" title="{{ w.sentence }}">
+                  <span class="fw-medium text-dark">{{ parts[0].strip() }}</span>
+                  {% if parts|length > 1 and parts[1].strip() %}
+                  <br><span class="fst-italic">{{ parts[1].strip() }}</span>
+                  {% endif %}
+                </span>
+              {% else %}
+                <span class="text-muted fst-italic">No sentence</span>
+              {% endif %}
+            </td>
+            <td class="text-end pe-4">
+              <button class="btn btn-link text-danger p-0"
+                      onclick="deleteWord({{ w.id }}, '{{ w.german_word | replace("'", "\\'") }}')"
+                      title="Delete">
+                <i class="bi bi-trash3"></i>
+              </button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Floating add button -->
+<button class="btn btn-primary fab-add" onclick="openAddModal()" title="Add word">
+  <i class="bi bi-plus-lg"></i>
+</button>
+
+<!-- Add Word Modal -->
+<div class="modal fade" id="addWordModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-1">
+        <h5 class="modal-title fw-bold">
+          <i class="bi bi-plus-circle me-2 text-purple"></i>Add New Word
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label fw-semibold small">German Word <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="add-german" placeholder="e.g. abholen">
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold small">Meaning <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="add-meaning" placeholder="e.g. to pick up">
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold small">Word Type <span class="text-muted fw-normal">(optional)</span></label>
+          <select class="form-select" id="add-wordtype">
+            <option value="">— select type —</option>
+            <option value="noun">Noun</option>
+            <option value="verb">Verb</option>
+            <option value="reflexive_verb">Reflexive Verb</option>
+            <option value="adjective">Adjective</option>
+            <option value="adverb">Adverb</option>
+            <option value="verb_mit_präposition">Verb with Preposition</option>
+            <option value="nomen_mit_präposition">Noun with Preposition</option>
+            <option value="nomen_verb_verbindung">Nomen-Verb-Verbindung</option>
+            <option value="common_phrase">Common Phrase</option>
+          </select>
+        </div>
+        <div class="mb-1">
+          <label class="form-label fw-semibold small">
+            Example Sentence
+            <span class="text-muted fw-normal">(optional — use: German | English)</span>
+          </label>
+          <input type="text" class="form-control" id="add-sentence"
+                 placeholder="Ich hole ihn ab. | I pick him up.">
+        </div>
+      </div>
+      <div class="modal-footer border-0 pt-0">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary px-4" onclick="submitAddWord()">
+          <i class="bi bi-plus-lg me-1"></i>Add Word
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+const SET_NAME = {{ set_name | tojson }};
+let addModal;
+
+document.addEventListener('DOMContentLoaded', () => {
+  addModal = new bootstrap.Modal(document.getElementById('addWordModal'));
+  updateRowCount();
+
+  // Enter to submit add form
+  ['add-german','add-meaning','add-sentence'].forEach(id => {
+    document.getElementById(id).addEventListener('keydown', e => {
+      if (e.key === 'Enter') submitAddWord();
+    });
+  });
+});
+
+// ── Row count ────────────────────────────────────────────────
+function updateRowCount() {
+  const visible = [...document.querySelectorAll('#words-table tbody tr')]
+                    .filter(r => r.style.display !== 'none').length;
+  const total   = document.querySelectorAll('#words-table tbody tr').length;
+  document.getElementById('row-count').textContent =
+    visible === total ? `${total} words` : `${visible} of ${total}`;
+}
+
+// ── Search / filter ───────────────────────────────────────────
+function filterTable() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  document.querySelectorAll('#words-table tbody tr').forEach(tr => {
+    tr.style.display = tr.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+  updateRowCount();
+}
+
+// ── Rename ────────────────────────────────────────────────────
+function startRename() {
+  document.getElementById('set-title').classList.add('d-none');
+  document.getElementById('rename-btn').classList.add('d-none');
+  document.getElementById('rename-form').classList.remove('d-none');
+  document.getElementById('rename-input').focus();
+}
+function cancelRename() {
+  document.getElementById('set-title').classList.remove('d-none');
+  document.getElementById('rename-btn').classList.remove('d-none');
+  document.getElementById('rename-form').classList.add('d-none');
+}
+async function submitRename(e) {
+  e.preventDefault();
+  const newName = document.getElementById('rename-input').value.trim();
+  if (!newName || newName === SET_NAME) { cancelRename(); return; }
+  const r = await fetch(`/api/sets/${encodeURIComponent(SET_NAME)}/rename`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ new_name: newName }),
+  });
+  const d = await r.json();
+  if (r.ok) {
+    window.location.href = `/set/${encodeURIComponent(d.new_name)}`;
+  } else {
+    alert(d.detail || 'Rename failed');
+    cancelRename();
+  }
+}
+
+// ── Delete word ───────────────────────────────────────────────
+async function deleteWord(id, german) {
+  if (!confirm(`Delete "${german}"?`)) return;
+  const r = await fetch(`/api/words/${id}?set=${encodeURIComponent(SET_NAME)}`, { method: 'DELETE' });
+  if (r.ok) {
+    const row = document.querySelector(`tr[data-id="${id}"]`);
+    row?.remove();
+    updateRowCount();
+  } else {
+    alert('Delete failed.');
+  }
+}
+
+// ── Add word ──────────────────────────────────────────────────
+function openAddModal() {
+  ['add-german','add-meaning','add-sentence'].forEach(id =>
+    document.getElementById(id).value = '');
+  document.getElementById('add-wordtype').value = '';
+  addModal.show();
+  setTimeout(() => document.getElementById('add-german').focus(), 300);
+}
+async function submitAddWord() {
+  const german    = document.getElementById('add-german').value.trim();
+  const meaning   = document.getElementById('add-meaning').value.trim();
+  const sentence  = document.getElementById('add-sentence').value.trim();
+  const word_type = document.getElementById('add-wordtype').value;
+  if (!german || !meaning) {
+    alert('German word and meaning are required.');
+    return;
+  }
+  const r = await fetch(`/api/sets/${encodeURIComponent(SET_NAME)}/words`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ german_word: german, meaning, sentence, word_type }),
+  });
+  if (r.ok) {
+    addModal.hide();
+    location.reload();
+  } else {
+    const d = await r.json();
+    alert(d.detail || 'Failed to add word.');
+  }
+}
+</script>
+{% endblock %}
