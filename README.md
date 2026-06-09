@@ -2,6 +2,22 @@
 
 A local web app for learning German vocabulary with AI-generated example sentences, flashcards, and tests.
 
+<h1 align="center">FluentFling</h1> 
+<p align="center"><em>Connect. Converse. Fly.</em></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=flat-square&logo=python" />
+  <img src="https://img.shields.io/badge/FastAPI-0.136-009688?style=flat-square&logo=fastapi" />
+  <img src="https://img.shields.io/badge/AI-Powered-7c3aed?style=flat-square&logo=openai" />
+  <img src="https://img.shields.io/badge/Language-German-black?style=flat-square" />
+</p>
+
+---
+
+**FluentFling** is a personal German vocabulary learning app that turns your own word lists into smart, AI-powered flashcards and quizzes — all running locally on your machine.
+
+Import a spreadsheet of German words, let the AI fill in word types, articles, and example sentences, then study with 3D flip-cards and test yourself with multiple-choice, fill-in-the-blank, or typing challenges.
+
 ---
 
 ## Features
