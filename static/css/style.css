@@ -17,33 +17,74 @@
 /* ── Base ───────────────────────────────────────────────────── */
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #f0f4ff 0%, #fdf4ff 100%);
   min-height: 100vh;
   color: #1a1a2e;
+  background: url('/static/images/background.jpg') center / cover fixed;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.82);
+  z-index: 0;
+  pointer-events: none;
+}
+.navbar, main {
+  position: relative;
+  z-index: 1;
 }
 
 /* ── Navbar ─────────────────────────────────────────────────── */
 .navbar {
   background: linear-gradient(135deg, #4c1d95 0%, #0c4a6e 100%);
-  padding: .9rem 0;
+  padding: .5rem 0;
+  overflow: visible;
   box-shadow: 0 2px 20px rgba(76,29,149,.35);
 }
 .navbar-brand {
-  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+.navbar-brand:hover { opacity: .9; }
+.navbar-brand img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,.35));
+  position: relative;
+  z-index: 1;
+}
+.brand-text {
+  font-size: 2.4rem;
   font-weight: 800;
-  font-size: 1.35rem;
-  letter-spacing: -.3px;
-  background: linear-gradient(90deg, #fff 0%, #c4b5fd 50%, #7dd3fc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  letter-spacing: -.5px;
+  color: #fff;
+  line-height: 1;
 }
-.navbar .nav-link {
-  color: rgba(255,255,255,.75) !important;
-  font-weight: 500;
-  transition: color .2s;
+.navbar .nav-pill {
+  color: rgba(255,255,255,.8) !important;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: .5rem 1.2rem !important;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  transition: background .2s, color .2s, transform .15s;
 }
-.navbar .nav-link:hover { color: #fff !important; }
+.navbar .nav-pill i { font-size: 1.2rem; }
+.navbar .nav-pill:hover {
+  color: #fff !important;
+  background: rgba(255,255,255,.18);
+  transform: translateY(-1px);
+}
+.navbar .nav-pill.active {
+  color: #fff !important;
+  background: rgba(255,255,255,.22);
+}
 
 /* ── Bootstrap btn-primary override ───────────────────────── */
 .btn-primary {
@@ -75,6 +116,75 @@ body {
   border-radius: var(--card-radius);
   box-shadow: var(--shadow);
   background: #fff;
+}
+
+/* ── Set detail: summary stats ──────────────────────────────── */
+.summary-stat {
+  min-width: 90px;
+  border-radius: 14px;
+}
+.stat-num {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--purple);
+  line-height: 1;
+}
+.stat-denom {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #999;
+}
+.stat-label {
+  font-size: .72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: #888;
+  margin-top: .25rem;
+}
+
+/* ── Set detail: table ───────────────────────────────────────── */
+#words-table thead th {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: #888;
+  border-bottom: 1px solid #f0f0f0;
+}
+#words-table tbody tr:last-child td { border-bottom: none; }
+
+/* ── Word-type badge colours ─────────────────────────────────── */
+.word-type-badge               { background: #6c757d; }
+.wt-noun                       { background: #0891b2; }
+.wt-verb                       { background: #7c3aed; }
+.wt-reflexive_verb             { background: #4c1d95; }
+.wt-adjective                  { background: #059669; }
+.wt-adverb                     { background: #d97706; }
+.wt-verb_mit_präposition       { background: #7c3aed; }
+.wt-nomen_mit_präposition      { background: #0891b2; }
+.wt-nomen_verb_verbindung      { background: #db2777; }
+.wt-common_phrase              { background: #9ca3af; }
+
+/* ── Floating action button (bottom-left) ────────────────────── */
+.fab-add {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 22px rgba(124,58,237,.5);
+  z-index: 1050;
+  transition: transform .2s, box-shadow .2s;
+}
+.fab-add:hover {
+  transform: scale(1.12) rotate(90deg);
+  box-shadow: 0 6px 28px rgba(124,58,237,.65);
 }
 
 /* ── Set cards (home) ───────────────────────────────────────── */
@@ -193,12 +303,23 @@ body {
 }
 .card-sentence {
   font-size: .95rem;
-  color: #555;
   text-align: center;
-  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
 }
-.card-sentence .german { font-weight: 600; color: var(--teal-dark); }
-.card-sentence .english { color: #888; font-style: italic; }
+.sentence-de {
+  font-weight: 600;
+  color: var(--teal-dark);
+  font-size: 1rem;
+}
+.sentence-en {
+  color: #555;
+  font-style: italic;
+  font-size: .9rem;
+  padding-top: .2rem;
+  border-top: 1px solid #e8e8e8;
+}
 
 /* ── Type filter pills ──────────────────────────────────────── */
 .type-filter.active {

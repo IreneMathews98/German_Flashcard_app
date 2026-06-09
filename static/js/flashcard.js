@@ -123,11 +123,13 @@ function _renderCard() {
   document.getElementById('back-meaning').textContent  = w.meaning;
 
   const sentenceEl = document.getElementById('back-sentence');
-  if (w.sentence && w.sentence.includes('|')) {
+  if (w.sentence) {
     const [ger, eng] = w.sentence.split('|').map(s => s.trim());
-    sentenceEl.innerHTML = `<span class="german">${escHtml(ger)}</span><br><span class="english">${escHtml(eng)}</span>`;
+    let html = `<span class="sentence-de">${escHtml(ger)}</span>`;
+    if (eng) html += `<span class="sentence-en">${escHtml(eng)}</span>`;
+    sentenceEl.innerHTML = html;
   } else {
-    sentenceEl.textContent = w.sentence || '';
+    sentenceEl.innerHTML = '';
   }
 }
 

@@ -92,6 +92,37 @@ class VocabularyStore:
         self._save(self._path(set_name), words)
         return changed
 
+    def rename_set(self, old_name: str, new_name: str) -> bool:
+        old_path = self._find_file(old_name)
+        if not old_path:
+            return False
+        new_path = self._path(new_name)
+        if new_path.exists():
+            return False
+        words = self._load(old_path)
+        self._save(new_path, words)
+        old_path.unlink()
+        return True
+
+    def add_word(self, set_name: str, word_data: dict) -> dict:
+        src = self._find_file(set_name)
+        words = self._load(src) if src else []
+        entry = {col: str(word_data.get(col, '') or '') for col in COLUMNS}
+        words.append(entry)
+        self._save(self._path(set_name), words)
+        return entry
+
+    def update_word(self, set_name: str, word_id: int, word_data: dict):
+        src = self._find_file(set_name)
+        if not src:
+            return
+        words = self._load(src)
+        if word_id < len(words):
+            for col in COLUMNS:
+                if col in word_data:
+                    words[word_id][col] = str(word_data[col] or '')
+            self._save(self._path(set_name), words)
+
     def delete_set(self, set_name: str):
         for p in [self._path(set_name), self.app_dir / f'{self._safe(set_name)}.json']:
             if p.exists():

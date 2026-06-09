@@ -11,25 +11,55 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ── Config ────────────────────────────────────────────────────
-LLM_BACKEND  = os.getenv("LLM_BACKEND", "transformers").lower()
-HF_MODEL     = os.getenv("HF_MODEL", "google/flan-t5-base")
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2")
-OLLAMA_URL   = os.getenv("OLLAMA_URL", "http://localhost:11434")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+HF_MODEL          = os.getenv("HF_MODEL", "google/flan-t5-base")
+OLLAMA_MODEL      = os.getenv("OLLAMA_MODEL", "llama3.2")
+OLLAMA_URL        = os.getenv("OLLAMA_URL", "http://localhost:11434")
+
+# Auto-select backend: Claude if API key is present, otherwise honour LLM_BACKEND env var
+_explicit = os.getenv("LLM_BACKEND", "").lower()
+if _explicit:
+    LLM_BACKEND = _explicit
+elif ANTHROPIC_API_KEY:
+    LLM_BACKEND = "claude"
+else:
+    LLM_BACKEND = "transformers"
 
 # ── spaCy POS → word_type mapping (from notebook) ────────────
 # Keys are our standard word_type values used throughout the app.
 WORD_EXP = {
-    "noun":                  ["NN", "NN NN"],
-    "reflexive_verb":        ["REFART VB", "REFART NN", "REFART ADJ"],
-    "verb":                  ["VB"],
-    "adjective":             ["ADJ"],
-    "adverb":                ["ADV", "ADV ADV"],
-    "verb_mit_präposition":  ["VB PP", "PP VB", "REFART VB PP", "REFART VB VB",
-                              "REFART PP VB", "PP REFART VB"],
-    "nomen_mit_präposition": ["NN PP", "ART NN PP", "NN NN PP", "ART NN NN PP",
-                              "PP NN", "PP ART NN", "PP ART NN NN", "PP NN NN"],
-    "nomen_verb_verbindung": ["NN VB", "ART NN VB", "NN NN VB", "ART NN NN VB",
-                              "PP ART NN VB", "PP NN VB", "PP ART NN NN VB", "PP NN NN VB"],
+    "noun": [
+        "NN", "NN NN", "NN NN NN",
+        "ART NN", "ART NN NN",
+        "ADJ NN", "ADJ ADJ NN", "ADJ NN NN",
+        "NUM NN",
+    ],
+    "reflexive_verb": [
+        "REFART VB", "REFART NN", "REFART ADJ",
+        "REFART VB VB", "REFART VB PP",
+    ],
+    "verb": [
+        "VB", "VB VB",
+        "ART VB", "ART VB VB",
+        "COMP VB",
+    ],
+    "adjective": ["ADJ", "ADJ ADJ"],
+    "adverb":    ["ADV", "ADV ADV", "NEG"],
+    "verb_mit_präposition": [
+        "VB PP", "PP VB", "REFART VB PP", "REFART VB VB",
+        "REFART PP VB", "PP REFART VB",
+        "ART VB PP", "VB PP NN", "VB NN PP",
+    ],
+    "nomen_mit_präposition": [
+        "NN PP", "ART NN PP", "NN NN PP", "ART NN NN PP",
+        "PP NN", "PP ART NN", "PP ART NN NN", "PP NN NN",
+        "ADJ NN PP", "PP ADJ NN",
+    ],
+    "nomen_verb_verbindung": [
+        "NN VB", "ART NN VB", "NN NN VB", "ART NN NN VB",
+        "PP ART NN VB", "PP NN VB", "PP ART NN NN VB", "PP NN NN VB",
+        "ADJ NN VB",
+    ],
 }
 
 # ── Lazy singletons ───────────────────────────────────────────
@@ -75,9 +105,41 @@ def _get_hf():
 
 # ── spaCy classification (mirrors notebook logic exactly) ─────
 
+def _clean_word_for_tagging(word: str) -> str:
+    """Strip alternatives/parentheticals so spaCy sees only the core German word."""
+    word = re.sub(r'\([^)]*\)', '', word)   # remove (hints)
+    word = re.sub(r'\.{2,}', '', word)      # remove ellipsis
+    for sep in (',', ';'):                  # take first alternative
+        word = word.split(sep)[0]
+    return word.strip()
+
+
+def _pos_fallback(pos_meaning: str) -> str:
+    """Best-guess classification when no WORD_EXP pattern matches."""
+    if not pos_meaning:
+        return "common_phrase"
+    counts: dict[str, int] = {}
+    for s in pos_meaning.split():
+        counts[s] = counts.get(s, 0) + 1
+    vb  = counts.get("VB", 0) + counts.get("REFART", 0)
+    nn  = counts.get("NN", 0)
+    adj = counts.get("ADJ", 0)
+    adv = counts.get("ADV", 0)
+    if vb > 0 and vb >= nn:
+        return "verb"
+    if nn > 0:
+        return "noun"
+    if adj > 0:
+        return "adjective"
+    if adv > 0:
+        return "adverb"
+    return "common_phrase"
+
+
 def _spacy_classify(word: str) -> str:
     nlp, pos_df = _get_nlp()
-    doc = nlp(word)
+    clean = _clean_word_for_tagging(word)
+    doc   = nlp(clean)
 
     # Build full_tag string
     full_tag = " ".join(token.tag_ for token in doc).strip()
@@ -90,12 +152,27 @@ def _spacy_classify(word: str) -> str:
             symbols.append(match[0])
     pos_meaning = " ".join(symbols).strip()
 
-    # Match to word_type
+    # Exact pattern match first
     for word_type, patterns in WORD_EXP.items():
         if pos_meaning in patterns:
             return word_type
 
-    return "common_phrase"
+    # Fall back to dominant-POS heuristic
+    return _pos_fallback(pos_meaning)
+
+
+def _is_phrase(word: dict) -> bool:
+    """Return True for entries that are phrases/templates — skip sentence generation."""
+    if word.get("word_type") == "common_phrase":
+        return True
+    german = word.get("german_word", "")
+    # Full-sentence templates contain ellipsis or end with sentence punctuation
+    if re.search(r'\.{2,}|[.!?]$', german.strip()):
+        return True
+    # Long multi-word strings (5+ words) are phrases, not vocabulary items
+    if len(german.split()) >= 5:
+        return True
+    return False
 
 
 # ── HF prompts ────────────────────────────────────────────────
@@ -112,8 +189,10 @@ Noun: Kollege → der
 Noun: Forschung → die
 Noun: {word} →"""
 
+_TRANSLATE_PROMPT = "translate German to English: {sentence}"
+
 _SENTENCE_PROMPT = """\
-Task: Write one German sentence using the vocabulary word, then give the English translation.
+Write one short, natural German sentence that shows how to USE the word in context, then give the English translation.
 Format: German sentence | English translation
 
 Word: laufen (to run)
@@ -122,11 +201,74 @@ Sentence: Er läuft jeden Morgen im Park. | He runs in the park every morning.
 Word: Angst (fear)
 Sentence: Sie hat Angst vor Spinnen. | She is afraid of spiders.
 
-Word: sich unterhalten (to chat)
-Sentence: Wir unterhalten uns gerne über Musik. | We like to chat about music.
+Word: absagen (to cancel)
+Sentence: Ich muss das Treffen leider absagen. | I unfortunately have to cancel the meeting.
+
+Word: pünktlich (punctual)
+Sentence: Der Zug ist heute pünktlich angekommen. | The train arrived on time today.
 
 Word: {word} ({meaning})
 Sentence:"""
+
+
+# ── Claude enrichment ─────────────────────────────────────────
+
+_CLAUDE_PROMPT = """\
+You are a German language teacher. Given a German vocabulary word, do the following:
+1. If the word is a noun, state its article (der / die / das).
+2. Write ONE short, natural German sentence that clearly shows how to use the word in everyday context.
+3. Translate that sentence into English.
+
+Reply in EXACTLY this format (omit the Artikel line for non-nouns):
+Artikel: der
+Sentence: Der Hund bellt laut. | The dog barks loudly.
+
+Word: {word} ({meaning})
+Word type: {word_type}"""
+
+
+async def _claude_enrich(words: list) -> list:
+    import anthropic
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    results = []
+    for word in words:
+        word_type = word.get("word_type", "unknown")
+        artikel   = ""
+        sentence  = ""
+        try:
+            msg = await client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=120,
+                messages=[{"role": "user", "content": _CLAUDE_PROMPT.format(
+                    word=word["german_word"],
+                    meaning=word["meaning"],
+                    word_type=word_type.replace("_", " "),
+                )}],
+            )
+            out = msg.content[0].text.strip()
+            for line in out.splitlines():
+                line = line.strip()
+                if line.lower().startswith("artikel:"):
+                    art = line.split(":", 1)[1].strip().lower()
+                    if art in ("der", "die", "das"):
+                        artikel = art
+                elif line.lower().startswith("sentence:"):
+                    raw = line.split(":", 1)[1].strip()
+                    if "|" in raw:
+                        de, en = raw.split("|", 1)
+                        sentence = f"{de.strip()} | {en.strip()}"
+                    else:
+                        sentence = raw
+        except Exception as e:
+            print(f"[claude] error for '{word['german_word']}': {e}", flush=True)
+        results.append({
+            "german_word": word["german_word"],
+            "meaning":     word["meaning"],
+            "word_type":   word_type,
+            "artikel":     artikel,
+            "sentence":    sentence,
+        })
+    return results
 
 
 # ── Public API ────────────────────────────────────────────────
@@ -154,7 +296,9 @@ async def process_batch(words: list) -> list:
     classified = await loop.run_in_executor(_executor, _classify_batch, words)
 
     # Step 2 — LLM: artikel (nouns only) + sentence
-    if LLM_BACKEND == "ollama":
+    if LLM_BACKEND == "claude":
+        return await _claude_enrich(classified)
+    elif LLM_BACKEND == "ollama":
         return await _ollama_enrich(classified)
     else:
         tasks = [loop.run_in_executor(_executor, _hf_enrich, w) for w in classified]
@@ -181,6 +325,29 @@ def _hf_generate(prompt: str, max_new_tokens: int = 120) -> str:
     return tok.decode(output_ids[0], skip_special_tokens=True).strip()
 
 
+def _hf_build_sentence(raw: str) -> str:
+    """Return 'German | English', translating if the English part is missing."""
+    if not raw or len(raw) < 5:
+        return ""
+    if "|" in raw:
+        de, en = raw.split("|", 1)
+        de, en = de.strip(), en.strip()
+        if not en:
+            try:
+                en = _hf_generate(_TRANSLATE_PROMPT.format(sentence=de), max_new_tokens=80)
+            except Exception:
+                pass
+        return f"{de} | {en}"
+    # No pipe at all — the whole output is the German sentence; translate it
+    de = raw.strip()
+    en = ""
+    try:
+        en = _hf_generate(_TRANSLATE_PROMPT.format(sentence=de), max_new_tokens=80)
+    except Exception:
+        pass
+    return f"{de} | {en}"
+
+
 def _hf_enrich(word: dict) -> dict:
     word_type = word.get("word_type", "unknown")
 
@@ -194,16 +361,15 @@ def _hf_enrich(word: dict) -> dict:
             pass
 
     sentence = ""
-    try:
-        out = _hf_generate(_SENTENCE_PROMPT.format(
-            word=word["german_word"],
-            word_type=word_type.replace("_", " "),
-            meaning=word["meaning"],
-        ))
-        if "|" in out:
-            sentence = out
-    except Exception:
-        pass
+    if not _is_phrase(word):
+        try:
+            out = _hf_generate(_SENTENCE_PROMPT.format(
+                word=word["german_word"],
+                meaning=word["meaning"],
+            )).strip()
+            sentence = _hf_build_sentence(out)
+        except Exception:
+            pass
 
     return {
         "german_word": word["german_word"],
@@ -239,21 +405,31 @@ async def _ollama_enrich(words: list) -> list:
                 except Exception:
                     pass
 
-            try:
-                r = await client.post(f"{OLLAMA_URL}/api/chat", json={
-                    "model": OLLAMA_MODEL,
-                    "messages": [{"role": "user", "content": _SENTENCE_PROMPT.format(
-                        word=word["german_word"],
-                        word_type=word_type.replace("_", " "),
-                        meaning=word["meaning"],
-                    )}],
-                    "stream": False,
-                })
-                out = r.json()["message"]["content"].strip()
-                if "|" in out:
-                    sentence = out
-            except Exception:
-                pass
+            if not _is_phrase(word):
+                try:
+                    r = await client.post(f"{OLLAMA_URL}/api/chat", json={
+                        "model": OLLAMA_MODEL,
+                        "messages": [{"role": "user", "content": _SENTENCE_PROMPT.format(
+                            word=word["german_word"],
+                            meaning=word["meaning"],
+                        )}],
+                        "stream": False,
+                    })
+                    out = r.json()["message"]["content"].strip()
+                    if out and len(out) > 5:
+                        de, en = (out.split("|", 1) + [""])[:2]
+                        de, en = de.strip(), en.strip()
+                        if not en:
+                            tr = await client.post(f"{OLLAMA_URL}/api/chat", json={
+                                "model": OLLAMA_MODEL,
+                                "messages": [{"role": "user",
+                                              "content": f"Translate to English, reply with only the translation:\n{de}"}],
+                                "stream": False,
+                            })
+                            en = tr.json()["message"]["content"].strip()
+                        sentence = f"{de} | {en}"
+                except Exception:
+                    pass
 
             results.append({"german_word": word["german_word"], "meaning": word["meaning"],
                             "word_type": word_type, "artikel": artikel, "sentence": sentence})
@@ -264,7 +440,9 @@ async def generate_sentences_batch(words: list) -> list:
     """Generate/update sentences for words that already have word_type set.
     Skips spaCy re-classification; only runs LLM for artikel + sentence."""
     loop = asyncio.get_event_loop()
-    if LLM_BACKEND == "ollama":
+    if LLM_BACKEND == "claude":
+        return await _claude_enrich(words)
+    elif LLM_BACKEND == "ollama":
         return await _ollama_enrich(words)
     else:
         tasks = [loop.run_in_executor(_executor, _hf_enrich, w) for w in words]
