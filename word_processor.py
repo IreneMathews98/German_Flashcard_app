@@ -12,15 +12,20 @@ load_dotenv()
 
 # ── Config ────────────────────────────────────────────────────
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
-HF_MODEL          = os.getenv("HF_MODEL", "google/flan-t5-base")
+HF_TOKEN          = os.getenv("HF_TOKEN", "")
+HF_MODEL          = os.getenv("HF_MODEL", "google/flan-t5-large")
+HF_API_MODEL      = os.getenv("HF_API_MODEL", "HuggingFaceH4/zephyr-7b-beta")
 OLLAMA_MODEL      = os.getenv("OLLAMA_MODEL", "llama3.2")
 OLLAMA_URL        = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
-# Auto-select backend: Claude if API key is present, otherwise honour LLM_BACKEND env var
-_explicit = os.getenv("LLM_BACKEND", "").lower()
+# Auto-select backend — explicit env var wins; Claude only if key looks real
+_explicit      = os.getenv("LLM_BACKEND", "").lower()
+_claude_usable = ANTHROPIC_API_KEY and ANTHROPIC_API_KEY not in ("your_key_here", "")
 if _explicit:
     LLM_BACKEND = _explicit
-elif ANTHROPIC_API_KEY:
+elif HF_TOKEN and HF_TOKEN not in ("hf_your_token_here", ""):
+    LLM_BACKEND = "hf_api"
+elif _claude_usable:
     LLM_BACKEND = "claude"
 else:
     LLM_BACKEND = "transformers"
@@ -271,6 +276,54 @@ async def _claude_enrich(words: list) -> list:
     return results
 
 
+# ── HuggingFace Inference API enrichment (free with HF account) ──────────────
+
+async def _hf_api_enrich(words: list) -> list:
+    """Free HuggingFace Inference API — get a token at huggingface.co/settings/tokens"""
+    from huggingface_hub import AsyncInferenceClient
+    client = AsyncInferenceClient(token=HF_TOKEN or None)
+    results = []
+    for word in words:
+        word_type = word.get("word_type", "unknown")
+        artikel = ""
+        sentence = ""
+        try:
+            response = await client.chat_completion(
+                model=HF_API_MODEL,
+                messages=[{"role": "user", "content": _CLAUDE_PROMPT.format(
+                    word=word["german_word"],
+                    meaning=word["meaning"],
+                    word_type=word_type.replace("_", " "),
+                )}],
+                max_tokens=130,
+                temperature=0.3,
+            )
+            out = response.choices[0].message.content.strip()
+            for line in out.splitlines():
+                line = line.strip()
+                if line.lower().startswith("artikel:"):
+                    art = line.split(":", 1)[1].strip().lower()
+                    if art in ("der", "die", "das"):
+                        artikel = art
+                elif line.lower().startswith("sentence:"):
+                    raw = line.split(":", 1)[1].strip()
+                    if "|" in raw:
+                        de, en = raw.split("|", 1)
+                        sentence = f"{de.strip()} | {en.strip()}"
+                    else:
+                        sentence = raw
+        except Exception as e:
+            print(f"[hf_api] error for '{word['german_word']}': {e}", flush=True)
+        results.append({
+            "german_word": word["german_word"],
+            "meaning":     word["meaning"],
+            "word_type":   word_type,
+            "artikel":     artikel,
+            "sentence":    sentence,
+        })
+    return results
+
+
 # ── Public API ────────────────────────────────────────────────
 
 async def process_words(words: list) -> list:
@@ -298,6 +351,8 @@ async def process_batch(words: list) -> list:
     # Step 2 — LLM: artikel (nouns only) + sentence
     if LLM_BACKEND == "claude":
         return await _claude_enrich(classified)
+    elif LLM_BACKEND == "hf_api":
+        return await _hf_api_enrich(classified)
     elif LLM_BACKEND == "ollama":
         return await _ollama_enrich(classified)
     else:
@@ -442,6 +497,8 @@ async def generate_sentences_batch(words: list) -> list:
     loop = asyncio.get_event_loop()
     if LLM_BACKEND == "claude":
         return await _claude_enrich(words)
+    elif LLM_BACKEND == "hf_api":
+        return await _hf_api_enrich(words)
     elif LLM_BACKEND == "ollama":
         return await _ollama_enrich(words)
     else:

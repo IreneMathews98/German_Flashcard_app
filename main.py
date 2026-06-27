@@ -58,6 +58,11 @@ async def flashcards_page(request: Request, set: Optional[str] = Query(None)):
     })
 
 
+@app.get("/bookmarks", response_class=HTMLResponse)
+async def bookmarks_page(request: Request):
+    return templates.TemplateResponse(request, "bookmarks.html", {})
+
+
 @app.get("/test", response_class=HTMLResponse)
 async def test_page(request: Request, set: Optional[str] = Query(None)):
     set_name = set or ""
@@ -267,6 +272,25 @@ async def delete_word(word_id: int, set: Optional[str] = Query(None)):
     return JSONResponse({"success": True})
 
 
+@app.patch("/api/words/{word_id}")
+async def update_word(word_id: int, request: Request, set: Optional[str] = Query(None)):
+    if not set:
+        raise HTTPException(status_code=400, detail="set query parameter required")
+    data = await request.json()
+    german = (data.get("german_word") or "").strip()
+    meaning = (data.get("meaning") or "").strip()
+    if not german or not meaning:
+        raise HTTPException(status_code=400, detail="german_word and meaning are required")
+    db.update_word(set, word_id, {
+        "german_word": german,
+        "meaning":     meaning,
+        "sentence":    data.get("sentence", ""),
+        "word_type":   data.get("word_type", ""),
+        "artikel":     data.get("artikel", ""),
+    })
+    return JSONResponse({"success": True})
+
+
 @app.get("/api/stats")
 async def get_stats(set: Optional[str] = Query(None)):
     set_name = set or None
@@ -336,4 +360,9 @@ def _build_questions(words: list, test_type: str, count: int) -> list:
                                'word_type': word.get('word_type', ''), 'correct': german,
                                'display_correct': display,
                                'sentence': word.get('sentence','').split('|')[0].strip()})
+
+        elif test_type == "matching":
+            questions.append({'type': 'matching', 'german': display,
+                               'word_type': word.get('word_type', ''), 'meaning': word['meaning'],
+                               'sentence': word.get('sentence', '').split('|')[0].strip()})
     return questions

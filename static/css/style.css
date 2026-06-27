@@ -29,28 +29,31 @@ body::before {
   z-index: 0;
   pointer-events: none;
 }
-.navbar, main {
+.navbar {
   position: relative;
   z-index: 1;
+}
+main {
+  position: relative;
 }
 
 /* ── Navbar ─────────────────────────────────────────────────── */
 .navbar {
   background: linear-gradient(135deg, #4c1d95 0%, #0c4a6e 100%);
-  padding: .5rem 0;
+  padding: .5rem 4rem;
   overflow: visible;
   box-shadow: 0 2px 20px rgba(76,29,149,.35);
 }
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: .85rem;
+  gap: .3rem;
   text-decoration: none;
   transition: opacity .2s;
 }
 .navbar-brand:hover { opacity: .9; }
 .navbar-brand img {
-  height: 100px;
+  height: 130px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 2px 12px rgba(0,0,0,.35));
@@ -307,6 +310,8 @@ body::before {
   display: flex;
   flex-direction: column;
   gap: .35rem;
+  user-select: text;
+  cursor: text;
 }
 .sentence-de {
   font-weight: 600;
@@ -319,6 +324,52 @@ body::before {
   font-size: .9rem;
   padding-top: .2rem;
   border-top: 1px solid #e8e8e8;
+}
+
+/* ── Bookmark button (flashcard action row) ─────────────────── */
+.bookmark-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  transition: transform .2s, box-shadow .2s;
+  flex-shrink: 0;
+}
+.bookmark-btn:hover { transform: scale(1.12); }
+.bookmark-btn.btn-warning {
+  box-shadow: 0 3px 14px rgba(245,200,66,.5);
+}
+
+/* ── Navbar bookmark badge ───────────────────────────────────── */
+.bm-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: var(--orange);
+  color: #fff;
+  font-size: .65rem;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+/* ── Bookmark cards (bookmarks page) ────────────────────────── */
+.bm-card {
+  border: 2px solid transparent;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.bm-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+  box-shadow: var(--shadow-lg);
 }
 
 /* ── Type filter pills ──────────────────────────────────────── */
@@ -362,6 +413,17 @@ body::before {
   to { opacity: .35; }
 }
 
+/* ── Upload mode pills ──────────────────────────────────────── */
+.mode-pill {
+  border-color: #dee2e6 !important;
+  background: #fff;
+  transition: border-color .2s, background .2s;
+}
+.mode-pill.active {
+  border-color: var(--purple) !important;
+  background: var(--purple-light);
+}
+
 /* ── Test: type selector ────────────────────────────────────── */
 .test-type-option {
   display: flex;
@@ -395,6 +457,114 @@ body::before {
 }
 .mc-option.correct { border-color: #16a34a; background: #dcfce7; color: #166534; }
 .mc-option.wrong   { border-color: #dc2626; background: #fee2e2; color: #991b1b; }
+
+/* ── Match sentence reveal ───────────────────────────────────── */
+.match-sentence {
+  padding: .7rem 1.1rem;
+  background: rgba(124,58,237,.07);
+  border-left: 3px solid var(--purple);
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+  color: #4c1d95;
+  font-size: .95rem;
+  animation: matchSentFadeIn .3s ease;
+}
+.match-sentence.match-sentence-out {
+  animation: matchSentFadeOut .45s ease forwards;
+}
+@keyframes matchSentFadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+@keyframes matchSentFadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* ── Puzzle piece base ───────────────────────────────────────── */
+.match-item {
+  --bg: #ede9fe;
+  position: relative;
+  width: 100%;
+  min-height: 52px;
+  padding: .7rem 1.1rem;
+  display: flex;
+  align-items: center;
+  background: var(--bg);
+  color: #1a1a2e;
+  font-weight: 500;
+  font-size: .95rem;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+  transition: opacity .2s;
+}
+.match-item:hover:not(.matched):not(.wrong-flash) { --bg: #ddd6fe; }
+.match-item.selected  { --bg: #7c3aed; color: white; }
+.match-item.matched   { cursor: default; pointer-events: none; opacity: .82; }
+.match-item.wrong-flash { --bg: #fee2e2; animation: matchWrongShake .45s ease; }
+
+/* ── Left piece — rounded left, flat right + circular bump ───── */
+.match-item-left {
+  border-radius: 10px 3px 3px 10px;
+  padding-right: 1.4rem;
+}
+.match-item-left::after {
+  content: '';
+  position: absolute;
+  right: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--bg);
+  z-index: 2;
+}
+
+/* ── Right piece — flat left with socket + rounded right ──────── */
+.match-item-right {
+  border-radius: 3px 10px 10px 3px;
+  padding-left: 1.6rem;
+}
+.match-item-right::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e5e1f0;
+  border: 2px solid #c5bed8;
+  z-index: 1;
+  transition: background .15s, border-color .15s;
+}
+.match-item-right:hover:not(.matched):not(.wrong-flash)::before {
+  background: #ddd6fe; border-color: #a78bfa;
+}
+.match-item-right.selected::before { background: #7c3aed; border-color: #7c3aed; }
+.match-item-right.matched::before  { background: var(--bg); border-color: var(--bg); }
+.match-item-right.wrong-flash::before { background: #fca5a5; border-color: #dc2626; }
+
+/* ── Snap-together animation on correct match ────────────────── */
+.snap-left  { animation: snapLeft  .38s cubic-bezier(.36,.07,.19,.97); }
+.snap-right { animation: snapRight .38s cubic-bezier(.36,.07,.19,.97); }
+@keyframes snapLeft  {
+  0%   { transform: translateX(0);   } 45%  { transform: translateX(10px); }
+  75%  { transform: translateX(3px); } 100% { transform: translateX(0);    }
+}
+@keyframes snapRight {
+  0%   { transform: translateX(0);    } 45%  { transform: translateX(-10px); }
+  75%  { transform: translateX(-3px); } 100% { transform: translateX(0);     }
+}
+@keyframes matchWrongShake {
+  0%, 100% { transform: translateX(0);     }
+  25%       { transform: translateX(-6px); }
+  75%       { transform: translateX(6px);  }
+}
 
 /* ── Score ring ─────────────────────────────────────────────── */
 .score-ring {
@@ -434,6 +604,59 @@ body::before {
 @keyframes popIn {
   from { transform: scale(0); opacity: 0; }
   to   { transform: scale(1); opacity: 1; }
+}
+
+/* ── Flashcard (Find the German word) ───────────────────────── */
+.fc-scene {
+  perspective: 1000px;
+  width: 100%;
+  height: 220px;
+  cursor: pointer;
+  user-select: none;
+}
+.fc-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .5s cubic-bezier(.4,0,.2,1);
+}
+.fc-card.is-flipped { transform: rotateY(180deg); }
+.fc-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+.fc-front {
+  background: #fff;
+  border: 2px solid #e0e4ee;
+}
+.fc-back {
+  background: linear-gradient(135deg, #faf5ff 0%, #ede9fe 100%);
+  border: 2px solid var(--purple);
+  transform: rotateY(180deg);
+}
+.fc-german-word {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--purple);
+  line-height: 1.1;
+}
+.fc-hint {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.7rem;
+  color: #bbb;
+  pointer-events: none;
 }
 
 /* ── Correct answer flash ───────────────────────────────────── */

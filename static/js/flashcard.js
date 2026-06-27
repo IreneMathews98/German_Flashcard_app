@@ -30,6 +30,59 @@ let _transitioning = false;
 
 const SET_NAME = document.getElementById('set-config')?.dataset.set || null;
 
+// ── Bookmarks (localStorage) ──────────────────────────────────
+const BOOKMARK_KEY = 'ff_bookmarks';
+
+function _bmKey(word) {
+  return `${word.set_name || SET_NAME || 'all'}::${word.german_word}`;
+}
+
+function _getBookmarks() {
+  try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY) || '[]'); }
+  catch { return []; }
+}
+
+function _isBookmarked(word) {
+  const key = _bmKey(word);
+  return _getBookmarks().some(b => b._key === key);
+}
+
+function toggleBookmark() {
+  if (!queue.length) return;
+  const word = queue[0];
+  const key  = _bmKey(word);
+  const bm   = _getBookmarks();
+  const idx  = bm.findIndex(b => b._key === key);
+  if (idx >= 0) {
+    bm.splice(idx, 1);
+  } else {
+    bm.push({ ...word, _key: key });
+  }
+  localStorage.setItem(BOOKMARK_KEY, JSON.stringify(bm));
+  _updateBmBtn();
+  _updateNavBmBadge();
+}
+
+function _updateBmBtn() {
+  const btn = document.getElementById('bookmark-btn');
+  if (!btn) return;
+  const bookmarked = queue.length && _isBookmarked(queue[0]);
+  btn.innerHTML = bookmarked
+    ? '<i class="bi bi-bookmark-fill"></i>'
+    : '<i class="bi bi-bookmark"></i>';
+  btn.classList.toggle('btn-warning',           !!bookmarked);
+  btn.classList.toggle('btn-outline-secondary', !bookmarked);
+  btn.title = bookmarked ? 'Remove bookmark' : 'Bookmark this word';
+}
+
+function _updateNavBmBadge() {
+  const badge = document.getElementById('bm-count-badge');
+  if (!badge) return;
+  const n = _getBookmarks().length;
+  badge.textContent  = n || '';
+  badge.style.display = n ? 'inline-flex' : 'none';
+}
+
 // ── Load ──────────────────────────────────────────────────────
 async function loadWords() {
   try {
@@ -57,6 +110,9 @@ function applyFilter(filter) {
   let filtered;
   if (filter === 'all') {
     filtered = [...allWords];
+  } else if (filter === 'bookmarked') {
+    const keys = new Set(_getBookmarks().map(b => b._key));
+    filtered   = allWords.filter(w => keys.has(_bmKey(w)));
   } else if (TYPE_GROUPS[filter]) {
     filtered = allWords.filter(w => TYPE_GROUPS[filter].includes(w.word_type));
   } else {
@@ -131,6 +187,8 @@ function _renderCard() {
   } else {
     sentenceEl.innerHTML = '';
   }
+
+  _updateBmBtn();
 }
 
 function updateCounter() {
@@ -189,7 +247,11 @@ function escHtml(str) {
 }
 
 // ── Event wiring ──────────────────────────────────────────────
-document.getElementById('flashcard-wrapper')?.addEventListener('click', flipCard);
+document.getElementById('flashcard-wrapper')?.addEventListener('click', e => {
+  if (window.getSelection()?.toString()) return; // don't flip if user is selecting text
+  if (e.target.closest('.card-sentence')) return; // don't flip on sentence click
+  flipCard();
+});
 document.getElementById('easy-btn')?.addEventListener('click', onEasy);
 document.getElementById('hard-btn')?.addEventListener('click', onHard);
 document.getElementById('prev-btn')?.addEventListener('click', onPrevious);
@@ -205,6 +267,8 @@ document.addEventListener('keydown', e => {
   else if (e.key === 'ArrowLeft')           onPrevious();
   else if (e.key === 'e' || e.key === 'E') onEasy();
   else if (e.key === 'h' || e.key === 'H') onHard();
+  else if (e.key === 'b' || e.key === 'B') toggleBookmark();
 });
 
 loadWords();
+_updateNavBmBadge();

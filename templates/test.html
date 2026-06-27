@@ -50,17 +50,23 @@
                 <div><div class="fw-semibold">Multiple Choice</div>
                   <div class="text-muted small">See the German word, pick the correct meaning.</div></div>
               </label>
-              <label class="test-type-option" data-value="fill_blank">
-                <input type="radio" name="test-type" value="fill_blank" class="d-none">
-                <span class="type-icon">✏️</span>
-                <div><div class="fw-semibold">Fill in the Blank</div>
-                  <div class="text-muted small">Complete the sentence with the missing German word.</div></div>
+              <label class="test-type-option" data-value="find_german">
+                <input type="radio" name="test-type" value="find_german" class="d-none">
+                <span class="type-icon">🃏</span>
+                <div><div class="fw-semibold">Find the German word</div>
+                  <div class="text-muted small">See the English meaning, flip the card and self-grade.</div></div>
               </label>
               <label class="test-type-option" data-value="typing">
                 <input type="radio" name="test-type" value="typing" class="d-none">
                 <span class="type-icon">⌨️</span>
                 <div><div class="fw-semibold">Type the Word</div>
                   <div class="text-muted small">Read the English meaning and type the German word.</div></div>
+              </label>
+              <label class="test-type-option" data-value="matching">
+                <input type="radio" name="test-type" value="matching" class="d-none">
+                <span class="type-icon">🔗</span>
+                <div><div class="fw-semibold">Match the Following</div>
+                  <div class="text-muted small">Connect each German word to its correct English meaning.</div></div>
               </label>
             </div>
           </div>
@@ -122,6 +128,73 @@
   </div>
 </div>
 
+<!-- Matching screen -->
+<div id="matching-screen" class="d-none">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted small" id="match-counter">0 / 0 matched</span>
+        <div class="d-flex gap-2">
+          <span class="badge bg-success" id="match-score-correct">✓ 0</span>
+          <span class="badge bg-danger"  id="match-score-wrong">✗ 0</span>
+        </div>
+      </div>
+      <div class="progress mb-4" style="height:6px;">
+        <div class="progress-bar bg-primary" id="match-progress" style="width:0%"></div>
+      </div>
+      <div class="d-flex gap-4 align-items-start">
+        <div id="match-left"  class="flex-fill d-flex flex-column gap-2"></div>
+        <div id="match-right" class="flex-fill d-flex flex-column gap-2"></div>
+      </div>
+      <div id="match-sentence" class="match-sentence d-none mt-3">
+        <span id="match-sentence-text"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Flashcard screen (Find the German word) -->
+<div id="flashcard-screen" class="d-none">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted small" id="fc-counter">Card 1 / 10</span>
+        <div class="d-flex gap-2">
+          <span class="badge bg-success" id="fc-score-correct">✓ 0</span>
+          <span class="badge bg-danger"  id="fc-score-wrong">✗ 0</span>
+        </div>
+      </div>
+      <div class="progress mb-4" style="height:6px;">
+        <div class="progress-bar bg-primary" id="fc-progress" style="width:0%"></div>
+      </div>
+      <!-- The flip card -->
+      <div class="fc-scene" id="fc-scene">
+        <div class="fc-card" id="fc-card">
+          <div class="fc-face fc-front">
+            <div class="word-type-badge mb-3" id="fc-type-badge" style="display:none"></div>
+            <h3 class="fw-bold mb-2" id="fc-meaning"></h3>
+            <span class="fc-hint">Click to reveal German word</span>
+          </div>
+          <div class="fc-face fc-back">
+            <div class="fc-german-word mb-2" id="fc-german"></div>
+            <p class="text-muted small mb-0" id="fc-sentence"></p>
+            <span class="fc-hint">Click to flip back</span>
+          </div>
+        </div>
+      </div>
+      <!-- Self-grade buttons — shown only after flip -->
+      <div id="fc-buttons" class="d-none d-flex gap-3 justify-content-center mt-4">
+        <button class="btn btn-danger btn-lg px-4" id="fc-btn-wrong">
+          ✗ Got it wrong
+        </button>
+        <button class="btn btn-success btn-lg px-4" id="fc-btn-correct">
+          ✓ Got it right
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Results screen -->
 <div id="results-screen" class="d-none">
   <div class="row justify-content-center">
@@ -160,5 +233,5 @@
 
 {% block scripts %}
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-<script src="/static/js/test.js?v=2"></script>
+<script src="/static/js/test.js?v=3"></script>
 {% endblock %}

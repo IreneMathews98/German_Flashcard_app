@@ -69,7 +69,9 @@ async function startTest() {
 
   try {
     const setParam = currentSet ? `&set=${encodeURIComponent(currentSet)}` : '';
-    const res = await fetch(`/api/test/questions?test_type=${testType}&count=${count}${setParam}`);
+    // find_german reuses the typing API (same data shape)
+    const apiType = testType === 'find_german' ? 'typing' : testType;
+    const res = await fetch(`/api/test/questions?test_type=${apiType}&count=${count}${setParam}`);
     if (!res.ok) {
       const err = await res.json();
       alert(err.detail || 'Failed to load questions');
@@ -78,10 +80,16 @@ async function startTest() {
     questions = await res.json();
     if (!questions.length) { alert('No questions available for this test type.'); return; }
 
-    currentQ = 0; correctCount = 0; wrongCount = 0;
-    updateScoreBadges();
-    showScreen('quiz-screen');
-    renderQuestion();
+    if (testType === 'matching') {
+      startMatchingGame(questions);
+    } else if (testType === 'find_german') {
+      startFlashcardGame(questions);
+    } else {
+      currentQ = 0; correctCount = 0; wrongCount = 0;
+      updateScoreBadges();
+      showScreen('quiz-screen');
+      renderQuestion();
+    }
   } catch (e) {
     alert('Error loading test: ' + e.message);
   }
@@ -266,9 +274,182 @@ function showResults() {
   showScreen('results-screen');
 }
 
+// ── Matching game ─────────────────────────────────────────────
+const MATCH_PAIR_COLORS = ['#7c3aed','#0891b2','#f97316','#16a34a','#2563eb','#d97706','#a855f7','#0d9488','#dc2626','#65a30d'];
+
+let matchPairs = [];
+let selectedEl = null, selectedSide = null;
+let matchedCount = 0, matchCorrect = 0, matchWrong = 0;
+const hadWrongAttempt = new Set();
+let _sentenceTimer = null;
+
+function startMatchingGame(pairs) {
+  matchPairs = pairs;
+  selectedEl = null; selectedSide = null;
+  matchedCount = 0; matchCorrect = 0; matchWrong = 0;
+  hadWrongAttempt.clear();
+
+  const rights = pairs.map((p, i) => ({ meaning: p.meaning, id: i }));
+  rights.sort(() => Math.random() - 0.5);
+
+  document.getElementById('match-left').innerHTML = pairs.map((p, i) => `
+    <button type="button" class="match-item match-item-left" data-id="${i}" data-meaning="${escHtml(p.meaning)}">${escHtml(p.german)}</button>
+  `).join('');
+  document.getElementById('match-right').innerHTML = rights.map(p => `
+    <button type="button" class="match-item match-item-right" data-id="${p.id}" data-meaning="${escHtml(p.meaning)}">${escHtml(p.meaning)}</button>
+  `).join('');
+
+  document.querySelectorAll('#match-left .match-item').forEach(el =>
+    el.addEventListener('click', () => onMatchItemClick(el, 'left')));
+  document.querySelectorAll('#match-right .match-item').forEach(el =>
+    el.addEventListener('click', () => onMatchItemClick(el, 'right')));
+
+  document.getElementById('match-score-correct').textContent = '✓ 0';
+  document.getElementById('match-score-wrong').textContent = '✗ 0';
+  updateMatchProgress();
+  showScreen('matching-screen');
+}
+
+function onMatchItemClick(el, side) {
+  if (el.classList.contains('matched') || el.classList.contains('wrong-flash')) return;
+
+  if (!selectedEl) {
+    el.classList.add('selected');
+    selectedEl = el; selectedSide = side;
+  } else if (selectedSide === side) {
+    selectedEl.classList.remove('selected');
+    el.classList.add('selected');
+    selectedEl = el;
+  } else {
+    const leftEl  = side === 'right' ? selectedEl : el;
+    const rightEl = side === 'right' ? el : selectedEl;
+    selectedEl.classList.remove('selected');
+    el.classList.remove('selected');
+    selectedEl = null; selectedSide = null;
+    checkMatchAttempt(leftEl, rightEl);
+  }
+}
+
+function checkMatchAttempt(leftEl, rightEl) {
+  const isCorrect = leftEl.dataset.meaning === rightEl.dataset.meaning;
+  const leftId    = parseInt(leftEl.dataset.id);
+
+  if (isCorrect) {
+    const color = MATCH_PAIR_COLORS[leftId % MATCH_PAIR_COLORS.length];
+    leftEl.style.setProperty('--bg', color);
+    rightEl.style.setProperty('--bg', color);
+    leftEl.style.color  = 'white';
+    rightEl.style.color = 'white';
+    leftEl.classList.add('matched', 'snap-left');
+    rightEl.classList.add('matched', 'snap-right');
+    matchedCount++;
+    if (hadWrongAttempt.has(leftId)) matchWrong++; else matchCorrect++;
+    document.getElementById('match-score-correct').textContent = `✓ ${matchedCount}`;
+
+    const sentence = matchPairs[leftId]?.sentence;
+    if (sentence) showMatchSentence(sentence);
+
+    if (typeof confetti === 'function') {
+      confetti({ particleCount: 40, spread: 50, origin: { y: 0.6 }, colors: [color, '#fff'] });
+    }
+    updateMatchProgress();
+    if (matchedCount === matchPairs.length) {
+      correctCount = matchCorrect;
+      wrongCount   = matchWrong;
+      questions    = new Array(matchPairs.length);
+      setTimeout(showResults, 900);
+    }
+  } else {
+    hadWrongAttempt.add(leftId);
+    matchWrong++;
+    document.getElementById('match-score-wrong').textContent = `✗ ${matchWrong}`;
+    leftEl.classList.add('wrong-flash');
+    rightEl.classList.add('wrong-flash');
+    setTimeout(() => {
+      leftEl.classList.remove('wrong-flash');
+      rightEl.classList.remove('wrong-flash');
+    }, 650);
+  }
+}
+
+function showMatchSentence(sentence) {
+  const box  = document.getElementById('match-sentence');
+  const text = document.getElementById('match-sentence-text');
+  text.textContent = sentence;
+  box.classList.remove('d-none', 'match-sentence-out');
+  clearTimeout(_sentenceTimer);
+  _sentenceTimer = setTimeout(() => {
+    box.classList.add('match-sentence-out');
+    setTimeout(() => box.classList.add('d-none'), 450);
+  }, 3500);
+}
+
+function updateMatchProgress() {
+  document.getElementById('match-counter').textContent = `${matchedCount} / ${matchPairs.length} matched`;
+  const pct = matchPairs.length ? (matchedCount / matchPairs.length) * 100 : 0;
+  document.getElementById('match-progress').style.width = `${pct}%`;
+}
+
+// ── Flashcard game (Find the German word) ─────────────────────
+let fcQuestions = [], fcCurrent = 0, fcCorrect = 0, fcWrong = 0, fcIsFlipped = false;
+
+function startFlashcardGame(qs) {
+  fcQuestions = qs;
+  fcCurrent = 0; fcCorrect = 0; fcWrong = 0;
+  correctCount = 0; wrongCount = 0;
+
+  document.getElementById('fc-score-correct').textContent = '✓ 0';
+  document.getElementById('fc-score-wrong').textContent   = '✗ 0';
+
+  document.getElementById('fc-btn-correct').onclick = () => fcAnswer(true);
+  document.getElementById('fc-btn-wrong').onclick   = () => fcAnswer(false);
+  document.getElementById('fc-scene').onclick = flipFcCard;
+
+  showScreen('flashcard-screen');
+  renderFlashcard();
+}
+
+function renderFlashcard() {
+  const q = fcQuestions[fcCurrent];
+  if (!q) { questions = fcQuestions; showResults(); return; }
+
+  fcIsFlipped = false;
+  document.getElementById('fc-card').classList.remove('is-flipped');
+  document.getElementById('fc-buttons').classList.add('d-none');
+
+  document.getElementById('fc-counter').textContent =
+    `Card ${fcCurrent + 1} / ${fcQuestions.length}`;
+  document.getElementById('fc-progress').style.width =
+    `${(fcCurrent / fcQuestions.length) * 100}%`;
+
+  const badge = document.getElementById('fc-type-badge');
+  const type  = q.word_type || '';
+  badge.textContent       = TYPE_LABELS[type] || '';
+  badge.style.background  = TYPE_COLORS[type] || '#6b7280';
+  badge.style.display     = (TYPE_LABELS[type] && type) ? 'inline-block' : 'none';
+
+  document.getElementById('fc-meaning').textContent  = q.question;
+  document.getElementById('fc-sentence').textContent = q.sentence || '';
+  document.getElementById('fc-german').textContent   = q.display_correct || q.correct;
+}
+
+function flipFcCard() {
+  fcIsFlipped = !fcIsFlipped;
+  document.getElementById('fc-card').classList.toggle('is-flipped', fcIsFlipped);
+  document.getElementById('fc-buttons').classList.toggle('d-none', !fcIsFlipped);
+}
+
+function fcAnswer(gotRight) {
+  if (gotRight) { fcCorrect++; correctCount++; } else { fcWrong++; wrongCount++; }
+  document.getElementById('fc-score-correct').textContent = `✓ ${fcCorrect}`;
+  document.getElementById('fc-score-wrong').textContent   = `✗ ${fcWrong}`;
+  fcCurrent++;
+  setTimeout(renderFlashcard, 180);
+}
+
 // ── Helpers ───────────────────────────────────────────────────
 function showScreen(id) {
-  ['setup-screen', 'quiz-screen', 'results-screen'].forEach(s => {
+  ['setup-screen', 'quiz-screen', 'matching-screen', 'flashcard-screen', 'results-screen'].forEach(s => {
     const el = document.getElementById(s);
     if (el) el.classList.toggle('d-none', s !== id);
   });
