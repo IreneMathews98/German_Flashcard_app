@@ -2,14 +2,26 @@ let parsedWords = [];
 let confirmedSetName = '';
 
 // ── DOM refs ──────────────────────────────────────────────────
-const nameInput      = document.getElementById('set-name');
+const nameInput       = document.getElementById('set-name');
 const filenamePreview = document.getElementById('filename-preview');
-const nameError      = document.getElementById('name-error');
-const confirmBtn     = document.getElementById('confirm-name-btn');
-const dropZone       = document.getElementById('drop-zone');
-const fileInput      = document.getElementById('file-input');
+const nameError       = document.getElementById('name-error');
+const confirmBtn      = document.getElementById('confirm-name-btn');
+const confirmAppendBtn = document.getElementById('confirm-append-btn');
+const dropZone        = document.getElementById('drop-zone');
+const fileInput       = document.getElementById('file-input');
 
-// ── Step 1: confirm name ──────────────────────────────────────
+// ── Step 1: mode toggle (new vs append) ───────────────────────
+document.querySelectorAll('input[name="upload-mode"]').forEach(radio => {
+  radio.addEventListener('change', () => {
+    const isAppend = radio.value === 'append' && radio.checked;
+    document.getElementById('new-set-area')?.classList.toggle('d-none', isAppend);
+    document.getElementById('append-set-area')?.classList.toggle('d-none', !isAppend);
+    document.querySelectorAll('.mode-pill').forEach(p => p.classList.remove('active'));
+    radio.closest('.mode-pill')?.classList.add('active');
+  });
+});
+
+// ── Step 1a: confirm new set name ─────────────────────────────
 if (nameInput && filenamePreview) {
   nameInput.addEventListener('input', () => {
     const name = nameInput.value.trim();
@@ -31,6 +43,20 @@ function confirmName() {
     return;
   }
   nameError?.classList.add('d-none');
+  _proceedWithName(name);
+}
+
+// ── Step 1b: confirm append to existing set ───────────────────
+if (confirmAppendBtn) {
+  confirmAppendBtn.addEventListener('click', () => {
+    const select = document.getElementById('existing-set-select');
+    const name = select?.value?.trim();
+    if (!name) return;
+    _proceedWithName(name);
+  });
+}
+
+function _proceedWithName(name) {
   confirmedSetName = name;
   const badge = document.getElementById('set-name-badge');
   if (badge) badge.textContent = name;

@@ -42,6 +42,9 @@
           {% endif %}
         </p>
         <div class="d-flex gap-2 mt-3 flex-wrap">
+          <a href="/set/{{ s.name | urlquote }}" class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-table me-1"></i>View Set
+          </a>
           <a href="/flashcards?set={{ s.name }}" class="btn btn-sm btn-primary">Study</a>
           <a href="/test?set={{ s.name }}" class="btn btn-sm btn-outline-primary">Test</a>
           {% if s.missing_sentences > 0 %}

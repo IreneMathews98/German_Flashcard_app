@@ -43,6 +43,9 @@
       <button class="btn btn-sm btn-outline-secondary type-filter" data-type="verb">Verbs</button>
       <button class="btn btn-sm btn-outline-secondary type-filter" data-type="adjective">Adjectives</button>
       <button class="btn btn-sm btn-outline-secondary type-filter" data-type="other">Other</button>
+      <button class="btn btn-sm btn-outline-secondary type-filter" data-type="bookmarked">
+        <i class="bi bi-bookmark-fill me-1"></i>Bookmarked
+      </button>
       <span class="ms-auto text-muted small" id="card-counter">– / –</span>
       <button type="button" class="btn btn-sm btn-outline-secondary" id="shuffle-btn">⟳ Shuffle</button>
     </div>
@@ -63,9 +66,13 @@
       </div>
     </div>
 
-    <!-- Easy / Hard -->
-    <div class="d-flex justify-content-center gap-3 mb-3">
+    <!-- Easy / Hard / Bookmark -->
+    <div class="d-flex justify-content-center gap-3 mb-3 align-items-center">
       <button type="button" class="btn btn-success btn-lg px-5" id="easy-btn">Easy ✓</button>
+      <button type="button" class="btn btn-outline-secondary bookmark-btn" id="bookmark-btn"
+              title="Bookmark this word" onclick="toggleBookmark()">
+        <i class="bi bi-bookmark"></i>
+      </button>
       <button type="button" class="btn btn-danger  btn-lg px-5" id="hard-btn">Hard ↺</button>
     </div>
 
@@ -73,7 +80,8 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
       <button type="button" class="btn btn-outline-secondary btn-sm" id="prev-btn">← Previous</button>
       <p class="text-muted small mb-0">
-        <kbd>Space</kbd> flip &nbsp;·&nbsp; <kbd>E</kbd> easy &nbsp;·&nbsp; <kbd>H</kbd> hard &nbsp;·&nbsp; <kbd>←</kbd> back
+        <kbd>Space</kbd> flip &nbsp;·&nbsp; <kbd>E</kbd> easy &nbsp;·&nbsp; <kbd>H</kbd> hard &nbsp;·&nbsp;
+        <kbd>B</kbd> bookmark &nbsp;·&nbsp; <kbd>←</kbd> back
       </p>
     </div>
 
@@ -92,5 +100,5 @@
 {% endblock %}
 
 {% block scripts %}
-<script src="/static/js/flashcard.js?v=3"></script>
+<script src="/static/js/flashcard.js?v=4"></script>
 {% endblock %}

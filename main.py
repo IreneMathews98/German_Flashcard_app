@@ -11,6 +11,8 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from urllib.parse import quote
+
 from database import VocabularyStore
 from file_handler import parse_uploaded_file
 from word_processor import process_words, process_batch, generate_sentences_batch
@@ -23,6 +25,7 @@ VOCAB_DIR = APP_DIR / 'vocabulary'
 app = FastAPI(title="Deutsch Lernen")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
+templates.env.filters["urlquote"] = quote
 db = VocabularyStore(vocab_dir=VOCAB_DIR, app_dir=APP_DIR)
 
 jobs: dict = {}
@@ -55,6 +58,11 @@ async def flashcards_page(request: Request, set: Optional[str] = Query(None)):
     })
 
 
+@app.get("/bookmarks", response_class=HTMLResponse)
+async def bookmarks_page(request: Request):
+    return templates.TemplateResponse(request, "bookmarks.html", {})
+
+
 @app.get("/test", response_class=HTMLResponse)
 async def test_page(request: Request, set: Optional[str] = Query(None)):
     set_name = set or ""
@@ -67,6 +75,62 @@ async def test_page(request: Request, set: Optional[str] = Query(None)):
         "all_sets":    all_sets,
         "total_count": total_count,
     })
+
+
+# ── Set detail page ───────────────────────────────────────────────────────────
+
+@app.get("/set/{set_name}", response_class=HTMLResponse)
+async def view_set(request: Request, set_name: str):
+    words = db.get_words(set_name)
+    if not words:
+        raise HTTPException(status_code=404, detail="Set not found")
+    type_counts: dict = {}
+    sentence_count = 0
+    for w in words:
+        wt = w.get("word_type") or "unknown"
+        type_counts[wt] = type_counts.get(wt, 0) + 1
+        if w.get("sentence"):
+            sentence_count += 1
+    return templates.TemplateResponse(request, "set.html", {
+        "set_name":       set_name,
+        "words":          words,
+        "total":          len(words),
+        "sentence_count": sentence_count,
+        "type_counts":    type_counts,
+    })
+
+
+# ── Set rename ────────────────────────────────────────────────────────────────
+
+@app.post("/api/sets/{set_name}/rename")
+async def rename_set(set_name: str, request: Request):
+    data = await request.json()
+    new_name = (data.get("new_name") or "").strip()
+    if not new_name:
+        raise HTTPException(status_code=400, detail="Name cannot be empty")
+    ok = db.rename_set(set_name, new_name)
+    if not ok:
+        raise HTTPException(status_code=409, detail="A set with that name already exists")
+    return JSONResponse({"success": True, "new_name": new_name})
+
+
+# ── Add word to set ───────────────────────────────────────────────────────────
+
+@app.post("/api/sets/{set_name}/words")
+async def add_word_to_set(set_name: str, request: Request):
+    data = await request.json()
+    german = (data.get("german_word") or "").strip()
+    meaning = (data.get("meaning") or "").strip()
+    if not german or not meaning:
+        raise HTTPException(status_code=400, detail="german_word and meaning are required")
+    word = db.add_word(set_name, {
+        "german_word": german,
+        "meaning":     meaning,
+        "sentence":    data.get("sentence", ""),
+        "word_type":   data.get("word_type", ""),
+        "artikel":     "",
+    })
+    return JSONResponse({"success": True, "word": word})
 
 
 # ── File upload ───────────────────────────────────────────────────────────────
@@ -208,6 +272,25 @@ async def delete_word(word_id: int, set: Optional[str] = Query(None)):
     return JSONResponse({"success": True})
 
 
+@app.patch("/api/words/{word_id}")
+async def update_word(word_id: int, request: Request, set: Optional[str] = Query(None)):
+    if not set:
+        raise HTTPException(status_code=400, detail="set query parameter required")
+    data = await request.json()
+    german = (data.get("german_word") or "").strip()
+    meaning = (data.get("meaning") or "").strip()
+    if not german or not meaning:
+        raise HTTPException(status_code=400, detail="german_word and meaning are required")
+    db.update_word(set, word_id, {
+        "german_word": german,
+        "meaning":     meaning,
+        "sentence":    data.get("sentence", ""),
+        "word_type":   data.get("word_type", ""),
+        "artikel":     data.get("artikel", ""),
+    })
+    return JSONResponse({"success": True})
+
+
 @app.get("/api/stats")
 async def get_stats(set: Optional[str] = Query(None)):
     set_name = set or None
@@ -277,4 +360,9 @@ def _build_questions(words: list, test_type: str, count: int) -> list:
                                'word_type': word.get('word_type', ''), 'correct': german,
                                'display_correct': display,
                                'sentence': word.get('sentence','').split('|')[0].strip()})
+
+        elif test_type == "matching":
+            questions.append({'type': 'matching', 'german': display,
+                               'word_type': word.get('word_type', ''), 'meaning': word['meaning'],
+                               'sentence': word.get('sentence', '').split('|')[0].strip()})
     return questions

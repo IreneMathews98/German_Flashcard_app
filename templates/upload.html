@@ -22,21 +22,57 @@
     <!-- Step 1: Name your set -->
     <div class="card shadow-sm mb-4" id="name-section">
       <div class="card-body p-4">
-        <h6 class="fw-semibold mb-3">① Name your vocabulary set</h6>
-        <div class="input-group">
-          <input type="text" class="form-control form-control-lg" id="set-name"
-                 placeholder="e.g. New file name"
-                 list="existing-sets-list"
-                 autocomplete="off">
-          <button type="button" id="confirm-name-btn" class="btn btn-outline-secondary">Next →</button>
+        <h6 class="fw-semibold mb-3">① Choose what to do</h6>
+
+        <!-- Mode toggle (only show append option when sets exist) -->
+        <div class="d-flex gap-3 mb-4" id="mode-toggle">
+          <label class="d-flex align-items-center gap-2 px-3 py-2 rounded border mode-pill active" id="pill-new" style="cursor:pointer">
+            <input type="radio" name="upload-mode" value="new" class="d-none" checked>
+            <span class="fw-semibold">➕ Create new set</span>
+          </label>
+          {% if existing_sets %}
+          <label class="d-flex align-items-center gap-2 px-3 py-2 rounded border mode-pill" id="pill-append" style="cursor:pointer">
+            <input type="radio" name="upload-mode" value="append" class="d-none">
+            <span class="fw-semibold">📥 Add to existing set</span>
+          </label>
+          {% endif %}
         </div>
-        <div class="text-danger small mt-1 d-none" id="name-error">Please enter a name for your vocabulary set.</div>
-        <datalist id="existing-sets-list">
-          {% for name in existing_sets %}
-          <option value="{{ name }}">
-          {% endfor %}
-        </datalist>
-        <div class="form-text mt-1">Saves as <code id="filename-preview">YourName.xlsx</code> in the vocabulary folder.</div>
+
+        <!-- New set: text input -->
+        <div id="new-set-area">
+          <div class="input-group">
+            <input type="text" class="form-control form-control-lg" id="set-name"
+                   placeholder="e.g. Chapter 5 — Travel"
+                   list="existing-sets-list"
+                   autocomplete="off">
+            <button type="button" id="confirm-name-btn" class="btn btn-outline-secondary">Next →</button>
+          </div>
+          <div class="text-danger small mt-1 d-none" id="name-error">Please enter a name for your vocabulary set.</div>
+          <datalist id="existing-sets-list">
+            {% for name in existing_sets %}
+            <option value="{{ name }}">
+            {% endfor %}
+          </datalist>
+          <div class="form-text mt-1">Saves as <code id="filename-preview">YourName.xlsx</code> in the vocabulary folder.</div>
+        </div>
+
+        <!-- Append to existing: select dropdown -->
+        {% if existing_sets %}
+        <div id="append-set-area" class="d-none">
+          <div class="input-group">
+            <select class="form-select form-select-lg" id="existing-set-select">
+              {% for name in existing_sets %}
+              <option value="{{ name }}">{{ name }}</option>
+              {% endfor %}
+            </select>
+            <button type="button" id="confirm-append-btn" class="btn btn-outline-secondary">Next →</button>
+          </div>
+          <div class="form-text mt-1 text-success mt-2">
+            ✓ New words will be merged in — any word already in the set (same German word) is skipped.
+          </div>
+        </div>
+        {% endif %}
+
       </div>
     </div>
 
