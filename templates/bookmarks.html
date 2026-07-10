@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% block title %}Bookmarks – FluentFling{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-3">
+  <div>
+    <h2 class="fw-bold mb-0"><i class="bi bi-bookmark-heart me-2 text-warning"></i>Bookmarks</h2>
+    <p class="text-muted small mb-0 mt-1">Words you've saved for focused review</p>
+  </div>
+  <div class="d-flex gap-2">
+    <a href="/flashcards" class="btn btn-primary" id="study-btn" style="display:none!important">
+      <i class="bi bi-stack me-1"></i>Study Bookmarks
+    </a>
+    <button class="btn btn-outline-danger btn-sm" id="clear-all-btn" onclick="clearAll()" style="display:none">
+      <i class="bi bi-trash3 me-1"></i>Clear All
+    </button>
+  </div>
+</div>
+
+<!-- Empty state -->
+<div id="empty-state" class="text-center py-5 d-none">
+  <div class="fs-1 mb-3">🔖</div>
+  <h4 class="text-muted">No bookmarks yet</h4>
+  <p class="text-muted small">While studying flashcards, press <kbd>B</kbd> or click the bookmark button to save words here.</p>
+  <a href="/flashcards" class="btn btn-primary mt-2">
+    <i class="bi bi-stack me-1"></i>Start Studying
+  </a>
+</div>
+
+<!-- Bookmark cards grouped by set -->
+<div id="bm-container"></div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+const BOOKMARK_KEY = 'ff_bookmarks';
+
+function _getBookmarks() {
+  try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY) || '[]'); }
+  catch { return []; }
+}
+
+function removeBookmark(key) {
+  let bm = _getBookmarks();
+  bm = bm.filter(b => b._key !== key);
+  localStorage.setItem(BOOKMARK_KEY, JSON.stringify(bm));
+  renderPage();
+  // update navbar badge
+  const badge = document.getElementById('bm-count-badge');
+  if (badge) {
+    badge.textContent  = bm.length || '';
+    badge.style.display = bm.length ? 'inline-flex' : 'none';
+  }
+}
+
+function clearAll() {
+  if (!confirm('Remove all bookmarks?')) return;
+  localStorage.removeItem(BOOKMARK_KEY);
+  renderPage();
+  const badge = document.getElementById('bm-count-badge');
+  if (badge) badge.style.display = 'none';
+}
+
+const TYPE_COLORS = {
+  noun: '#2563eb', verb: '#dc2626', reflexive_verb: '#d97706',
+  adjective: '#16a34a', adverb: '#7c3aed', preposition: '#0891b2',
+  verb_mit_präposition: '#dc2626', adjektiv_mit_präposition: '#16a34a',
+  nomen_mit_präposition: '#2563eb', nomen_verb_verbindung: '#b45309',
+  common_phrase: '#6b7280', unknown: '#6b7280',
+};
+
+function escHtml(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function renderPage() {
+  const bm = _getBookmarks();
+  const container  = document.getElementById('bm-container');
+  const emptyState = document.getElementById('empty-state');
+  const clearBtn   = document.getElementById('clear-all-btn');
+  const studyBtn   = document.getElementById('study-btn');
+
+  if (!bm.length) {
+    emptyState.classList.remove('d-none');
+    container.innerHTML = '';
+    clearBtn.style.display = 'none';
+    studyBtn.style.removeProperty('display');
+    studyBtn.style.display = 'none';
+    return;
+  }
+
+  emptyState.classList.add('d-none');
+  clearBtn.style.display = 'inline-flex';
+  studyBtn.style.removeProperty('display');
+  studyBtn.style.display = 'inline-flex';
+
+  // Group by set_name
+  const groups = {};
+  for (const w of bm) {
+    const set = w.set_name || 'All Vocabulary';
+    if (!groups[set]) groups[set] = [];
+    groups[set].push(w);
+  }
+
+  let html = '';
+  for (const [setName, words] of Object.entries(groups)) {
+    html += `
+      <div class="mb-5">
+        <h5 class="fw-semibold mb-3 text-muted">
+          <i class="bi bi-collection me-2"></i>${escHtml(setName)}
+          <span class="badge bg-secondary ms-2 fw-normal" style="font-size:.75rem">${words.length}</span>
+        </h5>
+        <div class="row g-3">
+    `;
+    for (const w of words) {
+      const typeColor = TYPE_COLORS[w.word_type] || '#6b7280';
+      const typeLabel = (w.word_type || 'unknown').replace(/_/g,' ');
+      let sentHtml = '';
+      if (w.sentence) {
+        const [de, en] = w.sentence.split('|').map(s => s.trim());
+        sentHtml = `<div class="mt-2 pt-2 border-top">
+          <div class="sentence-de small">${escHtml(de)}</div>
+          ${en ? `<div class="sentence-en small">${escHtml(en)}</div>` : ''}
+        </div>`;
+      }
+      html += `
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bm-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <div>
+                  ${w.artikel ? `<span class="text-warning fw-bold me-1">${escHtml(w.artikel)}</span>` : ''}
+                  <span class="fw-bold fs-5">${escHtml(w.german_word)}</span>
+                </div>
+                <button class="btn btn-link text-muted p-0 ms-2 flex-shrink-0"
+                        onclick="removeBookmark(${JSON.stringify(w._key)})"
+                        title="Remove bookmark">
+                  <i class="bi bi-bookmark-fill text-warning"></i>
+                </button>
+              </div>
+              <div class="text-muted mb-2">${escHtml(w.meaning)}</div>
+              ${w.word_type && w.word_type !== 'unknown'
+                ? `<span class="word-type-badge mt-auto" style="background:${typeColor}">${escHtml(typeLabel)}</span>`
+                : ''}
+              ${sentHtml}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    html += `</div></div>`;
+  }
+
+  container.innerHTML = html;
+}
+
+document.addEventListener('DOMContentLoaded', renderPage);
+</script>
+{% endblock %}
