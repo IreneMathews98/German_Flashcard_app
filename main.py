@@ -300,6 +300,29 @@ async def get_stats(set: Optional[str] = Query(None)):
     })
 
 
+# ── Bookmarks ─────────────────────────────────────────────────────────────────
+
+@app.get("/api/bookmarks")
+async def get_bookmarks():
+    return JSONResponse(db.get_bookmarks())
+
+
+@app.post("/api/bookmarks")
+async def add_bookmark(request: Request):
+    word  = await request.json()
+    added = db.add_bookmark(word)
+    return JSONResponse({"success": True, "added": added})
+
+
+@app.delete("/api/bookmarks")
+async def remove_or_clear_bookmarks(key: Optional[str] = Query(None)):
+    if key:
+        removed = db.remove_bookmark(key)
+        return JSONResponse({"success": removed})
+    db.clear_bookmarks()
+    return JSONResponse({"success": True})
+
+
 # ── Set management ────────────────────────────────────────────────────────────
 
 @app.delete("/api/sets/{set_name}")

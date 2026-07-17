@@ -34,52 +34,47 @@
 
 {% block scripts %}
 <script>
-const BOOKMARK_KEY = 'ff_bookmarks';
-
-function _getBookmarks() {
-  try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY) || '[]'); }
-  catch { return []; }
-}
-
-function removeBookmark(key) {
-  let bm = _getBookmarks();
-  bm = bm.filter(b => b._key !== key);
-  localStorage.setItem(BOOKMARK_KEY, JSON.stringify(bm));
-  renderPage();
-  // update navbar badge
-  const badge = document.getElementById('bm-count-badge');
-  if (badge) {
-    badge.textContent  = bm.length || '';
-    badge.style.display = bm.length ? 'inline-flex' : 'none';
-  }
-}
-
-function clearAll() {
-  if (!confirm('Remove all bookmarks?')) return;
-  localStorage.removeItem(BOOKMARK_KEY);
-  renderPage();
-  const badge = document.getElementById('bm-count-badge');
-  if (badge) badge.style.display = 'none';
-}
-
 const TYPE_COLORS = {
-  noun: '#2563eb', verb: '#dc2626', reflexive_verb: '#d97706',
-  adjective: '#16a34a', adverb: '#7c3aed', preposition: '#0891b2',
-  verb_mit_präposition: '#dc2626', adjektiv_mit_präposition: '#16a34a',
-  nomen_mit_präposition: '#2563eb', nomen_verb_verbindung: '#b45309',
-  common_phrase: '#6b7280', unknown: '#6b7280',
+  noun: '#2563eb', verb: '#dc2626', adjective: '#16a34a',
+  adverb: '#7c3aed', phrase: '#6b7280', nomen_verb_verbindung: '#b45309',
+  conjunction: '#0891b2', verb_mit_präposition: '#be185d',
+  nomen_mit_präposition: '#0369a1', adj_mit_präposition: '#15803d',
+  unknown: '#6b7280',
 };
 
 function escHtml(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
-function renderPage() {
-  const bm = _getBookmarks();
+function _updateNavBmBadge(count) {
+  const badge = document.getElementById('bm-count-badge');
+  if (!badge) return;
+  badge.textContent   = count || '';
+  badge.style.display = count ? 'inline-flex' : 'none';
+}
+
+async function removeBookmark(key) {
+  await fetch(`/api/bookmarks?key=${encodeURIComponent(key)}`, { method: 'DELETE' });
+  renderPage();
+}
+
+async function clearAll() {
+  if (!confirm('Remove all bookmarks?')) return;
+  await fetch('/api/bookmarks', { method: 'DELETE' });
+  renderPage();
+}
+
+async function renderPage() {
+  let bm;
+  try { bm = await (await fetch('/api/bookmarks')).json(); }
+  catch { bm = []; }
+
   const container  = document.getElementById('bm-container');
   const emptyState = document.getElementById('empty-state');
   const clearBtn   = document.getElementById('clear-all-btn');
   const studyBtn   = document.getElementById('study-btn');
+
+  _updateNavBmBadge(bm.length);
 
   if (!bm.length) {
     emptyState.classList.remove('d-none');

@@ -10,6 +10,7 @@ class VocabularyStore:
         self.vocab_dir = Path(vocab_dir)
         self.app_dir   = Path(app_dir)
         self.vocab_dir.mkdir(exist_ok=True)
+        self._sync_bookmark_vocab()  # populate vocabulary/Bookmarks.json on startup
 
     # ── Set discovery ─────────────────────────────────────────
     # Scans both vocabulary/ and the app root; vocabulary/ takes priority
@@ -196,6 +197,63 @@ class VocabularyStore:
             existing[w['german_word']] = {col: str(w.get(col, '') or '') for col in COLUMNS}
         self._save(dest, list(existing.values()))
         return len(words)
+
+    # ── Bookmarks ─────────────────────────────────────────────
+    # Stored as {"bookmarks": [...]} so _all_json_files() never treats
+    # this file as a vocabulary set (it checks isinstance(data, list)).
+
+    BM_COLS = ['german_word', 'meaning', 'word_type', 'artikel', 'sentence', 'set_name']
+
+    @property
+    def _bm_path(self) -> Path:
+        return self.app_dir / 'bookmarks.json'
+
+    def get_bookmarks(self) -> list:
+        try:
+            data = json.loads(self._bm_path.read_text(encoding='utf-8'))
+            return data.get('bookmarks', []) if isinstance(data, dict) else []
+        except Exception:
+            return []
+
+    def add_bookmark(self, word: dict) -> bool:
+        bm  = self.get_bookmarks()
+        key = f"{word.get('set_name', '')}::{word.get('german_word', '')}"
+        if any(b.get('_key') == key for b in bm):
+            return False
+        entry = {col: str(word.get(col, '') or '') for col in self.BM_COLS}
+        entry['_key'] = key
+        bm.append(entry)
+        self._save_bookmarks(bm)
+        return True
+
+    def remove_bookmark(self, key: str) -> bool:
+        bm     = self.get_bookmarks()
+        new_bm = [b for b in bm if b.get('_key') != key]
+        if len(new_bm) == len(bm):
+            return False
+        self._save_bookmarks(new_bm)
+        return True
+
+    def clear_bookmarks(self):
+        self._save_bookmarks([])
+
+    def _save_bookmarks(self, bookmarks: list):
+        self._bm_path.write_text(
+            json.dumps({'bookmarks': bookmarks}, ensure_ascii=False, indent=2),
+            encoding='utf-8',
+        )
+        self._sync_bookmark_vocab()
+
+    def _sync_bookmark_vocab(self):
+        """Mirror bookmarks → vocabulary/Bookmarks.json so it appears as a normal studyable set."""
+        bm    = self.get_bookmarks()
+        words = [{col: b.get(col, '') for col in COLUMNS} for b in bm]
+        bm_vocab = self.vocab_dir / 'Bookmarks.json'
+        if words:
+            with open(bm_vocab, 'w', encoding='utf-8') as f:
+                json.dump(words, f, ensure_ascii=False, indent=2)
+        elif bm_vocab.exists():
+            bm_vocab.unlink()
 
     @staticmethod
     def _safe(name: str) -> str:
