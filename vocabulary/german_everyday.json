@@ -16,28 +16,28 @@
   {
     "german_word": "Guten Morgen!",
     "meaning": "Good morning!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Guten Tag!",
     "meaning": "Good day / Hello!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Guten Abend!",
     "meaning": "Good evening!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Grüß Gott!",
     "meaning": "Hello! (God bless you)",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -58,21 +58,21 @@
   {
     "german_word": "Na?",
     "meaning": "Hey, how's it going?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Na, alles gut?",
     "meaning": "Hey, all good?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Wie geht's?",
     "meaning": "How's it going?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -93,35 +93,35 @@
   {
     "german_word": "Was geht ab?",
     "meaning": "What's up?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Lange nicht gesehen!",
     "meaning": "Long time no see!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Schön, dich zu sehen!",
     "meaning": "Nice to see you!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Schön, Sie zu sehen!",
     "meaning": "Nice to see you!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Herzlich willkommen!",
     "meaning": "Welcome! (heartfelt)",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -156,21 +156,21 @@
   {
     "german_word": "Bis bald!",
     "meaning": "See you soon!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Bis dann!",
     "meaning": "See you then / later!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Bis morgen!",
     "meaning": "See you tomorrow!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -184,42 +184,42 @@
   {
     "german_word": "Mach's gut!",
     "meaning": "Take care!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Pass auf dich auf!",
     "meaning": "Take care of yourself!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Schönen Abend noch!",
     "meaning": "Have a nice evening!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Schönes Wochenende!",
     "meaning": "Have a nice weekend!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Gute Nacht!",
     "meaning": "Good night!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Schlaf gut!",
     "meaning": "Sleep well!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -261,7 +261,7 @@
   {
     "german_word": "Darf ich mich vorstellen?",
     "meaning": "May I introduce myself?",
-    "word_type": "reflexive_verb",
+    "word_type": "verb",
     "artikel": "",
     "sentence": ""
   },
@@ -282,14 +282,14 @@
   {
     "german_word": "Schön, dich kennenzulernen!",
     "meaning": "Nice to meet you!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Schön, Sie kennenzulernen!",
     "meaning": "Nice to meet you!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -303,56 +303,56 @@
   {
     "german_word": "Ich komme aus …",
     "meaning": "I'm from …",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Was machst du beruflich?",
     "meaning": "What do you do for work?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich arbeite als …",
     "meaning": "I work as …",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Was machst du so?",
     "meaning": "What do you get up to?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Wie war dein Wochenende?",
     "meaning": "How was your weekend?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Was hast du am Wochenende gemacht?",
     "meaning": "What did you do over the weekend?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Hast du Pläne für heute Abend?",
     "meaning": "Do you have plans tonight?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Was machst du in deiner Freizeit?",
     "meaning": "What do you do in your free time?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -366,49 +366,49 @@
   {
     "german_word": "Das Wetter ist heute schön, oder?",
     "meaning": "The weather is nice today, isn't it?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Typisch deutsches Wetter!",
     "meaning": "Typical German weather!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Was für ein schöner Tag!",
     "meaning": "What a beautiful day!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Hast du schon gehört, dass …?",
     "meaning": "Have you heard that …?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich habe gelesen, dass …",
     "meaning": "I read that …",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das glaube ich kaum.",
     "meaning": "I can hardly believe that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Wirklich? Das ist ja interessant!",
     "meaning": "Really? That's interesting!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -429,7 +429,7 @@
   {
     "german_word": "Bei mir ist das genauso.",
     "meaning": "It's the same for me.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -443,7 +443,7 @@
   {
     "german_word": "Danke schön!",
     "meaning": "Thank you very much!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -457,63 +457,63 @@
   {
     "german_word": "Vielen Dank!",
     "meaning": "Many thanks!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Herzlichen Dank!",
     "meaning": "Heartfelt thanks!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Danke der Nachfrage!",
     "meaning": "Thanks for asking!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das ist sehr nett von dir!",
     "meaning": "That's very kind of you!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das ist sehr nett von Ihnen!",
     "meaning": "That's very kind of you!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich weiß das sehr zu schätzen.",
     "meaning": "I really appreciate that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich bin dir sehr dankbar.",
     "meaning": "I'm very grateful to you.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich bin Ihnen sehr dankbar.",
     "meaning": "I'm very grateful to you.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Bitte!",
     "meaning": "You're welcome!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -527,7 +527,7 @@
   {
     "german_word": "Gern geschehen!",
     "meaning": "My pleasure!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -541,14 +541,14 @@
   {
     "german_word": "Nicht der Rede wert!",
     "meaning": "Don't mention it!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das mache ich doch gerne!",
     "meaning": "I'm happy to do it!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -583,14 +583,14 @@
   {
     "german_word": "Es tut mir leid.",
     "meaning": "I'm sorry.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Es tut mir sehr leid.",
     "meaning": "I'm very sorry.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -604,133 +604,133 @@
   {
     "german_word": "Das wollte ich nicht.",
     "meaning": "I didn't mean that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das war nicht meine Absicht.",
     "meaning": "That wasn't my intention.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich habe mich geirrt.",
     "meaning": "I was wrong.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das ist mein Fehler.",
     "meaning": "That's my fault.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich bitte um Entschuldigung.",
     "meaning": "I apologize.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Tut mir leid, dass ich zu spät bin.",
     "meaning": "Sorry I'm late.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das kommt nicht wieder vor.",
     "meaning": "It won't happen again.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Schon gut!",
     "meaning": "It's alright!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Macht nichts!",
     "meaning": "Never mind! / It's fine!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ist doch nicht so schlimm!",
     "meaning": "It's not that bad!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das passiert doch mal!",
     "meaning": "These things happen!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich nehme es dir nicht übel.",
     "meaning": "I don't hold it against you.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das tut mir leid für dich.",
     "meaning": "I'm sorry to hear that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das ist wirklich schade.",
     "meaning": "That's really a shame.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das höre ich sehr gerne.",
     "meaning": "I'm glad to hear that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Kopf hoch!",
     "meaning": "Chin up!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Alles wird gut!",
     "meaning": "Everything will be alright!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das geht vorbei.",
     "meaning": "This will pass.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich bin für dich da.",
     "meaning": "I'm here for you.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -744,42 +744,42 @@
   {
     "german_word": "Lass dich nicht unterkriegen!",
     "meaning": "Don't let it get you down!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das ist nicht das Ende der Welt.",
     "meaning": "It's not the end of the world.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich verstehe, wie du dich fühlst.",
     "meaning": "I understand how you feel.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das muss schwer für dich sein.",
     "meaning": "That must be hard for you.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Wenn du reden möchtest, bin ich da.",
     "meaning": "If you want to talk, I'm here.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Mein herzliches Beileid.",
     "meaning": "My sincere condolences.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -800,49 +800,49 @@
   {
     "german_word": "Da hast du recht.",
     "meaning": "You're right about that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich bin deiner Meinung.",
     "meaning": "I share your opinion.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich sehe das genauso.",
     "meaning": "I see it the same way.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Da bin ich anderer Meinung.",
     "meaning": "I have a different opinion.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das sehe ich anders.",
     "meaning": "I see that differently.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Da bin ich nicht so sicher.",
     "meaning": "I'm not so sure about that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das stimmt nicht ganz.",
     "meaning": "That's not entirely right.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -856,7 +856,7 @@
   {
     "german_word": "Das halte ich für falsch.",
     "meaning": "I think that's wrong.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -877,49 +877,49 @@
   {
     "german_word": "Ich brauche Hilfe.",
     "meaning": "I need help.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Darf ich Sie etwas fragen?",
     "meaning": "May I ask you something?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Darf ich dich etwas fragen?",
     "meaning": "Can I ask you something?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Wie komme ich zum/zur …?",
     "meaning": "How do I get to …?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Könnten Sie das bitte wiederholen?",
     "meaning": "Could you please repeat that?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Kannst du das nochmal sagen?",
     "meaning": "Can you say that again?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich verstehe das nicht.",
     "meaning": "I don't understand that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -933,49 +933,49 @@
   {
     "german_word": "Könnten Sie das bitte erklären?",
     "meaning": "Could you please explain that?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das hast du toll gemacht!",
     "meaning": "You did a great job!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das steht dir gut!",
     "meaning": "That suits you well!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Du siehst gut aus!",
     "meaning": "You look great!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das war wirklich beeindruckend.",
     "meaning": "That was really impressive.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Du bist sehr talentiert.",
     "meaning": "You are very talented.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das schmeckt ausgezeichnet!",
     "meaning": "That tastes excellent!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -989,28 +989,28 @@
   {
     "german_word": "Das ist ein schönes …!",
     "meaning": "That is a beautiful …!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich finde deinen Stil toll.",
     "meaning": "I love your style.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Einen Tisch für zwei, bitte.",
     "meaning": "A table for two, please.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich hätte gerne …",
     "meaning": "I would like …",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -1024,42 +1024,42 @@
   {
     "german_word": "Was ist das Tagesgericht?",
     "meaning": "What is the daily special?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ohne … bitte.",
     "meaning": "Without … please.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich bin Vegetarier/Vegetarierin.",
     "meaning": "I am vegetarian.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Die Rechnung, bitte!",
     "meaning": "The bill, please!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Zusammen oder getrennt?",
     "meaning": "Together or separate?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das war sehr lecker!",
     "meaning": "That was very tasty!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -1073,35 +1073,35 @@
   {
     "german_word": "Guten Appetit!",
     "meaning": "Enjoy your meal!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Hier ist …",
     "meaning": "This is … (on the phone)",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Einen Moment, bitte.",
     "meaning": "One moment, please.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Können Sie später zurückrufen?",
     "meaning": "Can you call back later?",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich rufe Sie zurück.",
     "meaning": "I'll call you back.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -1115,14 +1115,14 @@
   {
     "german_word": "Ich melde mich.",
     "meaning": "I'll be in touch.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Schick mir die Adresse.",
     "meaning": "Send me the address.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -1143,21 +1143,21 @@
   {
     "german_word": "Das gibt es doch nicht!",
     "meaning": "You're kidding! / No way!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Ich glaube, mein Schwein pfeift!",
     "meaning": "I can't believe it!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
   {
     "german_word": "Das ist ja wahnsinnig!",
     "meaning": "That's crazy!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -1178,7 +1178,7 @@
   {
     "german_word": "Herzlichen Glückwunsch!",
     "meaning": "Congratulations!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -1192,7 +1192,7 @@
   {
     "german_word": "Alles Gute zum Geburtstag!",
     "meaning": "Happy birthday!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -1213,7 +1213,7 @@
   {
     "german_word": "Gute Besserung!",
     "meaning": "Get well soon!",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   },
@@ -1227,7 +1227,7 @@
   {
     "german_word": "Das tut mir leid zu hören.",
     "meaning": "I'm sorry to hear that.",
-    "word_type": "common_phrase",
+    "word_type": "phrase",
     "artikel": "",
     "sentence": ""
   }

@@ -46,6 +46,7 @@
             <i class="bi bi-table me-1"></i>View Set
           </a>
           <a href="/flashcards?set={{ s.name }}" class="btn btn-sm btn-primary">Study</a>
+          <a href="/flashcards?set={{ s.name }}&mode=revise" class="btn btn-sm btn-outline-success">Revise</a>
           <a href="/test?set={{ s.name }}" class="btn btn-sm btn-outline-primary">Test</a>
           {% if s.missing_sentences > 0 %}
           <button type="button" class="btn btn-sm btn-outline-secondary gen-btn"

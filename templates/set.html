@@ -63,17 +63,30 @@
       <table class="table table-hover align-middle mb-0" id="words-table">
         <thead class="table-light">
           <tr>
-            <th class="ps-4" style="width:22%">German Word</th>
-            <th style="width:20%">Meaning</th>
-            <th style="width:14%">Type</th>
-            <th>Sentence</th>
+            <th class="ps-3" style="width:38px"></th>
+            <th class="sortable ps-0" data-col="1" style="width:22%" onclick="sortTable(this)">German Word <span class="sort-icon"></span></th>
+            <th class="sortable" data-col="2" style="width:20%" onclick="sortTable(this)">Meaning <span class="sort-icon"></span></th>
+            <th class="sortable" data-col="3" style="width:14%" onclick="sortTable(this)">Type <span class="sort-icon"></span></th>
+            <th class="sortable" data-col="4" onclick="sortTable(this)">Sentence <span class="sort-icon"></span></th>
             <th class="text-end pe-4" style="width:6%"></th>
           </tr>
         </thead>
         <tbody>
           {% for w in words %}
           <tr data-id="{{ w.id }}">
-            <td class="ps-4 fw-semibold">
+            <td class="ps-3">
+              <button class="btn btn-sm btn-link p-0 bm-toggle-btn"
+                      data-german="{{ w.german_word }}"
+                      data-meaning="{{ w.meaning }}"
+                      data-word-type="{{ w.word_type }}"
+                      data-artikel="{{ w.artikel }}"
+                      data-sentence="{{ w.sentence }}"
+                      onclick="toggleSetBookmark(this)"
+                      title="Bookmark">
+                <i class="bi bi-bookmark"></i>
+              </button>
+            </td>
+            <td class="fw-semibold">
               {% if w.artikel and w.artikel != '-' %}
               <span class="text-warning me-1 fw-bold">{{ w.artikel }}</span>
               {% endif %}
@@ -101,8 +114,13 @@
               {% endif %}
             </td>
             <td class="text-end pe-4">
-              <button class="btn btn-link text-secondary p-0 me-2"
-                      onclick="openEditModal({{ w.id }}, {{ w | tojson }})"
+              <button class="btn btn-link text-secondary p-0 me-2 edit-word-btn"
+                      data-id="{{ w.id }}"
+                      data-german="{{ w.german_word }}"
+                      data-meaning="{{ w.meaning }}"
+                      data-word-type="{{ w.word_type }}"
+                      data-artikel="{{ w.artikel }}"
+                      data-sentence="{{ w.sentence }}"
                       title="Edit">
                 <i class="bi bi-pencil"></i>
               </button>
@@ -128,80 +146,28 @@
 {% endblock %}
 
 {% block modals %}
-<!-- Add Word Modal -->
-<div class="modal fade" id="addWordModal" tabindex="-1">
+<!-- Unified Add / Edit Word Modal -->
+<div class="modal fade" id="wordModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header border-0 pb-1">
-        <h5 class="modal-title fw-bold">
-          <i class="bi bi-plus-circle me-2 text-purple"></i>Add New Word
+        <h5 class="modal-title fw-bold" id="word-modal-title">
+          <i class="bi bi-plus-circle me-2" style="color:var(--purple)"></i>Add New Word
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         <div class="mb-3">
           <label class="form-label fw-semibold small">German Word <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" id="add-german" placeholder="e.g. abholen">
+          <input type="text" class="form-control" id="word-german" placeholder="e.g. abholen">
         </div>
         <div class="mb-3">
           <label class="form-label fw-semibold small">Meaning <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" id="add-meaning" placeholder="e.g. to pick up">
-        </div>
-        <div class="mb-3">
-          <label class="form-label fw-semibold small">Word Type <span class="text-muted fw-normal">(optional)</span></label>
-          <select class="form-select" id="add-wordtype">
-            <option value="">— select type —</option>
-            <option value="noun">Noun</option>
-            <option value="verb">Verb</option>
-            <option value="reflexive_verb">Reflexive Verb</option>
-            <option value="adjective">Adjective</option>
-            <option value="adverb">Adverb</option>
-            <option value="verb_mit_präposition">Verb with Preposition</option>
-            <option value="nomen_mit_präposition">Noun with Preposition</option>
-            <option value="nomen_verb_verbindung">Nomen-Verb-Verbindung</option>
-            <option value="common_phrase">Common Phrase</option>
-          </select>
-        </div>
-        <div class="mb-1">
-          <label class="form-label fw-semibold small">
-            Example Sentence
-            <span class="text-muted fw-normal">(optional — use: German | English)</span>
-          </label>
-          <input type="text" class="form-control" id="add-sentence"
-                 placeholder="Ich hole ihn ab. | I pick him up.">
-        </div>
-      </div>
-      <div class="modal-footer border-0 pt-0">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary px-4" onclick="submitAddWord()">
-          <i class="bi bi-plus-lg me-1"></i>Add Word
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Edit Word Modal -->
-<div class="modal fade" id="editWordModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header border-0 pb-1">
-        <h5 class="modal-title fw-bold">
-          <i class="bi bi-pencil-square me-2 text-purple"></i>Edit Word
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3">
-          <label class="form-label fw-semibold small">German Word <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" id="edit-german">
-        </div>
-        <div class="mb-3">
-          <label class="form-label fw-semibold small">Meaning <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" id="edit-meaning">
+          <input type="text" class="form-control" id="word-meaning" placeholder="e.g. to pick up">
         </div>
         <div class="mb-3">
           <label class="form-label fw-semibold small">Artikel <span class="text-muted fw-normal">(for nouns)</span></label>
-          <select class="form-select" id="edit-artikel">
+          <select class="form-select" id="word-artikel">
             <option value="">— none —</option>
             <option value="der">der</option>
             <option value="die">die</option>
@@ -210,17 +176,18 @@
         </div>
         <div class="mb-3">
           <label class="form-label fw-semibold small">Word Type <span class="text-muted fw-normal">(optional)</span></label>
-          <select class="form-select" id="edit-wordtype">
+          <select class="form-select" id="word-wordtype">
             <option value="">— select type —</option>
             <option value="noun">Noun</option>
             <option value="verb">Verb</option>
-            <option value="reflexive_verb">Reflexive Verb</option>
             <option value="adjective">Adjective</option>
             <option value="adverb">Adverb</option>
-            <option value="verb_mit_präposition">Verb with Preposition</option>
-            <option value="nomen_mit_präposition">Noun with Preposition</option>
+            <option value="phrase">Phrase</option>
             <option value="nomen_verb_verbindung">Nomen-Verb-Verbindung</option>
-            <option value="common_phrase">Common Phrase</option>
+            <option value="conjunction">Conjunction / Connector</option>
+            <option value="verb_mit_präposition">Verb + Preposition</option>
+            <option value="nomen_mit_präposition">Noun + Preposition</option>
+            <option value="adj_mit_präposition">Adj + Preposition</option>
           </select>
         </div>
         <div class="mb-1">
@@ -228,14 +195,15 @@
             Example Sentence
             <span class="text-muted fw-normal">(optional — use: German | English)</span>
           </label>
-          <input type="text" class="form-control" id="edit-sentence"
+          <input type="text" class="form-control" id="word-sentence"
                  placeholder="Ich hole ihn ab. | I pick him up.">
         </div>
       </div>
       <div class="modal-footer border-0 pt-0">
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary px-4" onclick="submitEditWord()">
-          <i class="bi bi-check-lg me-1"></i>Save Changes
+        <button type="button" class="btn btn-primary px-4" onclick="submitWordForm()">
+          <i id="word-modal-icon" class="bi bi-plus-lg me-1"></i>
+          <span id="word-modal-btn-text">Add Word</span>
         </button>
       </div>
     </div>
@@ -246,25 +214,82 @@
 {% block scripts %}
 <script>
 const SET_NAME = {{ set_name | tojson }};
-let addModal, editModal;
+let wordModal;
+let _editMode   = false;
 let _editWordId = null;
 
+// ── Bookmarks (server-backed) ────────────────────────────────
+let _bmCache = [];
+
+function _bmKey(german) { return `${SET_NAME}::${german}`; }
+
+function _applyBmState(btn, bookmarked) {
+  btn.innerHTML = bookmarked
+    ? '<i class="bi bi-bookmark-fill text-warning"></i>'
+    : '<i class="bi bi-bookmark text-secondary"></i>';
+}
+
+async function _loadBmCache() {
+  try { _bmCache = await (await fetch('/api/bookmarks')).json(); }
+  catch { _bmCache = []; }
+  document.querySelectorAll('.bm-toggle-btn').forEach(btn => {
+    _applyBmState(btn, _bmCache.some(b => b._key === _bmKey(btn.dataset.german)));
+  });
+  _updateNavBmBadge();
+}
+
+function toggleSetBookmark(btn) {
+  const german = btn.dataset.german;
+  const key    = _bmKey(german);
+  const idx    = _bmCache.findIndex(b => b._key === key);
+  if (idx >= 0) {
+    _bmCache.splice(idx, 1);
+    _applyBmState(btn, false);
+    fetch(`/api/bookmarks?key=${encodeURIComponent(key)}`, { method: 'DELETE' });
+  } else {
+    const entry = {
+      german_word: german,
+      meaning:     btn.dataset.meaning,
+      word_type:   btn.dataset.wordType,
+      artikel:     btn.dataset.artikel,
+      sentence:    btn.dataset.sentence,
+      set_name:    SET_NAME,
+      _key:        key,
+    };
+    _bmCache.push(entry);
+    _applyBmState(btn, true);
+    fetch('/api/bookmarks', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(entry),
+    });
+  }
+  _updateNavBmBadge();
+}
+
+function _updateNavBmBadge() {
+  const badge = document.getElementById('bm-count-badge');
+  if (!badge) return;
+  const n = _bmCache.length;
+  badge.textContent   = n || '';
+  badge.style.display = n ? 'inline-flex' : 'none';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  addModal  = new bootstrap.Modal(document.getElementById('addWordModal'));
-  editModal = new bootstrap.Modal(document.getElementById('editWordModal'));
+  wordModal = new bootstrap.Modal(document.getElementById('wordModal'));
   updateRowCount();
 
-  // Enter to submit add form
-  ['add-german','add-meaning','add-sentence'].forEach(id => {
-    document.getElementById(id).addEventListener('keydown', e => {
-      if (e.key === 'Enter') submitAddWord();
-    });
+  _loadBmCache();
+
+  // Wire edit buttons (data attributes avoid JSON-in-onclick escaping issues)
+  document.querySelectorAll('.edit-word-btn').forEach(btn => {
+    btn.addEventListener('click', () => openEditModal(btn));
   });
 
-  // Enter to submit edit form
-  ['edit-german','edit-meaning','edit-sentence'].forEach(id => {
+  // Enter to submit the unified form
+  ['word-german', 'word-meaning', 'word-sentence'].forEach(id => {
     document.getElementById(id).addEventListener('keydown', e => {
-      if (e.key === 'Enter') submitEditWord();
+      if (e.key === 'Enter') submitWordForm();
     });
   });
 });
@@ -330,69 +355,94 @@ async function deleteWord(id, german) {
   }
 }
 
-// ── Add word ──────────────────────────────────────────────────
-function openAddModal() {
-  ['add-german','add-meaning','add-sentence'].forEach(id =>
-    document.getElementById(id).value = '');
-  document.getElementById('add-wordtype').value = '';
-  addModal.show();
-  setTimeout(() => document.getElementById('add-german').focus(), 300);
-}
-async function submitAddWord() {
-  const german    = document.getElementById('add-german').value.trim();
-  const meaning   = document.getElementById('add-meaning').value.trim();
-  const sentence  = document.getElementById('add-sentence').value.trim();
-  const word_type = document.getElementById('add-wordtype').value;
-  if (!german || !meaning) {
-    alert('German word and meaning are required.');
-    return;
-  }
-  const r = await fetch(`/api/sets/${encodeURIComponent(SET_NAME)}/words`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ german_word: german, meaning, sentence, word_type }),
-  });
-  if (r.ok) {
-    addModal.hide();
-    location.reload();
-  } else {
-    const d = await r.json();
-    alert(d.detail || 'Failed to add word.');
-  }
+// ── Add / Edit word (unified) ─────────────────────────────────
+function _setModalMode(isEdit) {
+  document.getElementById('word-modal-title').innerHTML = isEdit
+    ? '<i class="bi bi-pencil-square me-2" style="color:var(--purple)"></i>Edit Word'
+    : '<i class="bi bi-plus-circle me-2" style="color:var(--purple)"></i>Add New Word';
+  document.getElementById('word-modal-icon').className = isEdit
+    ? 'bi bi-check-lg me-1' : 'bi bi-plus-lg me-1';
+  document.getElementById('word-modal-btn-text').textContent = isEdit ? 'Save Changes' : 'Add Word';
 }
 
-// ── Edit word ─────────────────────────────────────────────────
-function openEditModal(id, word) {
-  _editWordId = id;
-  document.getElementById('edit-german').value   = word.german_word  || '';
-  document.getElementById('edit-meaning').value  = word.meaning      || '';
-  document.getElementById('edit-sentence').value = word.sentence     || '';
-  document.getElementById('edit-wordtype').value = word.word_type    || '';
-  document.getElementById('edit-artikel').value  = word.artikel      || '';
-  editModal.show();
-  setTimeout(() => document.getElementById('edit-german').focus(), 300);
+function openAddModal() {
+  _editMode   = false;
+  _editWordId = null;
+  ['word-german', 'word-meaning', 'word-sentence'].forEach(id =>
+    document.getElementById(id).value = '');
+  document.getElementById('word-wordtype').value = '';
+  document.getElementById('word-artikel').value  = '';
+  _setModalMode(false);
+  wordModal.show();
+  setTimeout(() => document.getElementById('word-german').focus(), 300);
 }
-async function submitEditWord() {
-  const german    = document.getElementById('edit-german').value.trim();
-  const meaning   = document.getElementById('edit-meaning').value.trim();
-  const sentence  = document.getElementById('edit-sentence').value.trim();
-  const word_type = document.getElementById('edit-wordtype').value;
-  const artikel   = document.getElementById('edit-artikel').value;
+
+function openEditModal(btn) {
+  _editMode   = true;
+  _editWordId = parseInt(btn.dataset.id);
+  document.getElementById('word-german').value   = btn.dataset.german   || '';
+  document.getElementById('word-meaning').value  = btn.dataset.meaning  || '';
+  document.getElementById('word-sentence').value = btn.dataset.sentence || '';
+  document.getElementById('word-wordtype').value = btn.dataset.wordType || '';
+  document.getElementById('word-artikel').value  = btn.dataset.artikel  || '';
+  _setModalMode(true);
+  wordModal.show();
+  setTimeout(() => document.getElementById('word-german').focus(), 300);
+}
+
+// ── Sort table ────────────────────────────────────────────────
+let _sortCol = null;
+let _sortAsc = true;
+
+function sortTable(th) {
+  const col = parseInt(th.dataset.col);
+  _sortAsc  = (_sortCol === col) ? !_sortAsc : true;
+  _sortCol  = col;
+
+  document.querySelectorAll('#words-table th.sortable').forEach(h =>
+    h.classList.remove('asc', 'desc'));
+  th.classList.add(_sortAsc ? 'asc' : 'desc');
+
+  const tbody = document.querySelector('#words-table tbody');
+  [...tbody.querySelectorAll('tr')].sort((a, b) => {
+    const av = a.cells[col].textContent.trim().toLowerCase();
+    const bv = b.cells[col].textContent.trim().toLowerCase();
+    return _sortAsc
+      ? av.localeCompare(bv, 'de')
+      : bv.localeCompare(av, 'de');
+  }).forEach(r => tbody.appendChild(r));
+}
+
+async function submitWordForm() {
+  const german    = document.getElementById('word-german').value.trim();
+  const meaning   = document.getElementById('word-meaning').value.trim();
+  const sentence  = document.getElementById('word-sentence').value.trim();
+  const word_type = document.getElementById('word-wordtype').value;
+  const artikel   = document.getElementById('word-artikel').value;
   if (!german || !meaning) {
     alert('German word and meaning are required.');
     return;
   }
-  const r = await fetch(`/api/words/${_editWordId}?set=${encodeURIComponent(SET_NAME)}`, {
-    method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ german_word: german, meaning, sentence, word_type, artikel }),
-  });
+  let r;
+  if (_editMode) {
+    r = await fetch(`/api/words/${_editWordId}?set=${encodeURIComponent(SET_NAME)}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ german_word: german, meaning, sentence, word_type, artikel }),
+    });
+  } else {
+    r = await fetch(`/api/sets/${encodeURIComponent(SET_NAME)}/words`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ german_word: german, meaning, sentence, word_type, artikel }),
+    });
+  }
   if (r.ok) {
-    editModal.hide();
+    wordModal.hide();
     location.reload();
   } else {
     const d = await r.json();
-    alert(d.detail || 'Failed to save changes.');
+    alert(d.detail || (_editMode ? 'Failed to save changes.' : 'Failed to add word.'));
   }
 }
 </script>

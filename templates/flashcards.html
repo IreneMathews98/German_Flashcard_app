@@ -57,10 +57,13 @@
           <span class="word-type-badge" id="front-type-badge"></span>
           <div class="card-artikel" id="front-artikel"></div>
           <div class="card-word" id="front-word">Loading…</div>
-          <p class="mt-3 mb-0 small" style="color:rgba(255,255,255,.4)">Click to reveal meaning</p>
+          <p class="mt-3 mb-0 small" id="flip-hint" style="color:rgba(255,255,255,.4)">Click to reveal meaning</p>
         </div>
         <div class="flashcard-back">
           <div class="card-meaning" id="back-meaning"></div>
+          <!-- revise mode: show artikel + German word on back -->
+          <div class="card-artikel d-none" id="back-artikel"></div>
+          <div class="card-word d-none" id="back-german" style="color:var(--purple);"></div>
           <div class="card-sentence" id="back-sentence"></div>
         </div>
       </div>

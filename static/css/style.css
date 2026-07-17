@@ -157,17 +157,42 @@ main {
 }
 #words-table tbody tr:last-child td { border-bottom: none; }
 
+#words-table thead th.sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: color .15s, background .15s;
+}
+#words-table thead th.sortable:hover { color: var(--purple); background: rgba(124,58,237,.04); }
+#words-table thead th.sortable.asc,
+#words-table thead th.sortable.desc { color: var(--purple); }
+
+.sort-icon {
+  display: inline-block;
+  margin-left: .3rem;
+  font-size: .7rem;
+  opacity: .3;
+  transition: opacity .15s;
+}
+.sortable:not(.asc):not(.desc) .sort-icon::after { content: '⇅'; }
+.sortable:hover .sort-icon                        { opacity: .6; }
+.sortable.asc  .sort-icon::after                 { content: '▲'; opacity: 1; }
+.sortable.desc .sort-icon::after                 { content: '▼'; opacity: 1; }
+.sortable.asc  .sort-icon,
+.sortable.desc .sort-icon                        { opacity: 1; }
+
 /* ── Word-type badge colours ─────────────────────────────────── */
 .word-type-badge               { background: #6c757d; }
-.wt-noun                       { background: #0891b2; }
-.wt-verb                       { background: #7c3aed; }
-.wt-reflexive_verb             { background: #4c1d95; }
-.wt-adjective                  { background: #059669; }
-.wt-adverb                     { background: #d97706; }
-.wt-verb_mit_präposition       { background: #7c3aed; }
-.wt-nomen_mit_präposition      { background: #0891b2; }
-.wt-nomen_verb_verbindung      { background: #db2777; }
-.wt-common_phrase              { background: #9ca3af; }
+.wt-noun                       { background: #2563eb; }
+.wt-verb                       { background: #dc2626; }
+.wt-adjective                  { background: #16a34a; }
+.wt-adverb                     { background: #7c3aed; }
+.wt-phrase                     { background: #6b7280; }
+.wt-nomen_verb_verbindung      { background: #b45309; }
+.wt-conjunction                { background: #0891b2; }
+.wt-verb_mit_präposition       { background: #b91c1c; }
+.wt-nomen_mit_präposition      { background: #1d4ed8; }
+.wt-adj_mit_präposition        { background: #15803d; }
 
 /* ── Floating action button (bottom-left) ────────────────────── */
 .fab-add {
@@ -238,7 +263,16 @@ main {
 }
 .flashcard-wrapper.card-exit {
   opacity: 0;
-  transform: scale(0.95);
+  transform: scale(0.88);
+}
+
+@keyframes cardPopIn {
+  0%   { transform: scale(0.78); opacity: 0; }
+  65%  { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1);    opacity: 1; }
+}
+.flashcard-wrapper.card-pop-in {
+  animation: cardPopIn .38s cubic-bezier(.175, .885, .32, 1.275) both;
 }
 
 .flashcard {

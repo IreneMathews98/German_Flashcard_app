@@ -1,0 +1,805 @@
+{
+  "bookmarks": [
+    {
+      "german_word": "die Tagesordnung einhalten",
+      "meaning": "to stick to the agenda",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Der Vorsitzende hält die Tagesordnung ein.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::die Tagesordnung einhalten"
+    },
+    {
+      "german_word": "Bewerbung + um (+Akk)",
+      "meaning": "application for",
+      "word_type": "nomen_mit_präposition",
+      "artikel": "die",
+      "sentence": "Die Bewerbung um die Stelle war erfolgreich.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Bewerbung + um (+Akk)"
+    },
+    {
+      "german_word": "verschicken",
+      "meaning": "to send out",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Die Einladungen wurden verschickt.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::verschicken"
+    },
+    {
+      "german_word": "Bewilligung, -en",
+      "meaning": "grant, approval, authorization",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Die Bewilligung des Kredits dauerte eine Woche.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Bewilligung, -en"
+    },
+    {
+      "german_word": "reich an + Dativ",
+      "meaning": "rich in",
+      "word_type": "adj_mit_präposition",
+      "artikel": "",
+      "sentence": "Deutschland ist reich an Fachkräften.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::reich an + Dativ"
+    },
+    {
+      "german_word": "feststellen",
+      "meaning": "to determine / to ascertain / to notice",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Wir stellen fest, dass der Termin verschoben wurde. | We note that the appointment was moved.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::feststellen"
+    },
+    {
+      "german_word": "den Schaden wiedergutmachen",
+      "meaning": "to make up for the damage",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Wir wollen den Schaden wiedergutmachen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::den Schaden wiedergutmachen"
+    },
+    {
+      "german_word": "vertreten",
+      "meaning": "to represent / to substitute / to stand in for",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Kannst du mich morgen in der Besprechung vertreten? | Can you stand in for me at the meeting tomorrow?",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::vertreten"
+    },
+    {
+      "german_word": "beflügeln",
+      "meaning": "to inspire / to lift (spirits)",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Das Wetter beflügelte ihre Stimmung.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::beflügeln"
+    },
+    {
+      "german_word": "einrichten",
+      "meaning": "to set up, furnish, establish",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Wir richten ein neues Büro ein.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::einrichten"
+    },
+    {
+      "german_word": "anbringen",
+      "meaning": "to attach, to affix; to bring up (a point)",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Bitte bringen Sie den Aufkleber gut sichtbar an.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::anbringen"
+    },
+    {
+      "german_word": "mit Schwung",
+      "meaning": "with momentum, with verve",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Er packte die Arbeit mit Schwung an.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::mit Schwung"
+    },
+    {
+      "german_word": "Vorlieben",
+      "meaning": "preferences",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Manche Kinder haben klare Vorlieben beim Spielzeug.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::die Vorlieben"
+    },
+    {
+      "german_word": "Betrag",
+      "meaning": "amount",
+      "word_type": "noun",
+      "artikel": "der",
+      "sentence": "Bitte überweisen Sie den Betrag bis Freitag.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Betrag"
+    },
+    {
+      "german_word": "vorübergehend",
+      "meaning": "temporary(ly)",
+      "word_type": "adverb",
+      "artikel": "",
+      "sentence": "Das ist nur vorübergehend.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::vorübergehend"
+    },
+    {
+      "german_word": "nachstellen",
+      "meaning": "to chase / to pursue / to adjust (a setting)",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Der Stalker stellt ihr nach. | The stalker is pursuing her.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::nachstellen"
+    },
+    {
+      "german_word": "jdn. verweisen an + A.",
+      "meaning": "to refer someone to",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Der Techniker verwies mich an die zentrale Hotline.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::jdn. verweisen an + A."
+    },
+    {
+      "german_word": "Anliegen",
+      "meaning": "concern / request",
+      "word_type": "noun",
+      "artikel": "das",
+      "sentence": "Ich habe ein dringendes Anliegen an Sie.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Anliegen"
+    },
+    {
+      "german_word": "unverzüglich",
+      "meaning": "immediately, without delay",
+      "word_type": "adverb",
+      "artikel": "",
+      "sentence": "Sie antworteten unverzüglich.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::unverzüglich"
+    },
+    {
+      "german_word": "zurücktreten",
+      "meaning": "step back / step down / withdraw",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Er möchte vom Vertrag zurücktreten.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::zurücktreten"
+    },
+    {
+      "german_word": "ein Gespräch führen mit + D.",
+      "meaning": "to have a conversation with",
+      "word_type": "nomen_verb_verbindung",
+      "artikel": "",
+      "sentence": "Sie führte ein wichtiges Gespräch mit dem Chef.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::ein Gespräch führen mit + D."
+    },
+    {
+      "german_word": "seinen Standpunkt vertreten",
+      "meaning": "to represent one's point of view",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Er vertrat seinen Standpunkt klar.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::seinen Standpunkt vertreten"
+    },
+    {
+      "german_word": "Absage",
+      "meaning": "cancellation, rejection",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Auf meine Bewerbung erhielt ich eine Absage.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Absage"
+    },
+    {
+      "german_word": "hochwertig",
+      "meaning": "high-quality, high-grade",
+      "word_type": "adjective",
+      "artikel": "",
+      "sentence": "Wir verwenden nur hochwertige Materialien.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::hochwertig"
+    },
+    {
+      "german_word": "die besseren Führungskräfte",
+      "meaning": "the better leaders/managers",
+      "word_type": "noun",
+      "artikel": "",
+      "sentence": "In dieser Firma arbeiten die besseren Führungskräfte.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::die besseren Führungskräfte"
+    },
+    {
+      "german_word": "Berufsübergreifung",
+      "meaning": "interdisciplinary cooperation",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Die Berufsübergreifung ist wichtig.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::die Berufsübergreifung"
+    },
+    {
+      "german_word": "erwidern",
+      "meaning": "to reply / to respond / to return (a feeling)",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Er erwiderte meinen Gruß nicht. | He did not return my greeting.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::erwidern"
+    },
+    {
+      "german_word": "ungerechtfertigt",
+      "meaning": "unjustified",
+      "word_type": "adjective",
+      "artikel": "",
+      "sentence": "Das war eine ungerechtfertigte Kritik.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::ungerechtfertigt"
+    },
+    {
+      "german_word": "beheben",
+      "meaning": "to fix / to remedy",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Der Schaden ließ sich rasch beheben.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::beheben"
+    },
+    {
+      "german_word": "ein Angebot unterbreiten",
+      "meaning": "submit an offer",
+      "word_type": "nomen_verb_verbindung",
+      "artikel": "",
+      "sentence": "",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::ein Angebot unterbreiten"
+    },
+    {
+      "german_word": "Dann erwarte ich aber...",
+      "meaning": "In that case, however, I expect...",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Dann erwarte ich aber eine schriftliche Bestätigung.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Dann erwarte ich aber..."
+    },
+    {
+      "german_word": "durch die rosarote Brille betrachten",
+      "meaning": "to see through rose-colored glasses",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Sie betrachtet alles durch die rosarote Brille.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::durch die rosarote Brille betrachten"
+    },
+    {
+      "german_word": "Einkommensnachweis",
+      "meaning": "proof of income",
+      "word_type": "noun",
+      "artikel": "der",
+      "sentence": "Der Vermieter verlangt einen Einkommensnachweis.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Einkommensnachweis"
+    },
+    {
+      "german_word": "verzögerte Lieferung",
+      "meaning": "delayed delivery",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Die verzögerte Lieferung hat Probleme verursacht.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::verzögerte Lieferung"
+    },
+    {
+      "german_word": "Einstellung zu + D.",
+      "meaning": "attitude towards",
+      "word_type": "nomen_mit_präposition",
+      "artikel": "die",
+      "sentence": "Seine positive Einstellung zur Arbeit ist vorbildlich.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Einstellung zu + D."
+    },
+    {
+      "german_word": "neigen dazu, ...",
+      "meaning": "to tend to ...",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Optimisten neigen dazu, das Gute zu sehen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::neigen dazu, ..."
+    },
+    {
+      "german_word": "auftreten",
+      "meaning": "to occur",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Dieses Problem tritt regelmäßig auf.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::auftreten"
+    },
+    {
+      "german_word": "Antrag auf + A.",
+      "meaning": "application for",
+      "word_type": "nomen_mit_präposition",
+      "artikel": "der",
+      "sentence": "Sie stellte einen Antrag auf Elterngeld.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::der Antrag auf + A."
+    },
+    {
+      "german_word": "überlegen",
+      "meaning": "to consider / to think over",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Ich muss mir das gut überlegen. | I have to think it over carefully.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::überlegen"
+    },
+    {
+      "german_word": "anstellen",
+      "meaning": "to hire / to turn on / to do (colloquial)",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Die Firma stellt neue Mitarbeiter an. | The company is hiring new employees.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::anstellen"
+    },
+    {
+      "german_word": "Nachwuchs",
+      "meaning": "young talent, offspring",
+      "word_type": "noun",
+      "artikel": "der",
+      "sentence": "Die Firma fördert den Nachwuchs.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::der Nachwuchs"
+    },
+    {
+      "german_word": "betreten",
+      "meaning": "to enter",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Bitte betreten Sie das Büro.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::betreten"
+    },
+    {
+      "german_word": "Arbeitsablauf",
+      "meaning": "workflow, work process",
+      "word_type": "noun",
+      "artikel": "der",
+      "sentence": "Der Arbeitsablauf könnte effizienter sein.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Arbeitsablauf"
+    },
+    {
+      "german_word": "sachlich reagieren auf + A.",
+      "meaning": "to react objectively/factually to",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Bitte reagieren Sie sachlich auf die Kritik.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::sachlich reagieren auf + A."
+    },
+    {
+      "german_word": "Spedition, -en",
+      "meaning": "forwarding agency, transport company",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Die Spedition liefert die Ware aus.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Spedition, -en"
+    },
+    {
+      "german_word": "wahre Wunder bewirken",
+      "meaning": "to work real wonders",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Regelmäßige Pausen können wahre Wunder bewirken.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::wahre Wunder bewirken"
+    },
+    {
+      "german_word": "Ausnahmefall",
+      "meaning": "exceptional case",
+      "word_type": "noun",
+      "artikel": "der",
+      "sentence": "In Ausnahmefällen kann die Frist verlängert werden.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Ausnahmefall"
+    },
+    {
+      "german_word": "sich spezialisieren auf + A.",
+      "meaning": "to specialize in",
+      "word_type": "verb_mit_präposition",
+      "artikel": "",
+      "sentence": "Er hat sich auf Softwareentwicklung spezialisiert.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::sich spezialisieren auf + A."
+    },
+    {
+      "german_word": "Arbeitsweise",
+      "meaning": "way of working, mode of operation",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Seine systematische Arbeitsweise ist vorbildlich.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Arbeitsweise"
+    },
+    {
+      "german_word": "eine Entschuldigung annehmen",
+      "meaning": "to accept an apology",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Er nahm ihre Entschuldigung an.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::eine Entschuldigung annehmen"
+    },
+    {
+      "german_word": "Vertretung",
+      "meaning": "substitute / replacement / representation",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Meine Kollegin übernimmt die Vertretung.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Vertretung"
+    },
+    {
+      "german_word": "Bericht über",
+      "meaning": "report on",
+      "word_type": "nomen_mit_präposition",
+      "artikel": "der",
+      "sentence": "Der Bericht über den Vorfall liegt vor.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Bericht über"
+    },
+    {
+      "german_word": "abzüglich (abzgl.)",
+      "meaning": "minus, deducting, excluding",
+      "word_type": "conjunction",
+      "artikel": "",
+      "sentence": "Der Preis ist abzüglich der Mehrwertsteuer.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::abzüglich (abzgl.)"
+    },
+    {
+      "german_word": "Höhe von",
+      "meaning": "the amount of",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Der Schaden beläuft sich auf die Höhe von 500 €.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Höhe von"
+    },
+    {
+      "german_word": "ausgebrannt",
+      "meaning": "burned out",
+      "word_type": "adjective",
+      "artikel": "",
+      "sentence": "Nach dem langen Projekt fühlte er sich ausgebrannt.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::ausgebrannt"
+    },
+    {
+      "german_word": "einholen",
+      "meaning": "to obtain, catch up",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Er holte Angebote ein.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::einholen"
+    },
+    {
+      "german_word": "sich aufregen über (+ Akkusativ)",
+      "meaning": "to get upset about",
+      "word_type": "verb_mit_präposition",
+      "artikel": "",
+      "sentence": "Er regt sich über die Verspätung auf.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::sich aufregen über (+ Akkusativ)"
+    },
+    {
+      "german_word": "Bedürfnisse",
+      "meaning": "needs",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Die Bedürfnisse der Kinder müssen ernst genommen werden.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::die Bedürfnisse"
+    },
+    {
+      "german_word": "vermitteln",
+      "meaning": "to mediate, convey, impart (knowledge)",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Die Agentur vermittelt Jobs.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::vermitteln"
+    },
+    {
+      "german_word": "errichten",
+      "meaning": "to erect / to establish / to build",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Sie haben dort ein neues Denkmal errichtet. | They erected a new monument there.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::errichten"
+    },
+    {
+      "german_word": "entstehen",
+      "meaning": "to arise, develop, come into being",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Bei der Arbeit entstehen oft neue Ideen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::entstehen"
+    },
+    {
+      "german_word": "entlassen",
+      "meaning": "to dismiss, fire",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Die Firma entließ zehn Mitarbeiter.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::entlassen"
+    },
+    {
+      "german_word": "sich gewöhnen an",
+      "meaning": "to get used to",
+      "word_type": "verb_mit_präposition",
+      "artikel": "",
+      "sentence": "Er gewöhnte sich an die neue Arbeitszeit.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::sich gewöhnen an"
+    },
+    {
+      "german_word": "Verfahren, -",
+      "meaning": "procedure, process, method",
+      "word_type": "noun",
+      "artikel": "das",
+      "sentence": "Das Verfahren ist standardisiert.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Verfahren, -"
+    },
+    {
+      "german_word": "eine gewisse Risikobereitschaft",
+      "meaning": "a certain willingness to take risks",
+      "word_type": "noun",
+      "artikel": "",
+      "sentence": "Erfolg erfordert eine gewisse Risikobereitschaft.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::eine gewisse Risikobereitschaft"
+    },
+    {
+      "german_word": "an einem Plan festhalten",
+      "meaning": "to stick to a plan",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Wir halten an unserem ursprünglichen Plan fest.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::an einem Plan festhalten"
+    },
+    {
+      "german_word": "ausführlich",
+      "meaning": "detailed, extensive, thorough",
+      "word_type": "adjective",
+      "artikel": "",
+      "sentence": "Er gab eine ausführliche Erklärung zu seinem Fehler.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::ausführlich"
+    },
+    {
+      "german_word": "Wären Sie mit .... als Ausgleich einverstanden?",
+      "meaning": "Would you agree to ... as compensation?",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Wären Sie mit einem Gutschein als Ausgleich einverstanden?",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Wären Sie mit .... als Ausgleich einverstanden?"
+    },
+    {
+      "german_word": "hinterlegen",
+      "meaning": "to deposit, leave (message/data)",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Sie haben eine Nachricht hinterlegt.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::hinterlegen"
+    },
+    {
+      "german_word": "umfassen",
+      "meaning": "include",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Das Angebot umfasst alle Leistungen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::umfassen"
+    },
+    {
+      "german_word": "entsprechend",
+      "meaning": "corresponding, appropriate, accordingly",
+      "word_type": "adjective",
+      "artikel": "",
+      "sentence": "Das entsprechende Formular finden Sie online.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::entsprechend"
+    },
+    {
+      "german_word": "sich in Verbindung setzen mit + D.",
+      "meaning": "to get in touch with",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Ich werde mich mit Ihnen in Verbindung setzen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::sich in Verbindung setzen mit + D."
+    },
+    {
+      "german_word": "Erkenntnisse",
+      "meaning": "findings / insights",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Die Erkenntnisse sind interessant.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::die Erkenntnisse"
+    },
+    {
+      "german_word": "verknüpfen",
+      "meaning": "link / associate / connect",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Diese zwei Themen lassen sich gut verknüpfen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::verknüpfen"
+    },
+    {
+      "german_word": "bereitgestellt",
+      "meaning": "provided, made available",
+      "word_type": "adjective",
+      "artikel": "",
+      "sentence": "Die bereitgestellten Mittel sind ausreichend.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::bereitgestellt"
+    },
+    {
+      "german_word": "Behandlung, -en",
+      "meaning": "treatment",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Die Behandlung des Patienten war erfolgreich.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::Behandlung, -en"
+    },
+    {
+      "german_word": "eine Änderung vornehmen",
+      "meaning": "to make a change",
+      "word_type": "nomen_verb_verbindung",
+      "artikel": "",
+      "sentence": "Alle Mitarbeitenden können an ihrem Passwort jederzeit eine Änderung vornehmen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::eine Änderung vornehmen"
+    },
+    {
+      "german_word": "Ausstattung",
+      "meaning": "equipment / facilities",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Die Ausstattung der Kita ist modern und kindgerecht.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::die Ausstattung"
+    },
+    {
+      "german_word": "Ausdauer",
+      "meaning": "endurance, stamina",
+      "word_type": "noun",
+      "artikel": "die",
+      "sentence": "Das Training erfordert Ausdauer.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::die Ausdauer"
+    },
+    {
+      "german_word": "bestehen aus (+ Dativ)",
+      "meaning": "to consist of",
+      "word_type": "verb_mit_präposition",
+      "artikel": "",
+      "sentence": "Das Team besteht aus fünf Personen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::bestehen aus (+ Dativ)"
+    },
+    {
+      "german_word": "eine Verabredung treffen (+ mit / zu)",
+      "meaning": "to make an appointment / arrangement",
+      "word_type": "nomen_verb_verbindung",
+      "artikel": "",
+      "sentence": "Welche internen Verabredungen zum Vertrag wurden denn mit Ihnen getroffen?",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::eine Verabredung treffen (+ mit / zu)"
+    },
+    {
+      "german_word": "befristet",
+      "meaning": "fixed-term (limited in time)",
+      "word_type": "adjective",
+      "artikel": "",
+      "sentence": "Sie hat einen befristeten Arbeitsvertrag für zwei Jahre.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::befristet"
+    },
+    {
+      "german_word": "zurückstellen",
+      "meaning": "to postpone / to set back / to put back",
+      "word_type": "verb",
+      "artikel": "",
+      "sentence": "Wir stellen das Projekt zurück. | We are postponing the project.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::zurückstellen"
+    },
+    {
+      "german_word": "zur Anwendung kommen",
+      "meaning": "to be applied / to come into use",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Die Ergebnisse aus Besprechungen kommen oft nicht zur Anwendung.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::zur Anwendung kommen"
+    },
+    {
+      "german_word": "überreden zu + D.",
+      "meaning": "to persuade to",
+      "word_type": "verb_mit_präposition",
+      "artikel": "",
+      "sentence": "Er überredete sie zu einem Treffen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::überreden zu + D."
+    },
+    {
+      "german_word": "bezugnehmend auf Ihre Beschwerde",
+      "meaning": "with reference to your complaint",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Bezugnehmend auf Ihre Beschwerde möchten wir uns entschuldigen.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::bezugnehmend auf Ihre Beschwerde"
+    },
+    {
+      "german_word": "vereinzelt",
+      "meaning": "isolated, sporadic, occasional",
+      "word_type": "adverb",
+      "artikel": "",
+      "sentence": "Es gab nur vereinzelt Beschwerden.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::vereinzelt"
+    },
+    {
+      "german_word": "abwickeln über + A.",
+      "meaning": "to handle/process via",
+      "word_type": "phrase",
+      "artikel": "",
+      "sentence": "Die Zahlung wird über unsere Bank abgewickelt.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::abwickeln über + A."
+    },
+    {
+      "german_word": "umständlich",
+      "meaning": "cumbersome, complicated, long-winded",
+      "word_type": "adjective",
+      "artikel": "",
+      "sentence": "Der Prozess ist sehr umständlich.",
+      "set_name": "Beruf B2",
+      "_key": "Beruf B2::umständlich"
+    }
+  ]
+}

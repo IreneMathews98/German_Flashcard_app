@@ -1,1 +1,1423 @@
-[{"german_word":"Abstraktion","meaning":"abstraction","word_type":"noun","artikel":"die","sentence":"Diese Abstraktion ist schwer zu verstehen."},{"german_word":"Ambivalenz","meaning":"ambivalence","word_type":"noun","artikel":"die","sentence":"Er empfindet Ambivalenz gegenüber seiner Arbeit."},{"german_word":"Anomalie","meaning":"anomaly","word_type":"noun","artikel":"die","sentence":"Die Anomalie in den Daten fiel sofort auf."},{"german_word":"Auseinandersetzung","meaning":"debate \/ confrontation","word_type":"noun","artikel":"die","sentence":"Die Auseinandersetzung über das Thema dauerte Stunden."},{"german_word":"Behauptung","meaning":"claim \/ assertion","word_type":"noun","artikel":"die","sentence":"Diese Behauptung ist wissenschaftlich nicht belegt."},{"german_word":"Erkenntnis","meaning":"insight \/ finding","word_type":"noun","artikel":"die","sentence":"Das ist eine wichtige wissenschaftliche Erkenntnis."},{"german_word":"Hypothese","meaning":"hypothesis","word_type":"noun","artikel":"die","sentence":"Die Hypothese muss noch bewiesen werden."},{"german_word":"Illusion","meaning":"illusion","word_type":"noun","artikel":"die","sentence":"Er lebt in einer Illusion."},{"german_word":"Interpretation","meaning":"interpretation","word_type":"noun","artikel":"die","sentence":"Es gibt viele Interpretationen dieses Textes."},{"german_word":"Konsequenz","meaning":"consequence","word_type":"noun","artikel":"die","sentence":"Du musst die Konsequenzen tragen."},{"german_word":"Paradox","meaning":"paradox","word_type":"noun","artikel":"das","sentence":"Das ist ein interessantes Paradox."},{"german_word":"Perspektive","meaning":"perspective","word_type":"noun","artikel":"die","sentence":"Man muss die Perspektive wechseln."},{"german_word":"Prämisse","meaning":"premise","word_type":"noun","artikel":"die","sentence":"Die Prämisse des Arguments ist falsch."},{"german_word":"Schlussfolgerung","meaning":"conclusion","word_type":"noun","artikel":"die","sentence":"Die Schlussfolgerung ist logisch."},{"german_word":"Widerspruch","meaning":"contradiction","word_type":"noun","artikel":"der","sentence":"Das ist ein klarer Widerspruch."},{"german_word":"Ansehen","meaning":"reputation \/ prestige","word_type":"noun","artikel":"das","sentence":"Sie genießt hohes Ansehen in der Wissenschaft."},{"german_word":"Autorität","meaning":"authority","word_type":"noun","artikel":"die","sentence":"Er spricht mit großer Autorität."},{"german_word":"Diskriminierung","meaning":"discrimination","word_type":"noun","artikel":"die","sentence":"Diskriminierung am Arbeitsplatz ist verboten."},{"german_word":"Einschränkung","meaning":"restriction \/ limitation","word_type":"noun","artikel":"die","sentence":"Es gibt strenge Einschränkungen."},{"german_word":"Globalisierung","meaning":"globalization","word_type":"noun","artikel":"die","sentence":"Die Globalisierung hat viele Auswirkungen."},{"german_word":"Ideologie","meaning":"ideology","word_type":"noun","artikel":"die","sentence":"Jede Partei hat ihre eigene Ideologie."},{"german_word":"Integration","meaning":"integration","word_type":"noun","artikel":"die","sentence":"Die Integration von Migranten ist eine Herausforderung."},{"german_word":"Manipulation","meaning":"manipulation","word_type":"noun","artikel":"die","sentence":"Manipulation der Medien ist gefährlich."},{"german_word":"Minderheit","meaning":"minority","word_type":"noun","artikel":"die","sentence":"Die Rechte der Minderheiten müssen geschützt werden."},{"german_word":"Norm","meaning":"norm \/ standard","word_type":"noun","artikel":"die","sentence":"Das entspricht nicht der gesellschaftlichen Norm."},{"german_word":"Solidarität","meaning":"solidarity","word_type":"noun","artikel":"die","sentence":"Solidarität ist in Krisenzeiten wichtig."},{"german_word":"Transparenz","meaning":"transparency","word_type":"noun","artikel":"die","sentence":"Die Regierung sollte mehr Transparenz zeigen."},{"german_word":"Vorurteil","meaning":"prejudice","word_type":"noun","artikel":"das","sentence":"Vorurteile sind schwer zu überwinden."},{"german_word":"Zensur","meaning":"censorship","word_type":"noun","artikel":"die","sentence":"Zensur widerspricht der Pressefreiheit."},{"german_word":"Zivilgesellschaft","meaning":"civil society","word_type":"noun","artikel":"die","sentence":"Die Zivilgesellschaft spielt eine wichtige Rolle."},{"german_word":"Aufschwung","meaning":"upturn \/ boom","word_type":"noun","artikel":"der","sentence":"Die Wirtschaft erlebt einen Aufschwung."},{"german_word":"Defizit","meaning":"deficit","word_type":"noun","artikel":"das","sentence":"Das Haushaltsdefizit ist gestiegen."},{"german_word":"Effizienz","meaning":"efficiency","word_type":"noun","artikel":"die","sentence":"Effizienz ist im Unternehmen entscheidend."},{"german_word":"Globaler Markt","meaning":"global market","word_type":"noun","artikel":"der","sentence":"Der globale Markt ist sehr volatil."},{"german_word":"Inflation","meaning":"inflation","word_type":"noun","artikel":"die","sentence":"Die Inflation hat die Kaufkraft geschwächt."},{"german_word":"Kapital","meaning":"capital","word_type":"noun","artikel":"das","sentence":"Das Unternehmen braucht mehr Kapital."},{"german_word":"Konjunktur","meaning":"economic cycle \/ business climate","word_type":"noun","artikel":"die","sentence":"Die Konjunktur schwächelt derzeit."},{"german_word":"Konkurrenz","meaning":"competition","word_type":"noun","artikel":"die","sentence":"Der Wettbewerb durch die Konkurrenz ist hart."},{"german_word":"Monopol","meaning":"monopoly","word_type":"noun","artikel":"das","sentence":"Ein Monopol schadet dem Wettbewerb."},{"german_word":"Nachfrage","meaning":"demand","word_type":"noun","artikel":"die","sentence":"Die Nachfrage nach Elektroautos steigt."},{"german_word":"Subvention","meaning":"subsidy","word_type":"noun","artikel":"die","sentence":"Der Staat zahlt Subventionen für Landwirte."},{"german_word":"Wettbewerb","meaning":"competition \/ contest","word_type":"noun","artikel":"der","sentence":"Der Wettbewerb zwischen den Firmen ist groß."},{"german_word":"Algorithmus","meaning":"algorithm","word_type":"noun","artikel":"der","sentence":"Der Algorithmus liefert genaue Ergebnisse."},{"german_word":"Auswirkung","meaning":"impact \/ effect","word_type":"noun","artikel":"die","sentence":"Die Auswirkungen des Klimawandels sind spürbar."},{"german_word":"Daten","meaning":"data","word_type":"noun","artikel":"die","sentence":"Die Daten müssen analysiert werden."},{"german_word":"Durchbruch","meaning":"breakthrough","word_type":"noun","artikel":"der","sentence":"Das ist ein wissenschaftlicher Durchbruch."},{"german_word":"Experiment","meaning":"experiment","word_type":"noun","artikel":"das","sentence":"Das Experiment lieferte überraschende Ergebnisse."},{"german_word":"Infrastruktur","meaning":"infrastructure","word_type":"noun","artikel":"die","sentence":"Die Infrastruktur muss modernisiert werden."},{"german_word":"Innovation","meaning":"innovation","word_type":"noun","artikel":"die","sentence":"Innovation ist der Motor des Fortschritts."},{"german_word":"Künstliche Intelligenz","meaning":"artificial intelligence","word_type":"noun","artikel":"die","sentence":"Künstliche Intelligenz verändert viele Branchen."},{"german_word":"Methodik","meaning":"methodology","word_type":"noun","artikel":"die","sentence":"Die Methodik der Studie ist solide."},{"german_word":"Modell","meaning":"model","word_type":"noun","artikel":"das","sentence":"Das Modell erklärt das Phänomen gut."},{"german_word":"Prozess","meaning":"process","word_type":"noun","artikel":"der","sentence":"Der Prozess muss optimiert werden."},{"german_word":"Technologie","meaning":"technology","word_type":"noun","artikel":"die","sentence":"Neue Technologien verändern unseren Alltag."},{"german_word":"Argumentation","meaning":"argumentation \/ reasoning","word_type":"noun","artikel":"die","sentence":"Seine Argumentation ist überzeugend."},{"german_word":"Aussage","meaning":"statement","word_type":"noun","artikel":"die","sentence":"Die Aussage des Zeugen war widersprüchlich."},{"german_word":"Formulierung","meaning":"wording \/ phrasing","word_type":"noun","artikel":"die","sentence":"Die Formulierung des Satzes ist unklar."},{"german_word":"Kommunikation","meaning":"communication","word_type":"noun","artikel":"die","sentence":"Gute Kommunikation ist entscheidend."},{"german_word":"Missverständnis","meaning":"misunderstanding","word_type":"noun","artikel":"das","sentence":"Das war ein großes Missverständnis."},{"german_word":"Nuance","meaning":"nuance","word_type":"noun","artikel":"die","sentence":"Die Nuancen der Sprache sind schwer zu erfassen."},{"german_word":"Rhetorik","meaning":"rhetoric","word_type":"noun","artikel":"die","sentence":"Seine Rhetorik ist sehr überzeugend."},{"german_word":"Stil","meaning":"style","word_type":"noun","artikel":"der","sentence":"Ihr Schreibstil ist sehr präzise."},{"german_word":"Überzeugung","meaning":"conviction \/ persuasion","word_type":"noun","artikel":"die","sentence":"Das ist meine feste Überzeugung."},{"german_word":"Ambition","meaning":"ambition","word_type":"noun","artikel":"die","sentence":"Sie hat große Ambition in ihrer Karriere."},{"german_word":"Bewusstsein","meaning":"consciousness \/ awareness","word_type":"noun","artikel":"das","sentence":"Das Bewusstsein für Umweltprobleme wächst."},{"german_word":"Druck","meaning":"pressure","word_type":"noun","artikel":"der","sentence":"Er steht unter großem Druck."},{"german_word":"Hemmung","meaning":"inhibition","word_type":"noun","artikel":"die","sentence":"Er hat keine Hemmungen, seine Meinung zu sagen."},{"german_word":"Instinkt","meaning":"instinct","word_type":"noun","artikel":"der","sentence":"Man sollte auf seinen Instinkt vertrauen."},{"german_word":"Motivation","meaning":"motivation","word_type":"noun","artikel":"die","sentence":"Die Motivation der Mitarbeiter ist gesunken."},{"german_word":"Persönlichkeit","meaning":"personality","word_type":"noun","artikel":"die","sentence":"Sie hat eine starke Persönlichkeit."},{"german_word":"Resilienz","meaning":"resilience","word_type":"noun","artikel":"die","sentence":"Resilienz hilft bei der Bewältigung von Krisen."},{"german_word":"Selbstbewusstsein","meaning":"self-confidence","word_type":"noun","artikel":"das","sentence":"Er strahlt Selbstbewusstsein aus."},{"german_word":"Trauma","meaning":"trauma","word_type":"noun","artikel":"das","sentence":"Das Trauma muss professionell behandelt werden."},{"german_word":"Vorstellung","meaning":"idea \/ notion \/ performance","word_type":"noun","artikel":"die","sentence":"Das entspricht nicht meiner Vorstellung."},{"german_word":"Wahrnehmung","meaning":"perception","word_type":"noun","artikel":"die","sentence":"Die Wahrnehmung der Realität ist subjektiv."},{"german_word":"Ästhetik","meaning":"aesthetics","word_type":"noun","artikel":"die","sentence":"Die Ästhetik des Gebäudes ist beeindruckend."},{"german_word":"Epoche","meaning":"epoch \/ era","word_type":"noun","artikel":"die","sentence":"Diese Epoche war kulturell sehr bedeutend."},{"german_word":"Ethik","meaning":"ethics","word_type":"noun","artikel":"die","sentence":"Die Ethik in der Forschung ist unerlässlich."},{"german_word":"Identität","meaning":"identity","word_type":"noun","artikel":"die","sentence":"Kulturelle Identität ist sehr wichtig."},{"german_word":"Moral","meaning":"morality","word_type":"noun","artikel":"die","sentence":"Die Moral der Geschichte ist eindeutig."},{"german_word":"Philosophie","meaning":"philosophy","word_type":"noun","artikel":"die","sentence":"Die Philosophie fragt nach dem Sinn des Lebens."},{"german_word":"Symbolik","meaning":"symbolism","word_type":"noun","artikel":"die","sentence":"Die Symbolik in dem Roman ist vielschichtig."},{"german_word":"Weltanschauung","meaning":"worldview","word_type":"noun","artikel":"die","sentence":"Jeder Mensch hat eine eigene Weltanschauung."},{"german_word":"abwägen","meaning":"to weigh up \/ consider","word_type":"verb","artikel":"-","sentence":"Man muss die Vor- und Nachteile abwägen."},{"german_word":"andeuten","meaning":"to hint \/ suggest","word_type":"verb","artikel":"-","sentence":"Er deutete an, dass er gehen würde."},{"german_word":"aufrechterhalten","meaning":"to maintain \/ uphold","word_type":"verb","artikel":"-","sentence":"Wir müssen den Dialog aufrechterhalten."},{"german_word":"ausdrücken","meaning":"to express","word_type":"verb","artikel":"-","sentence":"Er konnte seine Gefühle nicht ausdrücken."},{"german_word":"auslösen","meaning":"to trigger \/ cause","word_type":"verb","artikel":"-","sentence":"Der Bericht hat eine Debatte ausgelöst."},{"german_word":"ausschließen","meaning":"to exclude \/ rule out","word_type":"verb","artikel":"-","sentence":"Das können wir nicht ausschließen."},{"german_word":"beanspruchen","meaning":"to claim \/ take up","word_type":"verb","artikel":"-","sentence":"Das beansprucht viel Zeit."},{"german_word":"befürworten","meaning":"to advocate \/ support","word_type":"verb","artikel":"-","sentence":"Ich befürworte diese Maßnahme."},{"german_word":"belegen","meaning":"to prove \/ document","word_type":"verb","artikel":"-","sentence":"Das ist wissenschaftlich belegt."},{"german_word":"berücksichtigen","meaning":"to take into account","word_type":"verb","artikel":"-","sentence":"Das muss berücksichtigt werden."},{"german_word":"einschränken","meaning":"to restrict \/ limit","word_type":"verb","artikel":"-","sentence":"Die neuen Regeln schränken die Freiheit ein."},{"german_word":"entsprechen","meaning":"to correspond to \/ match","word_type":"verb","artikel":"-","sentence":"Das entspricht nicht meinen Erwartungen."},{"german_word":"erläutern","meaning":"to explain \/ elaborate","word_type":"verb","artikel":"-","sentence":"Können Sie das erläutern?"},{"german_word":"erscheinen","meaning":"to appear \/ seem","word_type":"verb","artikel":"-","sentence":"Das erscheint mir unlogisch."},{"german_word":"feststellen","meaning":"to establish \/ note","word_type":"verb","artikel":"-","sentence":"Wir haben festgestellt, dass es Fehler gibt."},{"german_word":"gewährleisten","meaning":"to ensure \/ guarantee","word_type":"verb","artikel":"-","sentence":"Das muss gewährleistet werden."},{"german_word":"hervorheben","meaning":"to emphasize \/ highlight","word_type":"verb","artikel":"-","sentence":"Ich möchte diesen Punkt hervorheben."},{"german_word":"hinweisen auf","meaning":"to point out \/ refer to","word_type":"verb","artikel":"-","sentence":"Er wies auf die Fehler hin."},{"german_word":"infrage stellen","meaning":"to question \/ challenge","word_type":"verb","artikel":"-","sentence":"Diese Theorie wird infrage gestellt."},{"german_word":"nachweisen","meaning":"to prove \/ demonstrate","word_type":"verb","artikel":"-","sentence":"Das konnte nicht nachgewiesen werden."},{"german_word":"prägen","meaning":"to shape \/ coin","word_type":"verb","artikel":"-","sentence":"Die Kindheit prägt den Charakter."},{"german_word":"scheitern","meaning":"to fail","word_type":"verb","artikel":"-","sentence":"Das Projekt ist gescheitert."},{"german_word":"schildern","meaning":"to describe \/ portray","word_type":"verb","artikel":"-","sentence":"Sie schildert die Situation sehr genau."},{"german_word":"überwinden","meaning":"to overcome","word_type":"verb","artikel":"-","sentence":"Er hat seine Angst überwunden."},{"german_word":"unterschätzen","meaning":"to underestimate","word_type":"verb","artikel":"-","sentence":"Man sollte das Risiko nicht unterschätzen."},{"german_word":"veranschaulichen","meaning":"to illustrate","word_type":"verb","artikel":"-","sentence":"Das Diagramm veranschaulicht den Trend."},{"german_word":"verdeutlichen","meaning":"to clarify \/ make clear","word_type":"verb","artikel":"-","sentence":"Ich möchte meinen Standpunkt verdeutlichen."},{"german_word":"vermitteln","meaning":"to convey \/ mediate","word_type":"verb","artikel":"-","sentence":"Er vermittelt komplexe Inhalte sehr gut."},{"german_word":"voraussetzen","meaning":"to presuppose \/ require","word_type":"verb","artikel":"-","sentence":"Das setzt gute Kenntnisse voraus."},{"german_word":"widerlegen","meaning":"to refute \/ disprove","word_type":"verb","artikel":"-","sentence":"Diese Theorie wurde widerlegt."},{"german_word":"zurückführen auf","meaning":"to attribute to","word_type":"verb","artikel":"-","sentence":"Das ist auf Stress zurückzuführen."},{"german_word":"ambitioniert","meaning":"ambitious","word_type":"adjective","artikel":"-","sentence":"Sie ist eine ambitionierte Forscherin."},{"german_word":"anspruchsvoll","meaning":"demanding \/ sophisticated","word_type":"adjective","artikel":"-","sentence":"Die Aufgabe ist sehr anspruchsvoll."},{"german_word":"ausgewogen","meaning":"balanced","word_type":"adjective","artikel":"-","sentence":"Der Bericht ist sehr ausgewogen."},{"german_word":"berechtigt","meaning":"justified \/ entitled","word_type":"adjective","artikel":"-","sentence":"Die Kritik ist berechtigt."},{"german_word":"charakteristisch","meaning":"characteristic \/ typical","word_type":"adjective","artikel":"-","sentence":"Das ist charakteristisch für seinen Stil."},{"german_word":"differenziert","meaning":"nuanced \/ differentiated","word_type":"adjective","artikel":"-","sentence":"Eine differenzierte Betrachtung ist nötig."},{"german_word":"eindeutig","meaning":"clear \/ unambiguous","word_type":"adjective","artikel":"-","sentence":"Das Ergebnis ist eindeutig."},{"german_word":"einflussreich","meaning":"influential","word_type":"adjective","artikel":"-","sentence":"Er ist ein einflussreicher Politiker."},{"german_word":"erheblich","meaning":"considerable \/ substantial","word_type":"adjective","artikel":"-","sentence":"Es gibt erhebliche Unterschiede."},{"german_word":"grundlegend","meaning":"fundamental \/ basic","word_type":"adjective","artikel":"-","sentence":"Das ist eine grundlegende Frage."},{"german_word":"komplex","meaning":"complex","word_type":"adjective","artikel":"-","sentence":"Das ist eine sehr komplexe Situation."},{"german_word":"konsequent","meaning":"consistent \/ consequent","word_type":"adjective","artikel":"-","sentence":"Sie handelt konsequent."},{"german_word":"kontrovers","meaning":"controversial","word_type":"adjective","artikel":"-","sentence":"Das ist ein kontroverses Thema."},{"german_word":"kritisch","meaning":"critical","word_type":"adjective","artikel":"-","sentence":"Es ist wichtig, kritisch zu denken."},{"german_word":"maßgeblich","meaning":"decisive \/ authoritative","word_type":"adjective","artikel":"-","sentence":"Das war ein maßgeblicher Faktor."},{"german_word":"nachhaltig","meaning":"sustainable \/ lasting","word_type":"adjective","artikel":"-","sentence":"Wir brauchen nachhaltige Lösungen."},{"german_word":"objektiv","meaning":"objective","word_type":"adjective","artikel":"-","sentence":"Versuche, objektiv zu bleiben."},{"german_word":"präzise","meaning":"precise","word_type":"adjective","artikel":"-","sentence":"Bitte drücke dich präzise aus."},{"german_word":"relevant","meaning":"relevant","word_type":"adjective","artikel":"-","sentence":"Das ist nicht relevant für das Thema."},{"german_word":"schlüssig","meaning":"conclusive \/ coherent","word_type":"adjective","artikel":"-","sentence":"Das Argument ist schlüssig."},{"german_word":"skeptisch","meaning":"skeptical","word_type":"adjective","artikel":"-","sentence":"Ich bin skeptisch gegenüber dieser Idee."},{"german_word":"substanziell","meaning":"substantial","word_type":"adjective","artikel":"-","sentence":"Das ist ein substanzieller Unterschied."},{"german_word":"überzeugend","meaning":"convincing","word_type":"adjective","artikel":"-","sentence":"Das Argument ist überzeugend."},{"german_word":"umstritten","meaning":"controversial \/ disputed","word_type":"adjective","artikel":"-","sentence":"Die Entscheidung ist umstritten."},{"german_word":"unerlässlich","meaning":"indispensable \/ essential","word_type":"adjective","artikel":"-","sentence":"Teamarbeit ist unerlässlich."},{"german_word":"verhältnismäßig","meaning":"proportionate \/ relatively","word_type":"adjective","artikel":"-","sentence":"Das ist verhältnismäßig teuer."},{"german_word":"vielversprechend","meaning":"promising","word_type":"adjective","artikel":"-","sentence":"Das ist ein vielversprechender Ansatz."},{"german_word":"weitreichend","meaning":"far-reaching","word_type":"adjective","artikel":"-","sentence":"Das hat weitreichende Konsequenzen."},{"german_word":"widersprüchlich","meaning":"contradictory","word_type":"adjective","artikel":"-","sentence":"Die Aussagen sind widersprüchlich."},{"german_word":"zukunftsorientiert","meaning":"future-oriented","word_type":"adjective","artikel":"-","sentence":"Das Unternehmen denkt zukunftsorientiert."},{"german_word":"beziehungsweise","meaning":"or rather \/ respectively","word_type":"adverb","artikel":"-","sentence":"Das kostet 10 bzw. 15 Euro."},{"german_word":"dahingegen","meaning":"whereas \/ in contrast","word_type":"adverb","artikel":"-","sentence":"Er ist optimistisch, sie dahingegen nicht."},{"german_word":"demgegenüber","meaning":"in contrast \/ on the other hand","word_type":"adverb","artikel":"-","sentence":"Demgegenüber gibt es auch Vorteile."},{"german_word":"dementsprechend","meaning":"accordingly \/ consequently","word_type":"adverb","artikel":"-","sentence":"Dementsprechend haben wir gehandelt."},{"german_word":"diesbezüglich","meaning":"in this regard","word_type":"adverb","artikel":"-","sentence":"Ich habe diesbezüglich keine Informationen."},{"german_word":"folglich","meaning":"consequently \/ therefore","word_type":"adverb","artikel":"-","sentence":"Folglich müssen wir unsere Strategie ändern."},{"german_word":"gleichwohl","meaning":"nevertheless \/ yet","word_type":"adverb","artikel":"-","sentence":"Gleichwohl bleibt die Frage offen."},{"german_word":"hingegen","meaning":"however \/ whereas","word_type":"adverb","artikel":"-","sentence":"Er arbeitet viel, sie hingegen nicht."},{"german_word":"im Hinblick auf","meaning":"with regard to","word_type":"adverb","artikel":"-","sentence":"Im Hinblick auf die Kosten ist das sinnvoll."},{"german_word":"infolgedessen","meaning":"as a result \/ consequently","word_type":"adverb","artikel":"-","sentence":"Infolgedessen mussten wir umplanen."},{"german_word":"inwieweit","meaning":"to what extent","word_type":"adverb","artikel":"-","sentence":"Inwieweit ist das relevant?"},{"german_word":"mitunter","meaning":"sometimes \/ occasionally","word_type":"adverb","artikel":"-","sentence":"Das ist mitunter schwierig."},{"german_word":"nichtsdestotrotz","meaning":"nevertheless","word_type":"adverb","artikel":"-","sentence":"Nichtsdestotrotz machen wir weiter."},{"german_word":"überdies","meaning":"moreover \/ furthermore","word_type":"adverb","artikel":"-","sentence":"Überdies fehlen uns die Mittel."},{"german_word":"womöglich","meaning":"possibly \/ perhaps","word_type":"adverb","artikel":"-","sentence":"Das ist womöglich nicht richtig."},{"german_word":"zweifelsohne","meaning":"undoubtedly","word_type":"adverb","artikel":"-","sentence":"Das ist zweifelsohne die beste Lösung."},{"german_word":"angesichts","meaning":"in view of \/ given","word_type":"preposition","artikel":"-","sentence":"Angesichts der Lage müssen wir handeln."},{"german_word":"bezüglich","meaning":"regarding \/ with respect to","word_type":"preposition","artikel":"-","sentence":"Bezüglich Ihrer Anfrage antworte ich gerne."},{"german_word":"im Rahmen von","meaning":"within the framework of","word_type":"preposition","artikel":"-","sentence":"Im Rahmen des Projekts arbeiten wir zusammen."},{"german_word":"indem","meaning":"by (doing) \/ in that","word_type":"conjunction","artikel":"-","sentence":"Man lernt, indem man Fehler macht."},{"german_word":"insofern als","meaning":"insofar as","word_type":"conjunction","artikel":"-","sentence":"Insofern als das stimmt, ist es problematisch."},{"german_word":"sofern","meaning":"provided that \/ as long as","word_type":"conjunction","artikel":"-","sentence":"Sofern du zustimmst, machen wir weiter."},{"german_word":"sodass","meaning":"so that \/ such that","word_type":"conjunction","artikel":"-","sentence":"Er lernte viel, sodass er die Prüfung bestand."},{"german_word":"wohingegen","meaning":"whereas \/ while","word_type":"conjunction","artikel":"-","sentence":"Er ist ruhig, wohingegen sie sehr laut ist."},{"german_word":"Abwägung","meaning":"weighing up \/ consideration","word_type":"noun","artikel":"die","sentence":"Eine sorgfältige Abwägung ist nötig."},{"german_word":"Anerkennung","meaning":"recognition \/ acknowledgment","word_type":"noun","artikel":"die","sentence":"Sie verdient Anerkennung für ihre Arbeit."},{"german_word":"Annäherung","meaning":"approach \/ rapprochement","word_type":"noun","artikel":"die","sentence":"Die Annäherung der beiden Länder schreitet voran."},{"german_word":"Beeinträchtigung","meaning":"impairment \/ interference","word_type":"noun","artikel":"die","sentence":"Das führt zu einer starken Beeinträchtigung."},{"german_word":"Einwand","meaning":"objection","word_type":"noun","artikel":"der","sentence":"Er erhob einen Einwand gegen den Plan."},{"german_word":"Herausforderung","meaning":"challenge","word_type":"noun","artikel":"die","sentence":"Das ist eine große Herausforderung."},{"german_word":"Kompetenz","meaning":"competence","word_type":"noun","artikel":"die","sentence":"Sie verfügt über hohe soziale Kompetenz."},{"german_word":"Legitimität","meaning":"legitimacy","word_type":"noun","artikel":"die","sentence":"Die Legitimität der Entscheidung wird angezweifelt."},{"german_word":"Lücke","meaning":"gap","word_type":"noun","artikel":"die","sentence":"Es gibt eine Lücke in der Forschung."},{"german_word":"Paradigma","meaning":"paradigm","word_type":"noun","artikel":"das","sentence":"Das ist ein Paradigmenwechsel in der Wissenschaft."},{"german_word":"Rahmenbedingung","meaning":"framework condition","word_type":"noun","artikel":"die","sentence":"Die Rahmenbedingungen müssen stimmen."},{"german_word":"Stellungnahme","meaning":"statement \/ position","word_type":"noun","artikel":"die","sentence":"Die Regierung hat eine Stellungnahme abgegeben."},{"german_word":"Tendenz","meaning":"tendency \/ trend","word_type":"noun","artikel":"die","sentence":"Es gibt eine Tendenz zu mehr Homeoffice."},{"german_word":"Überlegung","meaning":"consideration \/ deliberation","word_type":"noun","artikel":"die","sentence":"Nach reiflicher Überlegung habe ich entschieden."},{"german_word":"Verfassung","meaning":"constitution \/ condition","word_type":"noun","artikel":"die","sentence":"Die Verfassung schützt die Grundrechte."},{"german_word":"absehen von","meaning":"to disregard \/ refrain from","word_type":"verb","artikel":"-","sentence":"Wir sehen von einer Strafe ab."},{"german_word":"abstimmen","meaning":"to vote \/ coordinate","word_type":"verb","artikel":"-","sentence":"Wir stimmen über den Vorschlag ab."},{"german_word":"anknüpfen an","meaning":"to connect to \/ follow up on","word_type":"verb","artikel":"-","sentence":"Er knüpfte an frühere Aussagen an."},{"german_word":"darlegen","meaning":"to set out \/ present","word_type":"verb","artikel":"-","sentence":"Sie legte ihre Argumente klar dar."},{"german_word":"einwenden","meaning":"to object \/ raise an objection","word_type":"verb","artikel":"-","sentence":"Er wandte ein, dass die Daten falsch sind."},{"german_word":"gegenüberstehen","meaning":"to face \/ be opposed to","word_type":"verb","artikel":"-","sentence":"Wir stehen einem großen Problem gegenüber."},{"german_word":"in Frage kommen","meaning":"to be eligible \/ be an option","word_type":"verb","artikel":"-","sentence":"Nur wenige Kandidaten kommen in Frage."},{"german_word":"relativieren","meaning":"to put into perspective","word_type":"verb","artikel":"-","sentence":"Man sollte die Aussage relativieren."},{"german_word":"verantworten","meaning":"to be responsible for","word_type":"verb","artikel":"-","sentence":"Wer verantwortet diese Entscheidung?"},{"german_word":"voraussetzen","meaning":"to presuppose","word_type":"verb","artikel":"-","sentence":"Das setzt Erfahrung voraus."},{"german_word":"bahnbrechend","meaning":"groundbreaking","word_type":"adjective","artikel":"-","sentence":"Das ist eine bahnbrechende Entdeckung."},{"german_word":"bemerkenswert","meaning":"remarkable","word_type":"adjective","artikel":"-","sentence":"Das ist eine bemerkenswerte Leistung."},{"german_word":"einschlägig","meaning":"relevant \/ pertinent","word_type":"adjective","artikel":"-","sentence":"Er hat einschlägige Erfahrung."},{"german_word":"folgerichtig","meaning":"logical \/ consistent","word_type":"adjective","artikel":"-","sentence":"Das ist eine folgerichtige Schlussfolgerung."},{"german_word":"fragwürdig","meaning":"questionable \/ dubious","word_type":"adjective","artikel":"-","sentence":"Die Methode ist fragwürdig."},{"german_word":"fundiert","meaning":"well-founded \/ sound","word_type":"adjective","artikel":"-","sentence":"Das ist eine fundierte Kritik."},{"german_word":"nachdrücklich","meaning":"emphatic \/ forceful","word_type":"adjective","artikel":"-","sentence":"Ich betone das nachdrücklich."},{"german_word":"tiefgreifend","meaning":"profound \/ far-reaching","word_type":"adjective","artikel":"-","sentence":"Es gibt tiefgreifende Veränderungen."},{"german_word":"treffend","meaning":"apt \/ accurate","word_type":"adjective","artikel":"-","sentence":"Das ist eine treffende Beschreibung."},{"german_word":"unabdingbar","meaning":"indispensable \/ imperative","word_type":"adjective","artikel":"-","sentence":"Teamarbeit ist unabdingbar."}]
+[
+  {
+    "german_word": "Abstraktion",
+    "meaning": "abstraction",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Diese Abstraktion ist schwer zu verstehen."
+  },
+  {
+    "german_word": "Ambivalenz",
+    "meaning": "ambivalence",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Er empfindet Ambivalenz gegenüber seiner Arbeit."
+  },
+  {
+    "german_word": "Anomalie",
+    "meaning": "anomaly",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Anomalie in den Daten fiel sofort auf."
+  },
+  {
+    "german_word": "Auseinandersetzung",
+    "meaning": "debate / confrontation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Auseinandersetzung über das Thema dauerte Stunden."
+  },
+  {
+    "german_word": "Behauptung",
+    "meaning": "claim / assertion",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Diese Behauptung ist wissenschaftlich nicht belegt."
+  },
+  {
+    "german_word": "Erkenntnis",
+    "meaning": "insight / finding",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das ist eine wichtige wissenschaftliche Erkenntnis."
+  },
+  {
+    "german_word": "Hypothese",
+    "meaning": "hypothesis",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Hypothese muss noch bewiesen werden."
+  },
+  {
+    "german_word": "Illusion",
+    "meaning": "illusion",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Er lebt in einer Illusion."
+  },
+  {
+    "german_word": "Interpretation",
+    "meaning": "interpretation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Es gibt viele Interpretationen dieses Textes."
+  },
+  {
+    "german_word": "Konsequenz",
+    "meaning": "consequence",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Du musst die Konsequenzen tragen."
+  },
+  {
+    "german_word": "Paradox",
+    "meaning": "paradox",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das ist ein interessantes Paradox."
+  },
+  {
+    "german_word": "Perspektive",
+    "meaning": "perspective",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Man muss die Perspektive wechseln."
+  },
+  {
+    "german_word": "Prämisse",
+    "meaning": "premise",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Prämisse des Arguments ist falsch."
+  },
+  {
+    "german_word": "Schlussfolgerung",
+    "meaning": "conclusion",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Schlussfolgerung ist logisch."
+  },
+  {
+    "german_word": "Widerspruch",
+    "meaning": "contradiction",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Das ist ein klarer Widerspruch."
+  },
+  {
+    "german_word": "Ansehen",
+    "meaning": "reputation / prestige",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Sie genießt hohes Ansehen in der Wissenschaft."
+  },
+  {
+    "german_word": "Autorität",
+    "meaning": "authority",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Er spricht mit großer Autorität."
+  },
+  {
+    "german_word": "Diskriminierung",
+    "meaning": "discrimination",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Diskriminierung am Arbeitsplatz ist verboten."
+  },
+  {
+    "german_word": "Einschränkung",
+    "meaning": "restriction / limitation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Es gibt strenge Einschränkungen."
+  },
+  {
+    "german_word": "Globalisierung",
+    "meaning": "globalization",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Globalisierung hat viele Auswirkungen."
+  },
+  {
+    "german_word": "Ideologie",
+    "meaning": "ideology",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Jede Partei hat ihre eigene Ideologie."
+  },
+  {
+    "german_word": "Integration",
+    "meaning": "integration",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Integration von Migranten ist eine Herausforderung."
+  },
+  {
+    "german_word": "Manipulation",
+    "meaning": "manipulation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Manipulation der Medien ist gefährlich."
+  },
+  {
+    "german_word": "Minderheit",
+    "meaning": "minority",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Rechte der Minderheiten müssen geschützt werden."
+  },
+  {
+    "german_word": "Norm",
+    "meaning": "norm / standard",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das entspricht nicht der gesellschaftlichen Norm."
+  },
+  {
+    "german_word": "Solidarität",
+    "meaning": "solidarity",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Solidarität ist in Krisenzeiten wichtig."
+  },
+  {
+    "german_word": "Transparenz",
+    "meaning": "transparency",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Regierung sollte mehr Transparenz zeigen."
+  },
+  {
+    "german_word": "Vorurteil",
+    "meaning": "prejudice",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Vorurteile sind schwer zu überwinden."
+  },
+  {
+    "german_word": "Zensur",
+    "meaning": "censorship",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Zensur widerspricht der Pressefreiheit."
+  },
+  {
+    "german_word": "Zivilgesellschaft",
+    "meaning": "civil society",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Zivilgesellschaft spielt eine wichtige Rolle."
+  },
+  {
+    "german_word": "Aufschwung",
+    "meaning": "upturn / boom",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Die Wirtschaft erlebt einen Aufschwung."
+  },
+  {
+    "german_word": "Defizit",
+    "meaning": "deficit",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Haushaltsdefizit ist gestiegen."
+  },
+  {
+    "german_word": "Effizienz",
+    "meaning": "efficiency",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Effizienz ist im Unternehmen entscheidend."
+  },
+  {
+    "german_word": "Globaler Markt",
+    "meaning": "global market",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der globale Markt ist sehr volatil."
+  },
+  {
+    "german_word": "Inflation",
+    "meaning": "inflation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Inflation hat die Kaufkraft geschwächt."
+  },
+  {
+    "german_word": "Kapital",
+    "meaning": "capital",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Unternehmen braucht mehr Kapital."
+  },
+  {
+    "german_word": "Konjunktur",
+    "meaning": "economic cycle / business climate",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Konjunktur schwächelt derzeit."
+  },
+  {
+    "german_word": "Konkurrenz",
+    "meaning": "competition",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Der Wettbewerb durch die Konkurrenz ist hart."
+  },
+  {
+    "german_word": "Monopol",
+    "meaning": "monopoly",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Ein Monopol schadet dem Wettbewerb."
+  },
+  {
+    "german_word": "Nachfrage",
+    "meaning": "demand",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Nachfrage nach Elektroautos steigt."
+  },
+  {
+    "german_word": "Subvention",
+    "meaning": "subsidy",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Der Staat zahlt Subventionen für Landwirte."
+  },
+  {
+    "german_word": "Wettbewerb",
+    "meaning": "competition / contest",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der Wettbewerb zwischen den Firmen ist groß."
+  },
+  {
+    "german_word": "Algorithmus",
+    "meaning": "algorithm",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der Algorithmus liefert genaue Ergebnisse."
+  },
+  {
+    "german_word": "Auswirkung",
+    "meaning": "impact / effect",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Auswirkungen des Klimawandels sind spürbar."
+  },
+  {
+    "german_word": "Daten",
+    "meaning": "data",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Daten müssen analysiert werden."
+  },
+  {
+    "german_word": "Durchbruch",
+    "meaning": "breakthrough",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Das ist ein wissenschaftlicher Durchbruch."
+  },
+  {
+    "german_word": "Experiment",
+    "meaning": "experiment",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Experiment lieferte überraschende Ergebnisse."
+  },
+  {
+    "german_word": "Infrastruktur",
+    "meaning": "infrastructure",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Infrastruktur muss modernisiert werden."
+  },
+  {
+    "german_word": "Innovation",
+    "meaning": "innovation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Innovation ist der Motor des Fortschritts."
+  },
+  {
+    "german_word": "Künstliche Intelligenz",
+    "meaning": "artificial intelligence",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Künstliche Intelligenz verändert viele Branchen."
+  },
+  {
+    "german_word": "Methodik",
+    "meaning": "methodology",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Methodik der Studie ist solide."
+  },
+  {
+    "german_word": "Modell",
+    "meaning": "model",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Modell erklärt das Phänomen gut."
+  },
+  {
+    "german_word": "Prozess",
+    "meaning": "process",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der Prozess muss optimiert werden."
+  },
+  {
+    "german_word": "Technologie",
+    "meaning": "technology",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Neue Technologien verändern unseren Alltag."
+  },
+  {
+    "german_word": "Argumentation",
+    "meaning": "argumentation / reasoning",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Seine Argumentation ist überzeugend."
+  },
+  {
+    "german_word": "Aussage",
+    "meaning": "statement",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Aussage des Zeugen war widersprüchlich."
+  },
+  {
+    "german_word": "Formulierung",
+    "meaning": "wording / phrasing",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Formulierung des Satzes ist unklar."
+  },
+  {
+    "german_word": "Kommunikation",
+    "meaning": "communication",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Gute Kommunikation ist entscheidend."
+  },
+  {
+    "german_word": "Missverständnis",
+    "meaning": "misunderstanding",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das war ein großes Missverständnis."
+  },
+  {
+    "german_word": "Nuance",
+    "meaning": "nuance",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Nuancen der Sprache sind schwer zu erfassen."
+  },
+  {
+    "german_word": "Rhetorik",
+    "meaning": "rhetoric",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Seine Rhetorik ist sehr überzeugend."
+  },
+  {
+    "german_word": "Stil",
+    "meaning": "style",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Ihr Schreibstil ist sehr präzise."
+  },
+  {
+    "german_word": "Überzeugung",
+    "meaning": "conviction / persuasion",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das ist meine feste Überzeugung."
+  },
+  {
+    "german_word": "Ambition",
+    "meaning": "ambition",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Sie hat große Ambition in ihrer Karriere."
+  },
+  {
+    "german_word": "Bewusstsein",
+    "meaning": "consciousness / awareness",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Bewusstsein für Umweltprobleme wächst."
+  },
+  {
+    "german_word": "Druck",
+    "meaning": "pressure",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Er steht unter großem Druck."
+  },
+  {
+    "german_word": "Hemmung",
+    "meaning": "inhibition",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Er hat keine Hemmungen, seine Meinung zu sagen."
+  },
+  {
+    "german_word": "Instinkt",
+    "meaning": "instinct",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Man sollte auf seinen Instinkt vertrauen."
+  },
+  {
+    "german_word": "Motivation",
+    "meaning": "motivation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Motivation der Mitarbeiter ist gesunken."
+  },
+  {
+    "german_word": "Persönlichkeit",
+    "meaning": "personality",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Sie hat eine starke Persönlichkeit."
+  },
+  {
+    "german_word": "Resilienz",
+    "meaning": "resilience",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Resilienz hilft bei der Bewältigung von Krisen."
+  },
+  {
+    "german_word": "Selbstbewusstsein",
+    "meaning": "self-confidence",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Er strahlt Selbstbewusstsein aus."
+  },
+  {
+    "german_word": "Trauma",
+    "meaning": "trauma",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Trauma muss professionell behandelt werden."
+  },
+  {
+    "german_word": "Vorstellung",
+    "meaning": "idea / notion / performance",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das entspricht nicht meiner Vorstellung."
+  },
+  {
+    "german_word": "Wahrnehmung",
+    "meaning": "perception",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Wahrnehmung der Realität ist subjektiv."
+  },
+  {
+    "german_word": "Ästhetik",
+    "meaning": "aesthetics",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Ästhetik des Gebäudes ist beeindruckend."
+  },
+  {
+    "german_word": "Epoche",
+    "meaning": "epoch / era",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Diese Epoche war kulturell sehr bedeutend."
+  },
+  {
+    "german_word": "Ethik",
+    "meaning": "ethics",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Ethik in der Forschung ist unerlässlich."
+  },
+  {
+    "german_word": "Identität",
+    "meaning": "identity",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Kulturelle Identität ist sehr wichtig."
+  },
+  {
+    "german_word": "Moral",
+    "meaning": "morality",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Moral der Geschichte ist eindeutig."
+  },
+  {
+    "german_word": "Philosophie",
+    "meaning": "philosophy",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Philosophie fragt nach dem Sinn des Lebens."
+  },
+  {
+    "german_word": "Symbolik",
+    "meaning": "symbolism",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Symbolik in dem Roman ist vielschichtig."
+  },
+  {
+    "german_word": "Weltanschauung",
+    "meaning": "worldview",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Jeder Mensch hat eine eigene Weltanschauung."
+  },
+  {
+    "german_word": "abwägen",
+    "meaning": "to weigh up / consider",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Man muss die Vor- und Nachteile abwägen."
+  },
+  {
+    "german_word": "andeuten",
+    "meaning": "to hint / suggest",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er deutete an, dass er gehen würde."
+  },
+  {
+    "german_word": "aufrechterhalten",
+    "meaning": "to maintain / uphold",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir müssen den Dialog aufrechterhalten."
+  },
+  {
+    "german_word": "ausdrücken",
+    "meaning": "to express",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er konnte seine Gefühle nicht ausdrücken."
+  },
+  {
+    "german_word": "auslösen",
+    "meaning": "to trigger / cause",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Der Bericht hat eine Debatte ausgelöst."
+  },
+  {
+    "german_word": "ausschließen",
+    "meaning": "to exclude / rule out",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das können wir nicht ausschließen."
+  },
+  {
+    "german_word": "beanspruchen",
+    "meaning": "to claim / take up",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das beansprucht viel Zeit."
+  },
+  {
+    "german_word": "befürworten",
+    "meaning": "to advocate / support",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich befürworte diese Maßnahme."
+  },
+  {
+    "german_word": "belegen",
+    "meaning": "to prove / document",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das ist wissenschaftlich belegt."
+  },
+  {
+    "german_word": "berücksichtigen",
+    "meaning": "to take into account",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das muss berücksichtigt werden."
+  },
+  {
+    "german_word": "einschränken",
+    "meaning": "to restrict / limit",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Die neuen Regeln schränken die Freiheit ein."
+  },
+  {
+    "german_word": "entsprechen",
+    "meaning": "to correspond to / match",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das entspricht nicht meinen Erwartungen."
+  },
+  {
+    "german_word": "erläutern",
+    "meaning": "to explain / elaborate",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Können Sie das erläutern?"
+  },
+  {
+    "german_word": "erscheinen",
+    "meaning": "to appear / seem",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das erscheint mir unlogisch."
+  },
+  {
+    "german_word": "feststellen",
+    "meaning": "to establish / note",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir haben festgestellt, dass es Fehler gibt."
+  },
+  {
+    "german_word": "gewährleisten",
+    "meaning": "to ensure / guarantee",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das muss gewährleistet werden."
+  },
+  {
+    "german_word": "hervorheben",
+    "meaning": "to emphasize / highlight",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich möchte diesen Punkt hervorheben."
+  },
+  {
+    "german_word": "hinweisen auf",
+    "meaning": "to point out / refer to",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er wies auf die Fehler hin."
+  },
+  {
+    "german_word": "infrage stellen",
+    "meaning": "to question / challenge",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Diese Theorie wird infrage gestellt."
+  },
+  {
+    "german_word": "nachweisen",
+    "meaning": "to prove / demonstrate",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das konnte nicht nachgewiesen werden."
+  },
+  {
+    "german_word": "prägen",
+    "meaning": "to shape / coin",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Die Kindheit prägt den Charakter."
+  },
+  {
+    "german_word": "scheitern",
+    "meaning": "to fail",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das Projekt ist gescheitert."
+  },
+  {
+    "german_word": "schildern",
+    "meaning": "to describe / portray",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Sie schildert die Situation sehr genau."
+  },
+  {
+    "german_word": "überwinden",
+    "meaning": "to overcome",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er hat seine Angst überwunden."
+  },
+  {
+    "german_word": "unterschätzen",
+    "meaning": "to underestimate",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Man sollte das Risiko nicht unterschätzen."
+  },
+  {
+    "german_word": "veranschaulichen",
+    "meaning": "to illustrate",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das Diagramm veranschaulicht den Trend."
+  },
+  {
+    "german_word": "verdeutlichen",
+    "meaning": "to clarify / make clear",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich möchte meinen Standpunkt verdeutlichen."
+  },
+  {
+    "german_word": "vermitteln",
+    "meaning": "to convey / mediate",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er vermittelt komplexe Inhalte sehr gut."
+  },
+  {
+    "german_word": "voraussetzen",
+    "meaning": "to presuppose / require",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das setzt gute Kenntnisse voraus."
+  },
+  {
+    "german_word": "widerlegen",
+    "meaning": "to refute / disprove",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Diese Theorie wurde widerlegt."
+  },
+  {
+    "german_word": "zurückführen auf",
+    "meaning": "to attribute to",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das ist auf Stress zurückzuführen."
+  },
+  {
+    "german_word": "ambitioniert",
+    "meaning": "ambitious",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Sie ist eine ambitionierte Forscherin."
+  },
+  {
+    "german_word": "anspruchsvoll",
+    "meaning": "demanding / sophisticated",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Die Aufgabe ist sehr anspruchsvoll."
+  },
+  {
+    "german_word": "ausgewogen",
+    "meaning": "balanced",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Der Bericht ist sehr ausgewogen."
+  },
+  {
+    "german_word": "berechtigt",
+    "meaning": "justified / entitled",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Die Kritik ist berechtigt."
+  },
+  {
+    "german_word": "charakteristisch",
+    "meaning": "characteristic / typical",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist charakteristisch für seinen Stil."
+  },
+  {
+    "german_word": "differenziert",
+    "meaning": "nuanced / differentiated",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Eine differenzierte Betrachtung ist nötig."
+  },
+  {
+    "german_word": "eindeutig",
+    "meaning": "clear / unambiguous",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das Ergebnis ist eindeutig."
+  },
+  {
+    "german_word": "einflussreich",
+    "meaning": "influential",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Er ist ein einflussreicher Politiker."
+  },
+  {
+    "german_word": "erheblich",
+    "meaning": "considerable / substantial",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Es gibt erhebliche Unterschiede."
+  },
+  {
+    "german_word": "grundlegend",
+    "meaning": "fundamental / basic",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine grundlegende Frage."
+  },
+  {
+    "german_word": "komplex",
+    "meaning": "complex",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine sehr komplexe Situation."
+  },
+  {
+    "german_word": "konsequent",
+    "meaning": "consistent / consequent",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Sie handelt konsequent."
+  },
+  {
+    "german_word": "kontrovers",
+    "meaning": "controversial",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist ein kontroverses Thema."
+  },
+  {
+    "german_word": "kritisch",
+    "meaning": "critical",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Es ist wichtig, kritisch zu denken."
+  },
+  {
+    "german_word": "maßgeblich",
+    "meaning": "decisive / authoritative",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das war ein maßgeblicher Faktor."
+  },
+  {
+    "german_word": "nachhaltig",
+    "meaning": "sustainable / lasting",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Wir brauchen nachhaltige Lösungen."
+  },
+  {
+    "german_word": "objektiv",
+    "meaning": "objective",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Versuche, objektiv zu bleiben."
+  },
+  {
+    "german_word": "präzise",
+    "meaning": "precise",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Bitte drücke dich präzise aus."
+  },
+  {
+    "german_word": "relevant",
+    "meaning": "relevant",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist nicht relevant für das Thema."
+  },
+  {
+    "german_word": "schlüssig",
+    "meaning": "conclusive / coherent",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das Argument ist schlüssig."
+  },
+  {
+    "german_word": "skeptisch",
+    "meaning": "skeptical",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Ich bin skeptisch gegenüber dieser Idee."
+  },
+  {
+    "german_word": "substanziell",
+    "meaning": "substantial",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist ein substanzieller Unterschied."
+  },
+  {
+    "german_word": "überzeugend",
+    "meaning": "convincing",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das Argument ist überzeugend."
+  },
+  {
+    "german_word": "umstritten",
+    "meaning": "controversial / disputed",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Die Entscheidung ist umstritten."
+  },
+  {
+    "german_word": "unerlässlich",
+    "meaning": "indispensable / essential",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Teamarbeit ist unerlässlich."
+  },
+  {
+    "german_word": "verhältnismäßig",
+    "meaning": "proportionate / relatively",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist verhältnismäßig teuer."
+  },
+  {
+    "german_word": "vielversprechend",
+    "meaning": "promising",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist ein vielversprechender Ansatz."
+  },
+  {
+    "german_word": "weitreichend",
+    "meaning": "far-reaching",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das hat weitreichende Konsequenzen."
+  },
+  {
+    "german_word": "widersprüchlich",
+    "meaning": "contradictory",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Die Aussagen sind widersprüchlich."
+  },
+  {
+    "german_word": "zukunftsorientiert",
+    "meaning": "future-oriented",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das Unternehmen denkt zukunftsorientiert."
+  },
+  {
+    "german_word": "beziehungsweise",
+    "meaning": "or rather / respectively",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Das kostet 10 bzw. 15 Euro."
+  },
+  {
+    "german_word": "dahingegen",
+    "meaning": "whereas / in contrast",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Er ist optimistisch, sie dahingegen nicht."
+  },
+  {
+    "german_word": "demgegenüber",
+    "meaning": "in contrast / on the other hand",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Demgegenüber gibt es auch Vorteile."
+  },
+  {
+    "german_word": "dementsprechend",
+    "meaning": "accordingly / consequently",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Dementsprechend haben wir gehandelt."
+  },
+  {
+    "german_word": "diesbezüglich",
+    "meaning": "in this regard",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Ich habe diesbezüglich keine Informationen."
+  },
+  {
+    "german_word": "folglich",
+    "meaning": "consequently / therefore",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Folglich müssen wir unsere Strategie ändern."
+  },
+  {
+    "german_word": "gleichwohl",
+    "meaning": "nevertheless / yet",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Gleichwohl bleibt die Frage offen."
+  },
+  {
+    "german_word": "hingegen",
+    "meaning": "however / whereas",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Er arbeitet viel, sie hingegen nicht."
+  },
+  {
+    "german_word": "im Hinblick auf",
+    "meaning": "with regard to",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Im Hinblick auf die Kosten ist das sinnvoll."
+  },
+  {
+    "german_word": "infolgedessen",
+    "meaning": "as a result / consequently",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Infolgedessen mussten wir umplanen."
+  },
+  {
+    "german_word": "inwieweit",
+    "meaning": "to what extent",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Inwieweit ist das relevant?"
+  },
+  {
+    "german_word": "mitunter",
+    "meaning": "sometimes / occasionally",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Das ist mitunter schwierig."
+  },
+  {
+    "german_word": "nichtsdestotrotz",
+    "meaning": "nevertheless",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Nichtsdestotrotz machen wir weiter."
+  },
+  {
+    "german_word": "überdies",
+    "meaning": "moreover / furthermore",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Überdies fehlen uns die Mittel."
+  },
+  {
+    "german_word": "womöglich",
+    "meaning": "possibly / perhaps",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Das ist womöglich nicht richtig."
+  },
+  {
+    "german_word": "zweifelsohne",
+    "meaning": "undoubtedly",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Das ist zweifelsohne die beste Lösung."
+  },
+  {
+    "german_word": "angesichts",
+    "meaning": "in view of / given",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Angesichts der Lage müssen wir handeln."
+  },
+  {
+    "german_word": "bezüglich",
+    "meaning": "regarding / with respect to",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Bezüglich Ihrer Anfrage antworte ich gerne."
+  },
+  {
+    "german_word": "im Rahmen von",
+    "meaning": "within the framework of",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Im Rahmen des Projekts arbeiten wir zusammen."
+  },
+  {
+    "german_word": "indem",
+    "meaning": "by (doing) / in that",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Man lernt, indem man Fehler macht."
+  },
+  {
+    "german_word": "insofern als",
+    "meaning": "insofar as",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Insofern als das stimmt, ist es problematisch."
+  },
+  {
+    "german_word": "sofern",
+    "meaning": "provided that / as long as",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Sofern du zustimmst, machen wir weiter."
+  },
+  {
+    "german_word": "sodass",
+    "meaning": "so that / such that",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Er lernte viel, sodass er die Prüfung bestand."
+  },
+  {
+    "german_word": "wohingegen",
+    "meaning": "whereas / while",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Er ist ruhig, wohingegen sie sehr laut ist."
+  },
+  {
+    "german_word": "Abwägung",
+    "meaning": "weighing up / consideration",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Eine sorgfältige Abwägung ist nötig."
+  },
+  {
+    "german_word": "Anerkennung",
+    "meaning": "recognition / acknowledgment",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Sie verdient Anerkennung für ihre Arbeit."
+  },
+  {
+    "german_word": "Annäherung",
+    "meaning": "approach / rapprochement",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Annäherung der beiden Länder schreitet voran."
+  },
+  {
+    "german_word": "Beeinträchtigung",
+    "meaning": "impairment / interference",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das führt zu einer starken Beeinträchtigung."
+  },
+  {
+    "german_word": "Einwand",
+    "meaning": "objection",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Er erhob einen Einwand gegen den Plan."
+  },
+  {
+    "german_word": "Herausforderung",
+    "meaning": "challenge",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das ist eine große Herausforderung."
+  },
+  {
+    "german_word": "Kompetenz",
+    "meaning": "competence",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Sie verfügt über hohe soziale Kompetenz."
+  },
+  {
+    "german_word": "Legitimität",
+    "meaning": "legitimacy",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Legitimität der Entscheidung wird angezweifelt."
+  },
+  {
+    "german_word": "Lücke",
+    "meaning": "gap",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Es gibt eine Lücke in der Forschung."
+  },
+  {
+    "german_word": "Paradigma",
+    "meaning": "paradigm",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das ist ein Paradigmenwechsel in der Wissenschaft."
+  },
+  {
+    "german_word": "Rahmenbedingung",
+    "meaning": "framework condition",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Rahmenbedingungen müssen stimmen."
+  },
+  {
+    "german_word": "Stellungnahme",
+    "meaning": "statement / position",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Regierung hat eine Stellungnahme abgegeben."
+  },
+  {
+    "german_word": "Tendenz",
+    "meaning": "tendency / trend",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Es gibt eine Tendenz zu mehr Homeoffice."
+  },
+  {
+    "german_word": "Überlegung",
+    "meaning": "consideration / deliberation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Nach reiflicher Überlegung habe ich entschieden."
+  },
+  {
+    "german_word": "Verfassung",
+    "meaning": "constitution / condition",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Verfassung schützt die Grundrechte."
+  },
+  {
+    "german_word": "absehen von",
+    "meaning": "to disregard / refrain from",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir sehen von einer Strafe ab."
+  },
+  {
+    "german_word": "abstimmen",
+    "meaning": "to vote / coordinate",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir stimmen über den Vorschlag ab."
+  },
+  {
+    "german_word": "anknüpfen an",
+    "meaning": "to connect to / follow up on",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er knüpfte an frühere Aussagen an."
+  },
+  {
+    "german_word": "darlegen",
+    "meaning": "to set out / present",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Sie legte ihre Argumente klar dar."
+  },
+  {
+    "german_word": "einwenden",
+    "meaning": "to object / raise an objection",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er wandte ein, dass die Daten falsch sind."
+  },
+  {
+    "german_word": "gegenüberstehen",
+    "meaning": "to face / be opposed to",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir stehen einem großen Problem gegenüber."
+  },
+  {
+    "german_word": "in Frage kommen",
+    "meaning": "to be eligible / be an option",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Nur wenige Kandidaten kommen in Frage."
+  },
+  {
+    "german_word": "relativieren",
+    "meaning": "to put into perspective",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Man sollte die Aussage relativieren."
+  },
+  {
+    "german_word": "verantworten",
+    "meaning": "to be responsible for",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wer verantwortet diese Entscheidung?"
+  },
+  {
+    "german_word": "voraussetzen",
+    "meaning": "to presuppose",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das setzt Erfahrung voraus."
+  },
+  {
+    "german_word": "bahnbrechend",
+    "meaning": "groundbreaking",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine bahnbrechende Entdeckung."
+  },
+  {
+    "german_word": "bemerkenswert",
+    "meaning": "remarkable",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine bemerkenswerte Leistung."
+  },
+  {
+    "german_word": "einschlägig",
+    "meaning": "relevant / pertinent",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Er hat einschlägige Erfahrung."
+  },
+  {
+    "german_word": "folgerichtig",
+    "meaning": "logical / consistent",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine folgerichtige Schlussfolgerung."
+  },
+  {
+    "german_word": "fragwürdig",
+    "meaning": "questionable / dubious",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Die Methode ist fragwürdig."
+  },
+  {
+    "german_word": "fundiert",
+    "meaning": "well-founded / sound",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine fundierte Kritik."
+  },
+  {
+    "german_word": "nachdrücklich",
+    "meaning": "emphatic / forceful",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Ich betone das nachdrücklich."
+  },
+  {
+    "german_word": "tiefgreifend",
+    "meaning": "profound / far-reaching",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Es gibt tiefgreifende Veränderungen."
+  },
+  {
+    "german_word": "treffend",
+    "meaning": "apt / accurate",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine treffende Beschreibung."
+  },
+  {
+    "german_word": "unabdingbar",
+    "meaning": "indispensable / imperative",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Teamarbeit ist unabdingbar."
+  }
+]

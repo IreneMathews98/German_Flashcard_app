@@ -1,24 +1,36 @@
 const TYPE_LABELS = {
-  noun: 'Nomen', verb: 'Verb', reflexive_verb: 'Reflexives Verb',
-  adjective: 'Adjektiv', adverb: 'Adverb', preposition: 'Präposition',
-  verb_mit_präposition: 'Verb + Präp.', adjektiv_mit_präposition: 'Adj. + Präp.',
-  nomen_mit_präposition: 'Nomen + Präp.', nomen_verb_verbindung: 'NVV',
-  common_phrase: 'Redewendung', unknown: '',
+  noun:                  'Noun',
+  verb:                  'Verb',
+  adjective:             'Adjective',
+  adverb:                'Adverb',
+  phrase:                'Phrase',
+  nomen_verb_verbindung: 'NVV',
+  conjunction:           'Conjunction',
+  verb_mit_präposition:  'Verb + Prep.',
+  nomen_mit_präposition: 'Noun + Prep.',
+  adj_mit_präposition:   'Adj + Prep.',
+  unknown:               '',
 };
 
 const TYPE_COLORS = {
-  noun: '#2563eb', verb: '#dc2626', reflexive_verb: '#d97706',
-  adjective: '#16a34a', adverb: '#7c3aed', preposition: '#0891b2',
-  verb_mit_präposition: '#dc2626', adjektiv_mit_präposition: '#16a34a',
-  nomen_mit_präposition: '#2563eb', nomen_verb_verbindung: '#b45309',
-  common_phrase: '#6b7280', unknown: '#6b7280',
+  noun:                  '#2563eb',
+  verb:                  '#dc2626',
+  adjective:             '#16a34a',
+  adverb:                '#7c3aed',
+  phrase:                '#6b7280',
+  nomen_verb_verbindung: '#b45309',
+  conjunction:           '#0891b2',
+  verb_mit_präposition:  '#b91c1c',
+  nomen_mit_präposition: '#1d4ed8',
+  adj_mit_präposition:   '#15803d',
+  unknown:               '#6b7280',
 };
 
 const TYPE_GROUPS = {
   noun:      ['noun', 'nomen_mit_präposition'],
-  verb:      ['verb', 'reflexive_verb', 'verb_mit_präposition', 'nomen_verb_verbindung'],
-  adjective: ['adjective', 'adjektiv_mit_präposition'],
-  other:     ['adverb', 'preposition', 'common_phrase', 'unknown'],
+  verb:      ['verb', 'verb_mit_präposition', 'nomen_verb_verbindung'],
+  adjective: ['adjective', 'adj_mit_präposition'],
+  other:     ['adverb', 'phrase', 'conjunction', 'unknown'],
 };
 
 let allWords = [];
@@ -28,37 +40,56 @@ let isFlipped = false;
 let activeFilter = 'all';
 let _transitioning = false;
 
-const SET_NAME = document.getElementById('set-config')?.dataset.set || null;
+const SET_NAME    = document.getElementById('set-config')?.dataset.set || null;
+const REVISE_MODE = new URLSearchParams(location.search).get('mode') === 'revise';
 
-// ── Bookmarks (localStorage) ──────────────────────────────────
-const BOOKMARK_KEY = 'ff_bookmarks';
+// ── Bookmarks (server-backed, in-memory cache for instant UI) ─
+let _bmCache = [];
 
 function _bmKey(word) {
   return `${word.set_name || SET_NAME || 'all'}::${word.german_word}`;
 }
 
-function _getBookmarks() {
-  try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY) || '[]'); }
-  catch { return []; }
+function _isBookmarked(word) {
+  return _bmCache.some(b => b._key === _bmKey(word));
 }
 
-function _isBookmarked(word) {
-  const key = _bmKey(word);
-  return _getBookmarks().some(b => b._key === key);
+async function _loadBmCache() {
+  // One-time migration: push any existing localStorage bookmarks to the server
+  const OLD_KEY = 'ff_bookmarks';
+  const local = JSON.parse(localStorage.getItem(OLD_KEY) || '[]');
+  if (local.length) {
+    await Promise.all(local.map(b => fetch('/api/bookmarks', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(b),
+    })));
+    localStorage.removeItem(OLD_KEY);
+  }
+  try {
+    _bmCache = await (await fetch('/api/bookmarks')).json();
+  } catch { _bmCache = []; }
+  _updateBmBtn();
+  _updateNavBmBadge();
 }
 
 function toggleBookmark() {
   if (!queue.length) return;
   const word = queue[0];
   const key  = _bmKey(word);
-  const bm   = _getBookmarks();
-  const idx  = bm.findIndex(b => b._key === key);
+  const idx  = _bmCache.findIndex(b => b._key === key);
   if (idx >= 0) {
-    bm.splice(idx, 1);
+    _bmCache.splice(idx, 1);
+    fetch(`/api/bookmarks?key=${encodeURIComponent(key)}`, { method: 'DELETE' });
   } else {
-    bm.push({ ...word, _key: key });
+    const entry = { ...word, set_name: word.set_name || SET_NAME || 'all', _key: key };
+    _bmCache.push(entry);
+    fetch('/api/bookmarks', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(entry),
+    });
   }
-  localStorage.setItem(BOOKMARK_KEY, JSON.stringify(bm));
   _updateBmBtn();
   _updateNavBmBadge();
 }
@@ -78,7 +109,7 @@ function _updateBmBtn() {
 function _updateNavBmBadge() {
   const badge = document.getElementById('bm-count-badge');
   if (!badge) return;
-  const n = _getBookmarks().length;
+  const n = _bmCache.length;
   badge.textContent  = n || '';
   badge.style.display = n ? 'inline-flex' : 'none';
 }
@@ -111,7 +142,7 @@ function applyFilter(filter) {
   if (filter === 'all') {
     filtered = [...allWords];
   } else if (filter === 'bookmarked') {
-    const keys = new Set(_getBookmarks().map(b => b._key));
+    const keys = new Set(_bmCache.map(b => b._key));
     filtered   = allWords.filter(w => keys.has(_bmKey(w)));
   } else if (TYPE_GROUPS[filter]) {
     filtered = allWords.filter(w => TYPE_GROUPS[filter].includes(w.word_type));
@@ -137,13 +168,17 @@ function showCurrent() {
   if (!wrapper) { _renderCard(); return; }
 
   _transitioning = true;
+  wrapper.classList.remove('card-pop-in'); // reset any previous pop
   wrapper.classList.add('card-exit');
 
   setTimeout(() => {
     _renderCard();
     wrapper.classList.remove('card-exit');
+    // Force reflow so the animation restart is picked up
+    void wrapper.offsetWidth;
+    wrapper.classList.add('card-pop-in');
     _transitioning = false;
-  }, 230);
+  }, 210);
 }
 
 // ── Render current card ───────────────────────────────────────
@@ -157,10 +192,12 @@ function _renderCard() {
   if (!queue.length) {
     const badge = document.getElementById('front-type-badge');
     badge.style.display = 'none';
-    document.getElementById('front-artikel').textContent = '';
-    document.getElementById('front-word').textContent    = '🎉 All done!';
-    document.getElementById('back-meaning').textContent  = '';
-    document.getElementById('back-sentence').textContent = '';
+    document.getElementById('front-artikel').textContent  = '';
+    document.getElementById('front-word').textContent     = '🎉 All done!';
+    document.getElementById('back-meaning').textContent   = '';
+    document.getElementById('back-artikel').textContent   = '';
+    document.getElementById('back-german').textContent    = '';
+    document.getElementById('back-sentence').innerHTML    = '';
     return;
   }
 
@@ -174,9 +211,29 @@ function _renderCard() {
   badge.style.background = color;
   badge.style.display    = label ? 'inline-block' : 'none';
 
-  document.getElementById('front-artikel').textContent = w.artikel || '';
-  document.getElementById('front-word').textContent    = w.german_word;
-  document.getElementById('back-meaning').textContent  = w.meaning;
+  if (REVISE_MODE) {
+    // Front: English meaning, no artikel
+    document.getElementById('front-artikel').textContent = '';
+    document.getElementById('front-word').textContent    = w.meaning;
+    document.getElementById('flip-hint').textContent     = 'Click to reveal German word';
+
+    // Back: artikel + German word (swap back-meaning out)
+    document.getElementById('back-meaning').classList.add('d-none');
+    document.getElementById('back-artikel').textContent = w.artikel || '';
+    document.getElementById('back-artikel').classList.toggle('d-none', !w.artikel);
+    document.getElementById('back-german').textContent  = w.german_word;
+    document.getElementById('back-german').classList.remove('d-none');
+  } else {
+    // Normal mode: front is German word
+    document.getElementById('front-artikel').textContent = w.artikel || '';
+    document.getElementById('front-word').textContent    = w.german_word;
+    document.getElementById('flip-hint').textContent     = 'Click to reveal meaning';
+
+    document.getElementById('back-meaning').textContent = w.meaning;
+    document.getElementById('back-meaning').classList.remove('d-none');
+    document.getElementById('back-artikel').classList.add('d-none');
+    document.getElementById('back-german').classList.add('d-none');
+  }
 
   const sentenceEl = document.getElementById('back-sentence');
   if (w.sentence) {
@@ -271,4 +328,4 @@ document.addEventListener('keydown', e => {
 });
 
 loadWords();
-_updateNavBmBadge();
+_loadBmCache();

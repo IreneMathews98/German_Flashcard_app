@@ -1,1 +1,1395 @@
-[{"german_word":"Gesellschaft","meaning":"society","word_type":"noun","artikel":"die","sentence":"Die Gesellschaft verändert sich ständig."},{"german_word":"Regierung","meaning":"government","word_type":"noun","artikel":"die","sentence":"Die Regierung hat ein neues Gesetz verabschiedet."},{"german_word":"Gesetz","meaning":"law","word_type":"noun","artikel":"das","sentence":"Dieses Gesetz gilt seit letztem Jahr."},{"german_word":"Recht","meaning":"right \/ law","word_type":"noun","artikel":"das","sentence":"Jeder hat das Recht auf Bildung."},{"german_word":"Pflicht","meaning":"duty \/ obligation","word_type":"noun","artikel":"die","sentence":"Es ist meine Pflicht, ehrlich zu sein."},{"german_word":"Wahl","meaning":"election \/ choice","word_type":"noun","artikel":"die","sentence":"Die Wahl findet im Herbst statt."},{"german_word":"Partei","meaning":"political party","word_type":"noun","artikel":"die","sentence":"Er ist Mitglied einer Partei."},{"german_word":"Demokratie","meaning":"democracy","word_type":"noun","artikel":"die","sentence":"Deutschland ist eine Demokratie."},{"german_word":"Bürger","meaning":"citizen","word_type":"noun","artikel":"der","sentence":"Alle Bürger haben gleiche Rechte."},{"german_word":"Freiheit","meaning":"freedom","word_type":"noun","artikel":"die","sentence":"Freiheit ist ein wichtiges Grundrecht."},{"german_word":"Gleichheit","meaning":"equality","word_type":"noun","artikel":"die","sentence":"Gleichheit ist ein Menschenrecht."},{"german_word":"Konflikt","meaning":"conflict","word_type":"noun","artikel":"der","sentence":"Der Konflikt zwischen den Ländern dauert an."},{"german_word":"Umwelt","meaning":"environment","word_type":"noun","artikel":"die","sentence":"Wir müssen die Umwelt schützen."},{"german_word":"Klimawandel","meaning":"climate change","word_type":"noun","artikel":"der","sentence":"Der Klimawandel ist eine globale Bedrohung."},{"german_word":"Energie","meaning":"energy","word_type":"noun","artikel":"die","sentence":"Wir brauchen mehr erneuerbare Energie."},{"german_word":"Abfall","meaning":"waste \/ rubbish","word_type":"noun","artikel":"der","sentence":"Bitte wirf den Abfall in den Mülleimer."},{"german_word":"Recycling","meaning":"recycling","word_type":"noun","artikel":"das","sentence":"Recycling ist wichtig für die Umwelt."},{"german_word":"Verschmutzung","meaning":"pollution","word_type":"noun","artikel":"die","sentence":"Die Luftverschmutzung nimmt zu."},{"german_word":"Nachhaltigkeit","meaning":"sustainability","word_type":"noun","artikel":"die","sentence":"Nachhaltigkeit ist ein wichtiges Thema."},{"german_word":"Ressource","meaning":"resource","word_type":"noun","artikel":"die","sentence":"Wir müssen unsere Ressourcen sparen."},{"german_word":"Bewerbung","meaning":"job application","word_type":"noun","artikel":"die","sentence":"Ich schreibe eine Bewerbung."},{"german_word":"Lebenslauf","meaning":"CV \/ résumé","word_type":"noun","artikel":"der","sentence":"Mein Lebenslauf ist aktualisiert."},{"german_word":"Vorstellungsgespräch","meaning":"job interview","word_type":"noun","artikel":"das","sentence":"Ich habe morgen ein Vorstellungsgespräch."},{"german_word":"Stelle","meaning":"position \/ job","word_type":"noun","artikel":"die","sentence":"Ich suche eine neue Stelle."},{"german_word":"Ausbildung","meaning":"vocational training","word_type":"noun","artikel":"die","sentence":"Er macht eine Ausbildung als Koch."},{"german_word":"Erfahrung","meaning":"experience","word_type":"noun","artikel":"die","sentence":"Sie hat viel Berufserfahrung."},{"german_word":"Fähigkeit","meaning":"skill \/ ability","word_type":"noun","artikel":"die","sentence":"Teamarbeit ist eine wichtige Fähigkeit."},{"german_word":"Verantwortung","meaning":"responsibility","word_type":"noun","artikel":"die","sentence":"Ich trage viel Verantwortung."},{"german_word":"Erfolg","meaning":"success","word_type":"noun","artikel":"der","sentence":"Der Erfolg kommt durch harte Arbeit."},{"german_word":"Misserfolg","meaning":"failure","word_type":"noun","artikel":"der","sentence":"Aus Misserfolgen kann man lernen."},{"german_word":"Kenntnisse","meaning":"knowledge \/ skills","word_type":"noun","artikel":"die","sentence":"Ich habe gute Sprachkenntnisse."},{"german_word":"Forschung","meaning":"research","word_type":"noun","artikel":"die","sentence":"Die Forschung bringt neue Erkenntnisse."},{"german_word":"Wissenschaft","meaning":"science","word_type":"noun","artikel":"die","sentence":"Die Wissenschaft entwickelt sich schnell."},{"german_word":"Theorie","meaning":"theory","word_type":"noun","artikel":"die","sentence":"Diese Theorie ist sehr überzeugend."},{"german_word":"Ergebnis","meaning":"result","word_type":"noun","artikel":"das","sentence":"Das Ergebnis der Prüfung war gut."},{"german_word":"Lösung","meaning":"solution","word_type":"noun","artikel":"die","sentence":"Wir suchen eine Lösung für das Problem."},{"german_word":"Fortschritt","meaning":"progress","word_type":"noun","artikel":"der","sentence":"Der Fortschritt in der Technik ist enorm."},{"german_word":"Beziehung","meaning":"relationship","word_type":"noun","artikel":"die","sentence":"Wir haben eine gute Beziehung."},{"german_word":"Vertrauen","meaning":"trust","word_type":"noun","artikel":"das","sentence":"Vertrauen ist die Basis jeder Freundschaft."},{"german_word":"Respekt","meaning":"respect","word_type":"noun","artikel":"der","sentence":"Gegenseitiger Respekt ist sehr wichtig."},{"german_word":"Streit","meaning":"argument \/ dispute","word_type":"noun","artikel":"der","sentence":"Wir hatten einen Streit."},{"german_word":"Versöhnung","meaning":"reconciliation","word_type":"noun","artikel":"die","sentence":"Nach dem Streit kam die Versöhnung."},{"german_word":"Eifersucht","meaning":"jealousy","word_type":"noun","artikel":"die","sentence":"Eifersucht ist nicht gut für eine Beziehung."},{"german_word":"Enttäuschung","meaning":"disappointment","word_type":"noun","artikel":"die","sentence":"Ich verberge meine Enttäuschung."},{"german_word":"Stolz","meaning":"pride","word_type":"noun","artikel":"der","sentence":"Ich bin stolz auf dich."},{"german_word":"Mitgefühl","meaning":"compassion \/ sympathy","word_type":"noun","artikel":"das","sentence":"Er zeigte Mitgefühl für seine Freunde."},{"german_word":"Ernährung","meaning":"nutrition \/ diet","word_type":"noun","artikel":"die","sentence":"Eine gesunde Ernährung ist wichtig."},{"german_word":"Bewegung","meaning":"exercise \/ movement","word_type":"noun","artikel":"die","sentence":"Regelmäßige Bewegung hält fit."},{"german_word":"Stress","meaning":"stress","word_type":"noun","artikel":"der","sentence":"Ich habe viel Stress bei der Arbeit."},{"german_word":"Wohlbefinden","meaning":"wellbeing","word_type":"noun","artikel":"das","sentence":"Sport verbessert das Wohlbefinden."},{"german_word":"Gewohnheit","meaning":"habit","word_type":"noun","artikel":"die","sentence":"Das Rauchen ist eine schlechte Gewohnheit."},{"german_word":"Schlafmangel","meaning":"lack of sleep","word_type":"noun","artikel":"der","sentence":"Schlafmangel schadet der Gesundheit."},{"german_word":"Kultur","meaning":"culture","word_type":"noun","artikel":"die","sentence":"Deutschland hat eine reiche Kultur."},{"german_word":"Tradition","meaning":"tradition","word_type":"noun","artikel":"die","sentence":"Diese Tradition gibt es seit Jahrhunderten."},{"german_word":"Medien","meaning":"media","word_type":"noun","artikel":"die","sentence":"Die Medien berichten über den Vorfall."},{"german_word":"Nachrichten","meaning":"news","word_type":"noun","artikel":"die","sentence":"Ich schaue jeden Abend die Nachrichten."},{"german_word":"Zeitung","meaning":"newspaper","word_type":"noun","artikel":"die","sentence":"Ich lese jeden Morgen die Zeitung."},{"german_word":"Werbung","meaning":"advertising","word_type":"noun","artikel":"die","sentence":"Die Werbung ist sehr kreativ."},{"german_word":"Ausstellung","meaning":"exhibition","word_type":"noun","artikel":"die","sentence":"Ich besuche eine Ausstellung im Museum."},{"german_word":"Veranstaltung","meaning":"event","word_type":"noun","artikel":"die","sentence":"Die Veranstaltung beginnt um 19 Uhr."},{"german_word":"Wirtschaft","meaning":"economy","word_type":"noun","artikel":"die","sentence":"Die Wirtschaft wächst langsam."},{"german_word":"Unternehmen","meaning":"company \/ enterprise","word_type":"noun","artikel":"das","sentence":"Er arbeitet bei einem großen Unternehmen."},{"german_word":"Produkt","meaning":"product","word_type":"noun","artikel":"das","sentence":"Das Produkt ist sehr beliebt."},{"german_word":"Markt","meaning":"market","word_type":"noun","artikel":"der","sentence":"Der Markt ist sehr wettbewerbsintensiv."},{"german_word":"Investition","meaning":"investment","word_type":"noun","artikel":"die","sentence":"Die Investition hat sich gelohnt."},{"german_word":"Schulden","meaning":"debts","word_type":"noun","artikel":"die","sentence":"Er hat hohe Schulden."},{"german_word":"Steuer","meaning":"tax","word_type":"noun","artikel":"die","sentence":"Ich zahle jeden Monat Steuern."},{"german_word":"Haushalt","meaning":"household \/ budget","word_type":"noun","artikel":"der","sentence":"Wir verwalten unseren Haushalt gut."},{"german_word":"Grund","meaning":"reason \/ ground","word_type":"noun","artikel":"der","sentence":"Was ist der Grund für deine Verspätung?"},{"german_word":"Ziel","meaning":"goal \/ aim","word_type":"noun","artikel":"das","sentence":"Mein Ziel ist es, Deutsch zu lernen."},{"german_word":"Chance","meaning":"chance \/ opportunity","word_type":"noun","artikel":"die","sentence":"Das ist eine große Chance für mich."},{"german_word":"Risiko","meaning":"risk","word_type":"noun","artikel":"das","sentence":"Das Risiko ist zu hoch."},{"german_word":"Einfluss","meaning":"influence","word_type":"noun","artikel":"der","sentence":"Sie hat großen Einfluss auf ihn."},{"german_word":"Wirkung","meaning":"effect","word_type":"noun","artikel":"die","sentence":"Die Wirkung des Medikaments ist gut."},{"german_word":"Zusammenhang","meaning":"context \/ connection","word_type":"noun","artikel":"der","sentence":"Im Zusammenhang mit dem Thema..."},{"german_word":"Unterschied","meaning":"difference","word_type":"noun","artikel":"der","sentence":"Was ist der Unterschied?"},{"german_word":"Gemeinsamkeit","meaning":"commonality","word_type":"noun","artikel":"die","sentence":"Wir haben viele Gemeinsamkeiten."},{"german_word":"Voraussetzung","meaning":"prerequisite \/ condition","word_type":"noun","artikel":"die","sentence":"Das ist eine wichtige Voraussetzung."},{"german_word":"sich bewerben","meaning":"to apply (for a job)","word_type":"verb","artikel":"-","sentence":"Ich bewerbe mich um die Stelle."},{"german_word":"erreichen","meaning":"to reach \/ achieve","word_type":"verb","artikel":"-","sentence":"Ich möchte mein Ziel erreichen."},{"german_word":"verbessern","meaning":"to improve","word_type":"verb","artikel":"-","sentence":"Ich möchte mein Deutsch verbessern."},{"german_word":"entwickeln","meaning":"to develop","word_type":"verb","artikel":"-","sentence":"Sie hat eine neue App entwickelt."},{"german_word":"lösen","meaning":"to solve","word_type":"verb","artikel":"-","sentence":"Wir müssen das Problem lösen."},{"german_word":"vermeiden","meaning":"to avoid","word_type":"verb","artikel":"-","sentence":"Man sollte Stress vermeiden."},{"german_word":"vergleichen","meaning":"to compare","word_type":"verb","artikel":"-","sentence":"Ich vergleiche die beiden Angebote."},{"german_word":"beschreiben","meaning":"to describe","word_type":"verb","artikel":"-","sentence":"Kannst du das beschreiben?"},{"german_word":"berichten","meaning":"to report","word_type":"verb","artikel":"-","sentence":"Die Zeitung berichtet über den Unfall."},{"german_word":"diskutieren","meaning":"to discuss","word_type":"verb","artikel":"-","sentence":"Wir diskutieren über Politik."},{"german_word":"überzeugen","meaning":"to convince","word_type":"verb","artikel":"-","sentence":"Er hat mich überzeugt."},{"german_word":"ablehnen","meaning":"to reject \/ decline","word_type":"verb","artikel":"-","sentence":"Das Angebot wurde abgelehnt."},{"german_word":"zustimmen","meaning":"to agree","word_type":"verb","artikel":"-","sentence":"Ich stimme deiner Meinung zu."},{"german_word":"widersprechen","meaning":"to contradict","word_type":"verb","artikel":"-","sentence":"Ich muss dir widersprechen."},{"german_word":"vorschlagen","meaning":"to suggest","word_type":"verb","artikel":"-","sentence":"Ich möchte etwas vorschlagen."},{"german_word":"annehmen","meaning":"to accept \/ assume","word_type":"verb","artikel":"-","sentence":"Ich nehme das Angebot an."},{"german_word":"aufgeben","meaning":"to give up \/ abandon","word_type":"verb","artikel":"-","sentence":"Du solltest nicht aufgeben."},{"german_word":"sich vorstellen","meaning":"to imagine \/ introduce oneself","word_type":"verb","artikel":"-","sentence":"Ich stelle mir die Zukunft vor."},{"german_word":"sich kümmern","meaning":"to take care of","word_type":"verb","artikel":"-","sentence":"Ich kümmere mich um meinen Vater."},{"german_word":"sich beschweren","meaning":"to complain","word_type":"verb","artikel":"-","sentence":"Er beschwert sich über den Lärm."},{"german_word":"beeinflussen","meaning":"to influence","word_type":"verb","artikel":"-","sentence":"Stress beeinflusst die Gesundheit."},{"german_word":"erziehen","meaning":"to raise \/ educate","word_type":"verb","artikel":"-","sentence":"Eltern erziehen ihre Kinder."},{"german_word":"gehören","meaning":"to belong to","word_type":"verb","artikel":"-","sentence":"Dieses Buch gehört mir."},{"german_word":"entstehen","meaning":"to arise \/ develop","word_type":"verb","artikel":"-","sentence":"Wie ist das Problem entstanden?"},{"german_word":"handeln","meaning":"to act \/ deal","word_type":"verb","artikel":"-","sentence":"Wir müssen schnell handeln."},{"german_word":"schaffen","meaning":"to manage \/ create","word_type":"verb","artikel":"-","sentence":"Ich schaffe das bestimmt."},{"german_word":"stattfinden","meaning":"to take place","word_type":"verb","artikel":"-","sentence":"Das Konzert findet morgen statt."},{"german_word":"umgehen mit","meaning":"to deal with \/ handle","word_type":"verb","artikel":"-","sentence":"Ich weiß, wie ich damit umgehe."},{"german_word":"verzichten auf","meaning":"to do without \/ give up","word_type":"verb","artikel":"-","sentence":"Ich verzichte auf Zucker."},{"german_word":"sich anpassen","meaning":"to adapt","word_type":"verb","artikel":"-","sentence":"Man muss sich anpassen."},{"german_word":"beruflich","meaning":"professional \/ career-related","word_type":"adjective","artikel":"-","sentence":"Das ist eine berufliche Entscheidung."},{"german_word":"persönlich","meaning":"personal","word_type":"adjective","artikel":"-","sentence":"Das ist eine persönliche Frage."},{"german_word":"öffentlich","meaning":"public","word_type":"adjective","artikel":"-","sentence":"Das ist ein öffentliches Gebäude."},{"german_word":"privat","meaning":"private","word_type":"adjective","artikel":"-","sentence":"Das ist meine private Meinung."},{"german_word":"politisch","meaning":"political","word_type":"adjective","artikel":"-","sentence":"Das ist ein politisches Thema."},{"german_word":"sozial","meaning":"social","word_type":"adjective","artikel":"-","sentence":"Soziale Gerechtigkeit ist wichtig."},{"german_word":"wirtschaftlich","meaning":"economic","word_type":"adjective","artikel":"-","sentence":"Die wirtschaftliche Lage ist schwierig."},{"german_word":"kulturell","meaning":"cultural","word_type":"adjective","artikel":"-","sentence":"Das ist ein kultureller Unterschied."},{"german_word":"typisch","meaning":"typical","word_type":"adjective","artikel":"-","sentence":"Das ist typisch deutsch."},{"german_word":"möglich","meaning":"possible","word_type":"adjective","artikel":"-","sentence":"Ist das möglich?"},{"german_word":"unmöglich","meaning":"impossible","word_type":"adjective","artikel":"-","sentence":"Das ist unmöglich."},{"german_word":"notwendig","meaning":"necessary","word_type":"adjective","artikel":"-","sentence":"Das ist absolut notwendig."},{"german_word":"überraschend","meaning":"surprising","word_type":"adjective","artikel":"-","sentence":"Das Ergebnis ist überraschend."},{"german_word":"enttäuschend","meaning":"disappointing","word_type":"adjective","artikel":"-","sentence":"Das war enttäuschend."},{"german_word":"besorgt","meaning":"worried","word_type":"adjective","artikel":"-","sentence":"Ich bin sehr besorgt."},{"german_word":"zufrieden","meaning":"satisfied \/ content","word_type":"adjective","artikel":"-","sentence":"Ich bin mit der Arbeit zufrieden."},{"german_word":"geduldig","meaning":"patient","word_type":"adjective","artikel":"-","sentence":"Sie ist sehr geduldig."},{"german_word":"ehrlich","meaning":"honest","word_type":"adjective","artikel":"-","sentence":"Bitte sei ehrlich mit mir."},{"german_word":"zuverlässig","meaning":"reliable","word_type":"adjective","artikel":"-","sentence":"Er ist ein zuverlässiger Mitarbeiter."},{"german_word":"selbstständig","meaning":"independent \/ self-employed","word_type":"adjective","artikel":"-","sentence":"Sie arbeitet selbstständig."},{"german_word":"kreativ","meaning":"creative","word_type":"adjective","artikel":"-","sentence":"Sie ist sehr kreativ."},{"german_word":"flexibel","meaning":"flexible","word_type":"adjective","artikel":"-","sentence":"Ich bin zeitlich flexibel."},{"german_word":"nachhaltig","meaning":"sustainable","word_type":"adjective","artikel":"-","sentence":"Wir brauchen nachhaltige Lösungen."},{"german_word":"bedeutend","meaning":"significant \/ important","word_type":"adjective","artikel":"-","sentence":"Das ist ein bedeutendes Ereignis."},{"german_word":"vielfältig","meaning":"diverse \/ varied","word_type":"adjective","artikel":"-","sentence":"Das Angebot ist sehr vielfältig."},{"german_word":"allerdings","meaning":"however \/ admittedly","word_type":"adverb","artikel":"-","sentence":"Das ist gut, allerdings sehr teuer."},{"german_word":"außerdem","meaning":"besides \/ moreover","word_type":"adverb","artikel":"-","sentence":"Ich bin müde, außerdem habe ich Hunger."},{"german_word":"dagegen","meaning":"on the other hand","word_type":"adverb","artikel":"-","sentence":"Er ist dafür, ich bin dagegen."},{"german_word":"einerseits","meaning":"on the one hand","word_type":"adverb","artikel":"-","sentence":"Einerseits ist es gut, andererseits nicht."},{"german_word":"andererseits","meaning":"on the other hand","word_type":"adverb","artikel":"-","sentence":"Andererseits gibt es auch Probleme."},{"german_word":"grundsätzlich","meaning":"basically \/ in principle","word_type":"adverb","artikel":"-","sentence":"Grundsätzlich bin ich damit einverstanden."},{"german_word":"tatsächlich","meaning":"actually \/ indeed","word_type":"adverb","artikel":"-","sentence":"Das ist tatsächlich wahr."},{"german_word":"offensichtlich","meaning":"obviously \/ evidently","word_type":"adverb","artikel":"-","sentence":"Er ist offensichtlich müde."},{"german_word":"vermutlich","meaning":"presumably \/ probably","word_type":"adverb","artikel":"-","sentence":"Er kommt vermutlich später."},{"german_word":"immerhin","meaning":"at least \/ after all","word_type":"adverb","artikel":"-","sentence":"Immerhin hat er es versucht."},{"german_word":"jedenfalls","meaning":"in any case \/ at any rate","word_type":"adverb","artikel":"-","sentence":"Jedenfalls war es interessant."},{"german_word":"schließlich","meaning":"finally \/ after all","word_type":"adverb","artikel":"-","sentence":"Schließlich haben wir eine Lösung gefunden."},{"german_word":"insgesamt","meaning":"overall \/ in total","word_type":"adverb","artikel":"-","sentence":"Insgesamt war es ein gutes Jahr."},{"german_word":"im Allgemeinen","meaning":"in general","word_type":"adverb","artikel":"-","sentence":"Im Allgemeinen bin ich zufrieden."},{"german_word":"zum Beispiel","meaning":"for example","word_type":"adverb","artikel":"-","sentence":"Zum Beispiel kannst du Yoga machen."},{"german_word":"im Gegensatz zu","meaning":"in contrast to","word_type":"adverb","artikel":"-","sentence":"Im Gegensatz zu ihm bin ich ruhig."},{"german_word":"hinsichtlich","meaning":"with regard to","word_type":"preposition","artikel":"-","sentence":"Hinsichtlich der Kosten gibt es Probleme."},{"german_word":"aufgrund","meaning":"due to \/ because of","word_type":"preposition","artikel":"-","sentence":"Aufgrund des Wetters bleiben wir drinnen."},{"german_word":"trotz","meaning":"despite","word_type":"preposition","artikel":"-","sentence":"Trotz des Regens gehen wir spazieren."},{"german_word":"anstatt","meaning":"instead of","word_type":"preposition","artikel":"-","sentence":"Anstatt Kaffee trinke ich Tee."},{"german_word":"sowohl … als auch","meaning":"both … and","word_type":"conjunction","artikel":"-","sentence":"Sowohl Fleisch als auch Gemüse."},{"german_word":"weder … noch","meaning":"neither … nor","word_type":"conjunction","artikel":"-","sentence":"Weder er noch sie war da."},{"german_word":"je … desto","meaning":"the … the","word_type":"conjunction","artikel":"-","sentence":"Je mehr du lernst, desto besser."},{"german_word":"damit","meaning":"so that \/ with it","word_type":"conjunction","artikel":"-","sentence":"Ich lerne, damit ich die Prüfung bestehe."},{"german_word":"obwohl","meaning":"although","word_type":"conjunction","artikel":"-","sentence":"Obwohl es schwer ist, mache ich weiter."},{"german_word":"Gerechtigkeit","meaning":"justice \/ fairness","word_type":"noun","artikel":"die","sentence":"Gerechtigkeit ist ein Grundwert."},{"german_word":"Sicherheit","meaning":"safety \/ security","word_type":"noun","artikel":"die","sentence":"Sicherheit geht vor."},{"german_word":"Gefahr","meaning":"danger","word_type":"noun","artikel":"die","sentence":"Es besteht große Gefahr."},{"german_word":"Folge","meaning":"consequence \/ episode","word_type":"noun","artikel":"die","sentence":"Das hat schwere Folgen."},{"german_word":"Ursache","meaning":"cause \/ reason","word_type":"noun","artikel":"die","sentence":"Was ist die Ursache des Problems?"},{"german_word":"Maßnahme","meaning":"measure \/ action","word_type":"noun","artikel":"die","sentence":"Wir müssen Maßnahmen ergreifen."},{"german_word":"Eindruck","meaning":"impression","word_type":"noun","artikel":"der","sentence":"Er hat einen guten Eindruck gemacht."},{"german_word":"Erfahrung","meaning":"experience","word_type":"noun","artikel":"die","sentence":"Das war eine lehrreiche Erfahrung."},{"german_word":"Vorteil","meaning":"advantage","word_type":"noun","artikel":"der","sentence":"Was sind die Vorteile?"},{"german_word":"Nachteil","meaning":"disadvantage","word_type":"noun","artikel":"der","sentence":"Es gibt auch Nachteile."},{"german_word":"Kompromiss","meaning":"compromise","word_type":"noun","artikel":"der","sentence":"Wir haben einen Kompromiss gefunden."},{"german_word":"Entschuldigung","meaning":"apology","word_type":"noun","artikel":"die","sentence":"Er hat eine Entschuldigung angeboten."},{"german_word":"Menge","meaning":"quantity \/ crowd","word_type":"noun","artikel":"die","sentence":"Eine große Menge Menschen war da."},{"german_word":"Schritt","meaning":"step","word_type":"noun","artikel":"der","sentence":"Das ist ein wichtiger Schritt."},{"german_word":"Überblick","meaning":"overview","word_type":"noun","artikel":"der","sentence":"Kannst du mir einen Überblick geben?"},{"german_word":"einschätzen","meaning":"to assess \/ estimate","word_type":"verb","artikel":"-","sentence":"Ich schätze die Lage richtig ein."},{"german_word":"bevorzugen","meaning":"to prefer","word_type":"verb","artikel":"-","sentence":"Ich bevorzuge öffentliche Verkehrsmittel."},{"german_word":"beachten","meaning":"to pay attention to","word_type":"verb","artikel":"-","sentence":"Bitte beachte die Regeln."},{"german_word":"erfordern","meaning":"to require \/ demand","word_type":"verb","artikel":"-","sentence":"Das erfordert viel Geduld."},{"german_word":"bewältigen","meaning":"to cope with \/ overcome","word_type":"verb","artikel":"-","sentence":"Sie hat die Krise gut bewältigt."},{"german_word":"einbeziehen","meaning":"to include \/ involve","word_type":"verb","artikel":"-","sentence":"Alle sollten einbezogen werden."},{"german_word":"nachdenken","meaning":"to think about \/ reflect","word_type":"verb","artikel":"-","sentence":"Ich denke darüber nach."},{"german_word":"anerkennen","meaning":"to acknowledge \/ recognize","word_type":"verb","artikel":"-","sentence":"Seine Leistung wird anerkannt."},{"german_word":"wahrnehmen","meaning":"to perceive \/ notice","word_type":"verb","artikel":"-","sentence":"Ich nehme die Veränderung wahr."},{"german_word":"unterstützen","meaning":"to support","word_type":"verb","artikel":"-","sentence":"Ich unterstütze deine Entscheidung."},{"german_word":"einführen","meaning":"to introduce \/ implement","word_type":"verb","artikel":"-","sentence":"Die Firma führt neue Regeln ein."},{"german_word":"durchführen","meaning":"to carry out \/ conduct","word_type":"verb","artikel":"-","sentence":"Wir führen eine Umfrage durch."},{"german_word":"zusammenfassen","meaning":"to summarize","word_type":"verb","artikel":"-","sentence":"Kannst du das zusammenfassen?"},{"german_word":"angemessen","meaning":"appropriate \/ adequate","word_type":"adjective","artikel":"-","sentence":"Das ist eine angemessene Reaktion."},{"german_word":"ausreichend","meaning":"sufficient \/ enough","word_type":"adjective","artikel":"-","sentence":"Die Zeit ist nicht ausreichend."},{"german_word":"erheblich","meaning":"considerable \/ significant","word_type":"adjective","artikel":"-","sentence":"Das ist ein erheblicher Unterschied."},{"german_word":"gegenseitig","meaning":"mutual \/ reciprocal","word_type":"adjective","artikel":"-","sentence":"Das ist gegenseitiges Vertrauen."},{"german_word":"gelegentlich","meaning":"occasional","word_type":"adjective","artikel":"-","sentence":"Ich trinke gelegentlich Alkohol."},{"german_word":"sorgfältig","meaning":"careful \/ thorough","word_type":"adjective","artikel":"-","sentence":"Er arbeitet sehr sorgfältig."},{"german_word":"vernünftig","meaning":"reasonable \/ sensible","word_type":"adjective","artikel":"-","sentence":"Das ist eine vernünftige Entscheidung."},{"german_word":"verantwortungsbewusst","meaning":"responsible","word_type":"adjective","artikel":"-","sentence":"Sie ist sehr verantwortungsbewusst."},{"german_word":"engagiert","meaning":"committed \/ engaged","word_type":"adjective","artikel":"-","sentence":"Er ist ein engagierter Mitarbeiter."},{"german_word":"ausgeglichen","meaning":"balanced \/ even-tempered","word_type":"adjective","artikel":"-","sentence":"Sie ist sehr ausgeglichen."},{"german_word":"neugiering","meaning":"curious","word_type":"adjective","artikel":"-","sentence":"Kinder sind von Natur aus neugierig."},{"german_word":"begeistert","meaning":"enthusiastic \/ excited","word_type":"adjective","artikel":"-","sentence":"Ich bin begeistert von der Idee."},{"german_word":"entschlossen","meaning":"determined \/ resolute","word_type":"adjective","artikel":"-","sentence":"Sie ist entschlossen, Erfolg zu haben."}]
+[
+  {
+    "german_word": "Gesellschaft",
+    "meaning": "society",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Gesellschaft verändert sich ständig."
+  },
+  {
+    "german_word": "Regierung",
+    "meaning": "government",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Regierung hat ein neues Gesetz verabschiedet."
+  },
+  {
+    "german_word": "Gesetz",
+    "meaning": "law",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Dieses Gesetz gilt seit letztem Jahr."
+  },
+  {
+    "german_word": "Recht",
+    "meaning": "right / law",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Jeder hat das Recht auf Bildung."
+  },
+  {
+    "german_word": "Pflicht",
+    "meaning": "duty / obligation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Es ist meine Pflicht, ehrlich zu sein."
+  },
+  {
+    "german_word": "Wahl",
+    "meaning": "election / choice",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Wahl findet im Herbst statt."
+  },
+  {
+    "german_word": "Partei",
+    "meaning": "political party",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Er ist Mitglied einer Partei."
+  },
+  {
+    "german_word": "Demokratie",
+    "meaning": "democracy",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Deutschland ist eine Demokratie."
+  },
+  {
+    "german_word": "Bürger",
+    "meaning": "citizen",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Alle Bürger haben gleiche Rechte."
+  },
+  {
+    "german_word": "Freiheit",
+    "meaning": "freedom",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Freiheit ist ein wichtiges Grundrecht."
+  },
+  {
+    "german_word": "Gleichheit",
+    "meaning": "equality",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Gleichheit ist ein Menschenrecht."
+  },
+  {
+    "german_word": "Konflikt",
+    "meaning": "conflict",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der Konflikt zwischen den Ländern dauert an."
+  },
+  {
+    "german_word": "Umwelt",
+    "meaning": "environment",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Wir müssen die Umwelt schützen."
+  },
+  {
+    "german_word": "Klimawandel",
+    "meaning": "climate change",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der Klimawandel ist eine globale Bedrohung."
+  },
+  {
+    "german_word": "Energie",
+    "meaning": "energy",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Wir brauchen mehr erneuerbare Energie."
+  },
+  {
+    "german_word": "Abfall",
+    "meaning": "waste / rubbish",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Bitte wirf den Abfall in den Mülleimer."
+  },
+  {
+    "german_word": "Recycling",
+    "meaning": "recycling",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Recycling ist wichtig für die Umwelt."
+  },
+  {
+    "german_word": "Verschmutzung",
+    "meaning": "pollution",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Luftverschmutzung nimmt zu."
+  },
+  {
+    "german_word": "Nachhaltigkeit",
+    "meaning": "sustainability",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Nachhaltigkeit ist ein wichtiges Thema."
+  },
+  {
+    "german_word": "Ressource",
+    "meaning": "resource",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Wir müssen unsere Ressourcen sparen."
+  },
+  {
+    "german_word": "Bewerbung",
+    "meaning": "job application",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich schreibe eine Bewerbung."
+  },
+  {
+    "german_word": "Lebenslauf",
+    "meaning": "CV / résumé",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Mein Lebenslauf ist aktualisiert."
+  },
+  {
+    "german_word": "Vorstellungsgespräch",
+    "meaning": "job interview",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Ich habe morgen ein Vorstellungsgespräch."
+  },
+  {
+    "german_word": "Stelle",
+    "meaning": "position / job",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich suche eine neue Stelle."
+  },
+  {
+    "german_word": "Ausbildung",
+    "meaning": "vocational training",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Er macht eine Ausbildung als Koch."
+  },
+  {
+    "german_word": "Erfahrung",
+    "meaning": "experience",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Sie hat viel Berufserfahrung."
+  },
+  {
+    "german_word": "Fähigkeit",
+    "meaning": "skill / ability",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Teamarbeit ist eine wichtige Fähigkeit."
+  },
+  {
+    "german_word": "Verantwortung",
+    "meaning": "responsibility",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich trage viel Verantwortung."
+  },
+  {
+    "german_word": "Erfolg",
+    "meaning": "success",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der Erfolg kommt durch harte Arbeit."
+  },
+  {
+    "german_word": "Misserfolg",
+    "meaning": "failure",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Aus Misserfolgen kann man lernen."
+  },
+  {
+    "german_word": "Kenntnisse",
+    "meaning": "knowledge / skills",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich habe gute Sprachkenntnisse."
+  },
+  {
+    "german_word": "Forschung",
+    "meaning": "research",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Forschung bringt neue Erkenntnisse."
+  },
+  {
+    "german_word": "Wissenschaft",
+    "meaning": "science",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Wissenschaft entwickelt sich schnell."
+  },
+  {
+    "german_word": "Theorie",
+    "meaning": "theory",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Diese Theorie ist sehr überzeugend."
+  },
+  {
+    "german_word": "Ergebnis",
+    "meaning": "result",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Ergebnis der Prüfung war gut."
+  },
+  {
+    "german_word": "Lösung",
+    "meaning": "solution",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Wir suchen eine Lösung für das Problem."
+  },
+  {
+    "german_word": "Fortschritt",
+    "meaning": "progress",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der Fortschritt in der Technik ist enorm."
+  },
+  {
+    "german_word": "Beziehung",
+    "meaning": "relationship",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Wir haben eine gute Beziehung."
+  },
+  {
+    "german_word": "Vertrauen",
+    "meaning": "trust",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Vertrauen ist die Basis jeder Freundschaft."
+  },
+  {
+    "german_word": "Respekt",
+    "meaning": "respect",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Gegenseitiger Respekt ist sehr wichtig."
+  },
+  {
+    "german_word": "Streit",
+    "meaning": "argument / dispute",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Wir hatten einen Streit."
+  },
+  {
+    "german_word": "Versöhnung",
+    "meaning": "reconciliation",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Nach dem Streit kam die Versöhnung."
+  },
+  {
+    "german_word": "Eifersucht",
+    "meaning": "jealousy",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Eifersucht ist nicht gut für eine Beziehung."
+  },
+  {
+    "german_word": "Enttäuschung",
+    "meaning": "disappointment",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich verberge meine Enttäuschung."
+  },
+  {
+    "german_word": "Stolz",
+    "meaning": "pride",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Ich bin stolz auf dich."
+  },
+  {
+    "german_word": "Mitgefühl",
+    "meaning": "compassion / sympathy",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Er zeigte Mitgefühl für seine Freunde."
+  },
+  {
+    "german_word": "Ernährung",
+    "meaning": "nutrition / diet",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Eine gesunde Ernährung ist wichtig."
+  },
+  {
+    "german_word": "Bewegung",
+    "meaning": "exercise / movement",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Regelmäßige Bewegung hält fit."
+  },
+  {
+    "german_word": "Stress",
+    "meaning": "stress",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Ich habe viel Stress bei der Arbeit."
+  },
+  {
+    "german_word": "Wohlbefinden",
+    "meaning": "wellbeing",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Sport verbessert das Wohlbefinden."
+  },
+  {
+    "german_word": "Gewohnheit",
+    "meaning": "habit",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das Rauchen ist eine schlechte Gewohnheit."
+  },
+  {
+    "german_word": "Schlafmangel",
+    "meaning": "lack of sleep",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Schlafmangel schadet der Gesundheit."
+  },
+  {
+    "german_word": "Kultur",
+    "meaning": "culture",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Deutschland hat eine reiche Kultur."
+  },
+  {
+    "german_word": "Tradition",
+    "meaning": "tradition",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Diese Tradition gibt es seit Jahrhunderten."
+  },
+  {
+    "german_word": "Medien",
+    "meaning": "media",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Medien berichten über den Vorfall."
+  },
+  {
+    "german_word": "Nachrichten",
+    "meaning": "news",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich schaue jeden Abend die Nachrichten."
+  },
+  {
+    "german_word": "Zeitung",
+    "meaning": "newspaper",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich lese jeden Morgen die Zeitung."
+  },
+  {
+    "german_word": "Werbung",
+    "meaning": "advertising",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Werbung ist sehr kreativ."
+  },
+  {
+    "german_word": "Ausstellung",
+    "meaning": "exhibition",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich besuche eine Ausstellung im Museum."
+  },
+  {
+    "german_word": "Veranstaltung",
+    "meaning": "event",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Veranstaltung beginnt um 19 Uhr."
+  },
+  {
+    "german_word": "Wirtschaft",
+    "meaning": "economy",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Wirtschaft wächst langsam."
+  },
+  {
+    "german_word": "Unternehmen",
+    "meaning": "company / enterprise",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Er arbeitet bei einem großen Unternehmen."
+  },
+  {
+    "german_word": "Produkt",
+    "meaning": "product",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Produkt ist sehr beliebt."
+  },
+  {
+    "german_word": "Markt",
+    "meaning": "market",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Der Markt ist sehr wettbewerbsintensiv."
+  },
+  {
+    "german_word": "Investition",
+    "meaning": "investment",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Investition hat sich gelohnt."
+  },
+  {
+    "german_word": "Schulden",
+    "meaning": "debts",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Er hat hohe Schulden."
+  },
+  {
+    "german_word": "Steuer",
+    "meaning": "tax",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Ich zahle jeden Monat Steuern."
+  },
+  {
+    "german_word": "Haushalt",
+    "meaning": "household / budget",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Wir verwalten unseren Haushalt gut."
+  },
+  {
+    "german_word": "Grund",
+    "meaning": "reason / ground",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Was ist der Grund für deine Verspätung?"
+  },
+  {
+    "german_word": "Ziel",
+    "meaning": "goal / aim",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Mein Ziel ist es, Deutsch zu lernen."
+  },
+  {
+    "german_word": "Chance",
+    "meaning": "chance / opportunity",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das ist eine große Chance für mich."
+  },
+  {
+    "german_word": "Risiko",
+    "meaning": "risk",
+    "word_type": "noun",
+    "artikel": "das",
+    "sentence": "Das Risiko ist zu hoch."
+  },
+  {
+    "german_word": "Einfluss",
+    "meaning": "influence",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Sie hat großen Einfluss auf ihn."
+  },
+  {
+    "german_word": "Wirkung",
+    "meaning": "effect",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Die Wirkung des Medikaments ist gut."
+  },
+  {
+    "german_word": "Zusammenhang",
+    "meaning": "context / connection",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Im Zusammenhang mit dem Thema..."
+  },
+  {
+    "german_word": "Unterschied",
+    "meaning": "difference",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Was ist der Unterschied?"
+  },
+  {
+    "german_word": "Gemeinsamkeit",
+    "meaning": "commonality",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Wir haben viele Gemeinsamkeiten."
+  },
+  {
+    "german_word": "Voraussetzung",
+    "meaning": "prerequisite / condition",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das ist eine wichtige Voraussetzung."
+  },
+  {
+    "german_word": "sich bewerben",
+    "meaning": "to apply (for a job)",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich bewerbe mich um die Stelle."
+  },
+  {
+    "german_word": "erreichen",
+    "meaning": "to reach / achieve",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich möchte mein Ziel erreichen."
+  },
+  {
+    "german_word": "verbessern",
+    "meaning": "to improve",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich möchte mein Deutsch verbessern."
+  },
+  {
+    "german_word": "entwickeln",
+    "meaning": "to develop",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Sie hat eine neue App entwickelt."
+  },
+  {
+    "german_word": "lösen",
+    "meaning": "to solve",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir müssen das Problem lösen."
+  },
+  {
+    "german_word": "vermeiden",
+    "meaning": "to avoid",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Man sollte Stress vermeiden."
+  },
+  {
+    "german_word": "vergleichen",
+    "meaning": "to compare",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich vergleiche die beiden Angebote."
+  },
+  {
+    "german_word": "beschreiben",
+    "meaning": "to describe",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Kannst du das beschreiben?"
+  },
+  {
+    "german_word": "berichten",
+    "meaning": "to report",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Die Zeitung berichtet über den Unfall."
+  },
+  {
+    "german_word": "diskutieren",
+    "meaning": "to discuss",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir diskutieren über Politik."
+  },
+  {
+    "german_word": "überzeugen",
+    "meaning": "to convince",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er hat mich überzeugt."
+  },
+  {
+    "german_word": "ablehnen",
+    "meaning": "to reject / decline",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das Angebot wurde abgelehnt."
+  },
+  {
+    "german_word": "zustimmen",
+    "meaning": "to agree",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich stimme deiner Meinung zu."
+  },
+  {
+    "german_word": "widersprechen",
+    "meaning": "to contradict",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich muss dir widersprechen."
+  },
+  {
+    "german_word": "vorschlagen",
+    "meaning": "to suggest",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich möchte etwas vorschlagen."
+  },
+  {
+    "german_word": "annehmen",
+    "meaning": "to accept / assume",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich nehme das Angebot an."
+  },
+  {
+    "german_word": "aufgeben",
+    "meaning": "to give up / abandon",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Du solltest nicht aufgeben."
+  },
+  {
+    "german_word": "sich vorstellen",
+    "meaning": "to imagine / introduce oneself",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich stelle mir die Zukunft vor."
+  },
+  {
+    "german_word": "sich kümmern",
+    "meaning": "to take care of",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich kümmere mich um meinen Vater."
+  },
+  {
+    "german_word": "sich beschweren",
+    "meaning": "to complain",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Er beschwert sich über den Lärm."
+  },
+  {
+    "german_word": "beeinflussen",
+    "meaning": "to influence",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Stress beeinflusst die Gesundheit."
+  },
+  {
+    "german_word": "erziehen",
+    "meaning": "to raise / educate",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Eltern erziehen ihre Kinder."
+  },
+  {
+    "german_word": "gehören",
+    "meaning": "to belong to",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Dieses Buch gehört mir."
+  },
+  {
+    "german_word": "entstehen",
+    "meaning": "to arise / develop",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wie ist das Problem entstanden?"
+  },
+  {
+    "german_word": "handeln",
+    "meaning": "to act / deal",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir müssen schnell handeln."
+  },
+  {
+    "german_word": "schaffen",
+    "meaning": "to manage / create",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich schaffe das bestimmt."
+  },
+  {
+    "german_word": "stattfinden",
+    "meaning": "to take place",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das Konzert findet morgen statt."
+  },
+  {
+    "german_word": "umgehen mit",
+    "meaning": "to deal with / handle",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich weiß, wie ich damit umgehe."
+  },
+  {
+    "german_word": "verzichten auf",
+    "meaning": "to do without / give up",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich verzichte auf Zucker."
+  },
+  {
+    "german_word": "sich anpassen",
+    "meaning": "to adapt",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Man muss sich anpassen."
+  },
+  {
+    "german_word": "beruflich",
+    "meaning": "professional / career-related",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine berufliche Entscheidung."
+  },
+  {
+    "german_word": "persönlich",
+    "meaning": "personal",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine persönliche Frage."
+  },
+  {
+    "german_word": "öffentlich",
+    "meaning": "public",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist ein öffentliches Gebäude."
+  },
+  {
+    "german_word": "privat",
+    "meaning": "private",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist meine private Meinung."
+  },
+  {
+    "german_word": "politisch",
+    "meaning": "political",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist ein politisches Thema."
+  },
+  {
+    "german_word": "sozial",
+    "meaning": "social",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Soziale Gerechtigkeit ist wichtig."
+  },
+  {
+    "german_word": "wirtschaftlich",
+    "meaning": "economic",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Die wirtschaftliche Lage ist schwierig."
+  },
+  {
+    "german_word": "kulturell",
+    "meaning": "cultural",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist ein kultureller Unterschied."
+  },
+  {
+    "german_word": "typisch",
+    "meaning": "typical",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist typisch deutsch."
+  },
+  {
+    "german_word": "möglich",
+    "meaning": "possible",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Ist das möglich?"
+  },
+  {
+    "german_word": "unmöglich",
+    "meaning": "impossible",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist unmöglich."
+  },
+  {
+    "german_word": "notwendig",
+    "meaning": "necessary",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist absolut notwendig."
+  },
+  {
+    "german_word": "überraschend",
+    "meaning": "surprising",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das Ergebnis ist überraschend."
+  },
+  {
+    "german_word": "enttäuschend",
+    "meaning": "disappointing",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das war enttäuschend."
+  },
+  {
+    "german_word": "besorgt",
+    "meaning": "worried",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Ich bin sehr besorgt."
+  },
+  {
+    "german_word": "zufrieden",
+    "meaning": "satisfied / content",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Ich bin mit der Arbeit zufrieden."
+  },
+  {
+    "german_word": "geduldig",
+    "meaning": "patient",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Sie ist sehr geduldig."
+  },
+  {
+    "german_word": "ehrlich",
+    "meaning": "honest",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Bitte sei ehrlich mit mir."
+  },
+  {
+    "german_word": "zuverlässig",
+    "meaning": "reliable",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Er ist ein zuverlässiger Mitarbeiter."
+  },
+  {
+    "german_word": "selbstständig",
+    "meaning": "independent / self-employed",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Sie arbeitet selbstständig."
+  },
+  {
+    "german_word": "kreativ",
+    "meaning": "creative",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Sie ist sehr kreativ."
+  },
+  {
+    "german_word": "flexibel",
+    "meaning": "flexible",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Ich bin zeitlich flexibel."
+  },
+  {
+    "german_word": "nachhaltig",
+    "meaning": "sustainable",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Wir brauchen nachhaltige Lösungen."
+  },
+  {
+    "german_word": "bedeutend",
+    "meaning": "significant / important",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist ein bedeutendes Ereignis."
+  },
+  {
+    "german_word": "vielfältig",
+    "meaning": "diverse / varied",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das Angebot ist sehr vielfältig."
+  },
+  {
+    "german_word": "allerdings",
+    "meaning": "however / admittedly",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Das ist gut, allerdings sehr teuer."
+  },
+  {
+    "german_word": "außerdem",
+    "meaning": "besides / moreover",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Ich bin müde, außerdem habe ich Hunger."
+  },
+  {
+    "german_word": "dagegen",
+    "meaning": "on the other hand",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Er ist dafür, ich bin dagegen."
+  },
+  {
+    "german_word": "einerseits",
+    "meaning": "on the one hand",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Einerseits ist es gut, andererseits nicht."
+  },
+  {
+    "german_word": "andererseits",
+    "meaning": "on the other hand",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Andererseits gibt es auch Probleme."
+  },
+  {
+    "german_word": "grundsätzlich",
+    "meaning": "basically / in principle",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Grundsätzlich bin ich damit einverstanden."
+  },
+  {
+    "german_word": "tatsächlich",
+    "meaning": "actually / indeed",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Das ist tatsächlich wahr."
+  },
+  {
+    "german_word": "offensichtlich",
+    "meaning": "obviously / evidently",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Er ist offensichtlich müde."
+  },
+  {
+    "german_word": "vermutlich",
+    "meaning": "presumably / probably",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Er kommt vermutlich später."
+  },
+  {
+    "german_word": "immerhin",
+    "meaning": "at least / after all",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Immerhin hat er es versucht."
+  },
+  {
+    "german_word": "jedenfalls",
+    "meaning": "in any case / at any rate",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Jedenfalls war es interessant."
+  },
+  {
+    "german_word": "schließlich",
+    "meaning": "finally / after all",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Schließlich haben wir eine Lösung gefunden."
+  },
+  {
+    "german_word": "insgesamt",
+    "meaning": "overall / in total",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Insgesamt war es ein gutes Jahr."
+  },
+  {
+    "german_word": "im Allgemeinen",
+    "meaning": "in general",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Im Allgemeinen bin ich zufrieden."
+  },
+  {
+    "german_word": "zum Beispiel",
+    "meaning": "for example",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Zum Beispiel kannst du Yoga machen."
+  },
+  {
+    "german_word": "im Gegensatz zu",
+    "meaning": "in contrast to",
+    "word_type": "adverb",
+    "artikel": "-",
+    "sentence": "Im Gegensatz zu ihm bin ich ruhig."
+  },
+  {
+    "german_word": "hinsichtlich",
+    "meaning": "with regard to",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Hinsichtlich der Kosten gibt es Probleme."
+  },
+  {
+    "german_word": "aufgrund",
+    "meaning": "due to / because of",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Aufgrund des Wetters bleiben wir drinnen."
+  },
+  {
+    "german_word": "trotz",
+    "meaning": "despite",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Trotz des Regens gehen wir spazieren."
+  },
+  {
+    "german_word": "anstatt",
+    "meaning": "instead of",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Anstatt Kaffee trinke ich Tee."
+  },
+  {
+    "german_word": "sowohl … als auch",
+    "meaning": "both … and",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Sowohl Fleisch als auch Gemüse."
+  },
+  {
+    "german_word": "weder … noch",
+    "meaning": "neither … nor",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Weder er noch sie war da."
+  },
+  {
+    "german_word": "je … desto",
+    "meaning": "the … the",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Je mehr du lernst, desto besser."
+  },
+  {
+    "german_word": "damit",
+    "meaning": "so that / with it",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Ich lerne, damit ich die Prüfung bestehe."
+  },
+  {
+    "german_word": "obwohl",
+    "meaning": "although",
+    "word_type": "conjunction",
+    "artikel": "-",
+    "sentence": "Obwohl es schwer ist, mache ich weiter."
+  },
+  {
+    "german_word": "Gerechtigkeit",
+    "meaning": "justice / fairness",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Gerechtigkeit ist ein Grundwert."
+  },
+  {
+    "german_word": "Sicherheit",
+    "meaning": "safety / security",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Sicherheit geht vor."
+  },
+  {
+    "german_word": "Gefahr",
+    "meaning": "danger",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Es besteht große Gefahr."
+  },
+  {
+    "german_word": "Folge",
+    "meaning": "consequence / episode",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das hat schwere Folgen."
+  },
+  {
+    "german_word": "Ursache",
+    "meaning": "cause / reason",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Was ist die Ursache des Problems?"
+  },
+  {
+    "german_word": "Maßnahme",
+    "meaning": "measure / action",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Wir müssen Maßnahmen ergreifen."
+  },
+  {
+    "german_word": "Eindruck",
+    "meaning": "impression",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Er hat einen guten Eindruck gemacht."
+  },
+  {
+    "german_word": "Erfahrung",
+    "meaning": "experience",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Das war eine lehrreiche Erfahrung."
+  },
+  {
+    "german_word": "Vorteil",
+    "meaning": "advantage",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Was sind die Vorteile?"
+  },
+  {
+    "german_word": "Nachteil",
+    "meaning": "disadvantage",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Es gibt auch Nachteile."
+  },
+  {
+    "german_word": "Kompromiss",
+    "meaning": "compromise",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Wir haben einen Kompromiss gefunden."
+  },
+  {
+    "german_word": "Entschuldigung",
+    "meaning": "apology",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Er hat eine Entschuldigung angeboten."
+  },
+  {
+    "german_word": "Menge",
+    "meaning": "quantity / crowd",
+    "word_type": "noun",
+    "artikel": "die",
+    "sentence": "Eine große Menge Menschen war da."
+  },
+  {
+    "german_word": "Schritt",
+    "meaning": "step",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Das ist ein wichtiger Schritt."
+  },
+  {
+    "german_word": "Überblick",
+    "meaning": "overview",
+    "word_type": "noun",
+    "artikel": "der",
+    "sentence": "Kannst du mir einen Überblick geben?"
+  },
+  {
+    "german_word": "einschätzen",
+    "meaning": "to assess / estimate",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich schätze die Lage richtig ein."
+  },
+  {
+    "german_word": "bevorzugen",
+    "meaning": "to prefer",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich bevorzuge öffentliche Verkehrsmittel."
+  },
+  {
+    "german_word": "beachten",
+    "meaning": "to pay attention to",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Bitte beachte die Regeln."
+  },
+  {
+    "german_word": "erfordern",
+    "meaning": "to require / demand",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Das erfordert viel Geduld."
+  },
+  {
+    "german_word": "bewältigen",
+    "meaning": "to cope with / overcome",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Sie hat die Krise gut bewältigt."
+  },
+  {
+    "german_word": "einbeziehen",
+    "meaning": "to include / involve",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Alle sollten einbezogen werden."
+  },
+  {
+    "german_word": "nachdenken",
+    "meaning": "to think about / reflect",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich denke darüber nach."
+  },
+  {
+    "german_word": "anerkennen",
+    "meaning": "to acknowledge / recognize",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Seine Leistung wird anerkannt."
+  },
+  {
+    "german_word": "wahrnehmen",
+    "meaning": "to perceive / notice",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich nehme die Veränderung wahr."
+  },
+  {
+    "german_word": "unterstützen",
+    "meaning": "to support",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Ich unterstütze deine Entscheidung."
+  },
+  {
+    "german_word": "einführen",
+    "meaning": "to introduce / implement",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Die Firma führt neue Regeln ein."
+  },
+  {
+    "german_word": "durchführen",
+    "meaning": "to carry out / conduct",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Wir führen eine Umfrage durch."
+  },
+  {
+    "german_word": "zusammenfassen",
+    "meaning": "to summarize",
+    "word_type": "verb",
+    "artikel": "-",
+    "sentence": "Kannst du das zusammenfassen?"
+  },
+  {
+    "german_word": "angemessen",
+    "meaning": "appropriate / adequate",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine angemessene Reaktion."
+  },
+  {
+    "german_word": "ausreichend",
+    "meaning": "sufficient / enough",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Die Zeit ist nicht ausreichend."
+  },
+  {
+    "german_word": "erheblich",
+    "meaning": "considerable / significant",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist ein erheblicher Unterschied."
+  },
+  {
+    "german_word": "gegenseitig",
+    "meaning": "mutual / reciprocal",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist gegenseitiges Vertrauen."
+  },
+  {
+    "german_word": "gelegentlich",
+    "meaning": "occasional",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Ich trinke gelegentlich Alkohol."
+  },
+  {
+    "german_word": "sorgfältig",
+    "meaning": "careful / thorough",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Er arbeitet sehr sorgfältig."
+  },
+  {
+    "german_word": "vernünftig",
+    "meaning": "reasonable / sensible",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Das ist eine vernünftige Entscheidung."
+  },
+  {
+    "german_word": "verantwortungsbewusst",
+    "meaning": "responsible",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Sie ist sehr verantwortungsbewusst."
+  },
+  {
+    "german_word": "engagiert",
+    "meaning": "committed / engaged",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Er ist ein engagierter Mitarbeiter."
+  },
+  {
+    "german_word": "ausgeglichen",
+    "meaning": "balanced / even-tempered",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Sie ist sehr ausgeglichen."
+  },
+  {
+    "german_word": "neugiering",
+    "meaning": "curious",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Kinder sind von Natur aus neugierig."
+  },
+  {
+    "german_word": "begeistert",
+    "meaning": "enthusiastic / excited",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Ich bin begeistert von der Idee."
+  },
+  {
+    "german_word": "entschlossen",
+    "meaning": "determined / resolute",
+    "word_type": "adjective",
+    "artikel": "-",
+    "sentence": "Sie ist entschlossen, Erfolg zu haben."
+  }
+]
